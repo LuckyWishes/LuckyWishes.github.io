@@ -5,59 +5,19 @@
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 06 Apr 2023 09:14:26 +0800</pubDate>
-        <lastBuildDate>Thu, 06 Apr 2023 09:14:26 +0800</lastBuildDate>
+        <pubDate>Wed, 23 Nov 2022 22:12:56 +0800</pubDate>
+        <lastBuildDate>Wed, 23 Nov 2022 22:12:56 +0800</lastBuildDate>
+        <category>Git</category>
+        <category>HTML基础</category>
+        <category>JavaScript</category>
+        <category>React</category>
+        <category>Vue</category>
         <item>
-            <guid isPermalink="true">http://example.com/2023/04/06/JavaScript%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%B8%8E%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/</guid>
-            <title>变量提升与函数提升</title>
-            <link>http://example.com/2023/04/06/JavaScript%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%B8%8E%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/</link>
-            <pubDate>Thu, 06 Apr 2023 09:14:26 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id=&#34;1-提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-提升&#34;&gt;#&lt;/a&gt; 1 提升&lt;/h3&gt;
-&lt;p&gt;在 j s 代码执行前引擎会先进行预编译，预编 译期间会将变量声明与函数声明提升至其对应作用域的最顶端。&lt;/p&gt;
-&lt;h3 id=&#34;2-变量提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-变量提升&#34;&gt;#&lt;/a&gt; 2 变量提升&lt;/h3&gt;
-&lt;p&gt;在 ES 6 出来之前，J S 并没有块级作用域这一说，只有全局作用域和局部作用域。变量提升指的是&lt;strong&gt;使用 var 声明的变量提升到他所在的作用域的最顶端&lt;/strong&gt;。创建阶段，初始化阶段变量提升，赋值阶段没有提升，值为 undefined。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;hljs&#34;&gt;* 赋值逻辑不提升
-* 全局变量会被局部作用域中的同名变量覆盖
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;let，con st 变量，在创建阶段被提升了，但初始化和赋值阶段都没有被提升，没法使用变量，都存在一个暂时性死区。&lt;/p&gt;
-&lt;h3 id=&#34;3-函数提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-函数提升&#34;&gt;#&lt;/a&gt; 3 函数提升&lt;/h3&gt;
-&lt;p&gt;函数声明提升：是将函数名及函数体全部提升到其所在作用域的顶部。&lt;/p&gt;
-&lt;p&gt;函数创建有两个方式：&lt;/p&gt;
-&lt;p&gt;1，函数声明形式&lt;/p&gt;
-&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs js&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 声明式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt; () &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// to do...&lt;/span&gt;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;2，函数字面量形式（即函数表达式）&lt;/p&gt;
-&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs js&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 函数字面量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; foo = &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// to do...&lt;/span&gt;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;还有一种是方式：函数构造法：var a = new Fun ()，技术角度来讲也是一个字面量形式。&lt;/p&gt;
-&lt;p&gt;函数提升只针对具名函数，而对于赋值的匿名函数，并不会存在函数提升。&lt;/p&gt;
-&lt;h3 id=&#34;4-变量提升与函数提升的优先级&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-变量提升与函数提升的优先级&#34;&gt;#&lt;/a&gt; 4 变量提升与函数提升的优先级&lt;/h3&gt;
-&lt;p&gt;函数提升优先级高于变量提升，且不会被同名变量声明覆盖，但是会被变量赋值后覆盖。&lt;/p&gt;
-&lt;h3 id=&#34;5-为什么有变量提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-为什么有变量提升&#34;&gt;#&lt;/a&gt; 5 为什么有变量提升&lt;/h3&gt;
-&lt;p&gt;JavaScript 作为脚本语言，不同于编程语言的一点是没有编译过程，但是它需要脚本解释器边解析边执行，而脚本解释器在解释执行代码前会先扫描一遍，这个过程就是 “预解析” 过程。&lt;/p&gt;
-&lt;p&gt;J S 运行阶段包括预解析阶段和运行阶段。&lt;/p&gt;
-&lt;p&gt;预解析阶段：&lt;/p&gt;
-&lt;p&gt;​	变量提升&lt;/p&gt;
-&lt;p&gt;​	函数提升&lt;/p&gt;
-&lt;p&gt;执行阶段：&lt;/p&gt;
-&lt;p&gt;​	创建一个执行上下文 (execution context)，函数压栈，生成 active object (活动对象)&lt;/p&gt;
-&lt;p&gt;​	执行 / 解释上下文中的 function，为变量赋值&lt;/p&gt;
-&lt;p&gt;预解析需要&lt;strong&gt;注意&lt;/strong&gt;如下几个问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;预编译首先是全局预编译，函数体未调用时是不进行预编译的。&lt;/li&gt;
-&lt;li&gt;只有 var 和 function 声明会被提升。&lt;/li&gt;
-&lt;li&gt;在所在的作用域会被提升，不会扩展到其他的作用域。&lt;/li&gt;
-&lt;li&gt;预编译后会顺序执行代码。&lt;/li&gt;
-&lt;/ol&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/04/06/JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
+            <guid isPermalink="true">http://example.com/2022/11/23/JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
             <title>JavaScript执行上下文</title>
-            <link>http://example.com/2023/04/06/JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
-            <pubDate>Thu, 06 Apr 2023 09:14:17 +0800</pubDate>
+            <link>http://example.com/2022/11/23/JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
+            <category>JavaScript</category>
+            <pubDate>Wed, 23 Nov 2022 22:12:56 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
@@ -152,10 +112,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/04/06/JavaScript%E5%8E%9F%E5%9E%8B%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/</guid>
+            <guid isPermalink="true">http://example.com/2022/11/19/JavaScript%E5%8E%9F%E5%9E%8B%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/</guid>
             <title>原型 原型链 继承</title>
-            <link>http://example.com/2023/04/06/JavaScript%E5%8E%9F%E5%9E%8B%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/</link>
-            <pubDate>Thu, 06 Apr 2023 09:14:02 +0800</pubDate>
+            <link>http://example.com/2022/11/19/JavaScript%E5%8E%9F%E5%9E%8B%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/</link>
+            <category>JavaScript</category>
+            <pubDate>Sat, 19 Nov 2022 22:12:03 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
@@ -320,6 +281,226 @@
 &lt;/ul&gt;
 &lt;p&gt;JavaScript 解释阶段便会确定作用域规则，因此作用域在函数定义时就已经确定了，而不是在函数调用时确定，但是执行上下文是函数执行之前创建的。执行上下文最明显的就是 this 的指向是执行时确定的。而作用域访问的变量是编写代码的结构确定的。&lt;/p&gt;
 &lt;p&gt;一个作用域下可能包含若干个上下文环境。有可能从来没有过上下文环境（函数从来就没有被调用过）；有可能有过，现在函数被调用完毕后，上下文环境被销毁了；有可能同时存在一个或多个（闭包）。&lt;strong&gt;同一个作用域下，不同的调用会产生不同的执行上下文环境，继而产生不同的变量的值&lt;/strong&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/11/17/JavaScript%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%B8%8E%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/</guid>
+            <title>变量提升与函数提升</title>
+            <link>http://example.com/2022/11/17/JavaScript%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%B8%8E%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/</link>
+            <category>JavaScript</category>
+            <pubDate>Thu, 17 Nov 2022 15:43:53 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;1-提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-提升&#34;&gt;#&lt;/a&gt; 1 提升&lt;/h3&gt;
+&lt;p&gt;在 j s 代码执行前引擎会先进行预编译，预编 译期间会将变量声明与函数声明提升至其对应作用域的最顶端。&lt;/p&gt;
+&lt;h3 id=&#34;2-变量提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-变量提升&#34;&gt;#&lt;/a&gt; 2 变量提升&lt;/h3&gt;
+&lt;p&gt;在 ES 6 出来之前，J S 并没有块级作用域这一说，只有全局作用域和局部作用域。变量提升指的是&lt;strong&gt;使用 var 声明的变量提升到他所在的作用域的最顶端&lt;/strong&gt;。创建阶段，初始化阶段变量提升，赋值阶段没有提升，值为 undefined。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;hljs&#34;&gt;* 赋值逻辑不提升
+* 全局变量会被局部作用域中的同名变量覆盖
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;let，con st 变量，在创建阶段被提升了，但初始化和赋值阶段都没有被提升，没法使用变量，都存在一个暂时性死区。&lt;/p&gt;
+&lt;h3 id=&#34;3-函数提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-函数提升&#34;&gt;#&lt;/a&gt; 3 函数提升&lt;/h3&gt;
+&lt;p&gt;函数声明提升：是将函数名及函数体全部提升到其所在作用域的顶部。&lt;/p&gt;
+&lt;p&gt;函数创建有两个方式：&lt;/p&gt;
+&lt;p&gt;1，函数声明形式&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs js&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 声明式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt; () &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// to do...&lt;/span&gt;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2，函数字面量形式（即函数表达式）&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs js&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 函数字面量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; foo = &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// to do...&lt;/span&gt;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;还有一种是方式：函数构造法：var a = new Fun ()，技术角度来讲也是一个字面量形式。&lt;/p&gt;
+&lt;p&gt;函数提升只针对具名函数，而对于赋值的匿名函数，并不会存在函数提升。&lt;/p&gt;
+&lt;h3 id=&#34;4-变量提升与函数提升的优先级&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-变量提升与函数提升的优先级&#34;&gt;#&lt;/a&gt; 4 变量提升与函数提升的优先级&lt;/h3&gt;
+&lt;p&gt;函数提升优先级高于变量提升，且不会被同名变量声明覆盖，但是会被变量赋值后覆盖。&lt;/p&gt;
+&lt;h3 id=&#34;5-为什么有变量提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-为什么有变量提升&#34;&gt;#&lt;/a&gt; 5 为什么有变量提升&lt;/h3&gt;
+&lt;p&gt;JavaScript 作为脚本语言，不同于编程语言的一点是没有编译过程，但是它需要脚本解释器边解析边执行，而脚本解释器在解释执行代码前会先扫描一遍，这个过程就是 “预解析” 过程。&lt;/p&gt;
+&lt;p&gt;J S 运行阶段包括预解析阶段和运行阶段。&lt;/p&gt;
+&lt;p&gt;预解析阶段：&lt;/p&gt;
+&lt;p&gt;​	变量提升&lt;/p&gt;
+&lt;p&gt;​	函数提升&lt;/p&gt;
+&lt;p&gt;执行阶段：&lt;/p&gt;
+&lt;p&gt;​	创建一个执行上下文 (execution context)，函数压栈，生成 active object (活动对象)&lt;/p&gt;
+&lt;p&gt;​	执行 / 解释上下文中的 function，为变量赋值&lt;/p&gt;
+&lt;p&gt;预解析需要&lt;strong&gt;注意&lt;/strong&gt;如下几个问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;预编译首先是全局预编译，函数体未调用时是不进行预编译的。&lt;/li&gt;
+&lt;li&gt;只有 var 和 function 声明会被提升。&lt;/li&gt;
+&lt;li&gt;在所在的作用域会被提升，不会扩展到其他的作用域。&lt;/li&gt;
+&lt;li&gt;预编译后会顺序执行代码。&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/06/23/React/</guid>
+            <title>React Hooks</title>
+            <link>http://example.com/2021/06/23/React/</link>
+            <category>React</category>
+            <pubDate>Wed, 23 Jun 2021 20:40:35 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/05/11/Vue/</guid>
+            <title>Vue</title>
+            <link>http://example.com/2021/05/11/Vue/</link>
+            <category>Vue</category>
+            <pubDate>Tue, 11 May 2021 20:39:44 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/03/22/JavaScript/</guid>
+            <title>JavaScript</title>
+            <link>http://example.com/2021/03/22/JavaScript/</link>
+            <category>JavaScript</category>
+            <pubDate>Mon, 22 Mar 2021 10:12:03 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/03/19/Git/</guid>
+            <title>Git常用命令</title>
+            <link>http://example.com/2021/03/19/Git/</link>
+            <category>Git</category>
+            <pubDate>Fri, 19 Mar 2021 20:42:30 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;1-全局配置git环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-全局配置git环境&#34;&gt;#&lt;/a&gt; 1、全局配置 git 环境；&lt;/h3&gt;
+&lt;p&gt;git config --global &lt;a href=&#34;http://user.name&#34;&gt;user.name&lt;/a&gt; “用户名”&lt;br&gt;
+git config --global user.email “邮箱”&lt;br&gt;
+ 基本命令：&lt;br&gt;
+mkdir 文件夹名；创建文件夹&lt;br&gt;
+ cd 文件夹名；进入文件夹&lt;br&gt;
+ ls；查看文件目录&lt;br&gt;
+ ls -sh；查看全部文件目录包含隐藏目录&lt;/p&gt;
+&lt;h3 id=&#34;2-初始化git仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-初始化git仓库&#34;&gt;#&lt;/a&gt; 2、初始化 git 仓库；&lt;/h3&gt;
+&lt;p&gt;git init&lt;/p&gt;
+&lt;h3 id=&#34;3-将本地工作区的文件添加到本地版本库的提交缓存中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-将本地工作区的文件添加到本地版本库的提交缓存中&#34;&gt;#&lt;/a&gt; 3、将本地工作区的文件添加到本地版本库的提交缓存中；&lt;/h3&gt;
+&lt;p&gt;git add .&lt;/p&gt;
+&lt;h3 id=&#34;4-将本地版本库提交缓存stage中的文件提交到本地版本库master中生成40位哈希值作为id&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-将本地版本库提交缓存stage中的文件提交到本地版本库master中生成40位哈希值作为id&#34;&gt;#&lt;/a&gt; 4、将本地版本库提交缓存 stage 中的文件提交到本地版本库 master 中；生成 40 位哈希值，作为 id，&lt;/h3&gt;
+&lt;p&gt;git commit -m “提交信息”&lt;/p&gt;
+&lt;!-- 修改提交信息命令 ，编辑后command+x退出编辑界面--&gt;
+&lt;p&gt;git commit -amend&lt;/p&gt;
+&lt;h3 id=&#34;5-查看历史提交日志加上prettyoneline选项简洁输出&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-查看历史提交日志加上prettyoneline选项简洁输出&#34;&gt;#&lt;/a&gt; 5、查看历史提交日志，加上–pretty=oneline 选项简洁输出；&lt;/h3&gt;
+&lt;p&gt;git log&lt;br&gt;
+HEAD-&amp;gt;master: 指本次提交到 master 仓库&lt;/p&gt;
+&lt;h3 id=&#34;6-回滚代码仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-回滚代码仓库&#34;&gt;#&lt;/a&gt; 6、回滚代码仓库；&lt;/h3&gt;
+&lt;p&gt;git reset --hard&lt;/p&gt;
+&lt;!-- 存在三种模式 --&gt;???
+&lt;p&gt;–soft 、–mixed 以及–hard 是三个恢复等级&lt;br&gt;
+使用–soft 就仅仅将头指针恢复，已经 add 的暂存区以及工作空间的所有东西都不变。&lt;br&gt;
+如果使用–mixed，就将头恢复掉，已经 add 的暂存区也会丢失掉，工作空间的代码什么的是不变的。&lt;br&gt;
+如果使用–hard，那么一切就全都恢复了，头变，aad 的暂存区消失，代码什么的也恢复到以前状态&lt;br&gt;
+ git reset --hard HEAD^&lt;br&gt;
+git reset --hard HEAD~3&lt;/p&gt;
+&lt;h3 id=&#34;7-查看当前仓库状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-查看当前仓库状态&#34;&gt;#&lt;/a&gt; 7、查看当前仓库状态；&lt;/h3&gt;
+&lt;p&gt;git status&lt;br&gt;
+ 英文对应：&lt;br&gt;
+A：未修改&lt;br&gt;
+ AM：修改&lt;br&gt;
+ Untracked：未提交&lt;br&gt;
+ modified：新文件，但未提交&lt;/p&gt;
+&lt;!-- 工作区与缓存区 --&gt;
+&lt;p&gt;工作区：当前目录&lt;br&gt;
+缓存区：使用 git add 命令提交的文件信息，位于.git 目录下 index 文件中&lt;br&gt;
+ git add . 与 git add --all 区别&lt;br&gt;
+这个命令会将当前目录下包括子目录下所有改动的文件提交到暂存区，注意只包括改动的文件，不改动的不会放到缓存区。&lt;br&gt;
+这个命令还会把删除的文件也提交进去&lt;br&gt;
+如你在本地删除了 min.c 这个命令会把删除信息也记录进去，然后在提交的时候把仓库里对应的 min.c 也删除掉，也就是说你在本地做的删除操作会被记录，提交仓库时会删除同样的文件，如果不想删除文件，可以使用 git add .，注意后面有一个 “.” 点的符号，这个命令跟 git add --all 一样，但是不会记录删除操作&lt;/p&gt;
+&lt;h3 id=&#34;8-将文件撤销回到最近一次修改的状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-将文件撤销回到最近一次修改的状态&#34;&gt;#&lt;/a&gt; 8、将文件撤销回到最近一次修改的状态；&lt;/h3&gt;
+&lt;p&gt;git checkout – file 回到了之前修改的状态&lt;/p&gt;
+&lt;h3 id=&#34;9-查看单个文件可回滚版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-查看单个文件可回滚版本&#34;&gt;#&lt;/a&gt; 9、查看单个文件可回滚版本；&lt;/h3&gt;
+&lt;p&gt;git log filename&lt;/p&gt;
+&lt;h3 id=&#34;10-删除文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10-删除文件&#34;&gt;#&lt;/a&gt; 10、删除文件；&lt;/h3&gt;
+&lt;p&gt;git rm 文件名&lt;/p&gt;
+&lt;h3 id=&#34;11-查看提交历史&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-查看提交历史&#34;&gt;#&lt;/a&gt; 11、查看提交历史；&lt;/h3&gt;
+&lt;p&gt;git reflog&lt;br&gt;
+git 仓库组成：&lt;br&gt;
+Workspace：开发者工作区，也就是你当前写代码的目录，它一般保持的是最新仓库代码。&lt;br&gt;
+Index / Stage：缓存区，最早叫 Stage，现在新版本已经改成 index，位于.git 目录中，它用来存放临时动作，比如我们做了 git add 或者 git rm，都是把文件提交到缓存区，这是可以撤销的，然后在通过 git commit 将缓存区的内容提交到本地仓库&lt;br&gt;
+ Repository：仓库区，是仓库代码，你所有的提交都在这里，git 会保存好每一个历史版本，存放在仓库区，它可以是服务端的也可以是本地的，因为在分布式中，任何人都可以是主仓库。&lt;br&gt;
+Remote：远程仓库，只能是别的电脑上的仓库，即服务器仓库。&lt;/p&gt;
+&lt;h3 id=&#34;12-创建分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12-创建分支&#34;&gt;#&lt;/a&gt; 12、创建分支；&lt;/h3&gt;
+&lt;p&gt;git checkout -b 分支名&lt;br&gt;
+等价于&lt;br&gt;
+ git branch 分支名&lt;br&gt;
+ git checkout 分支名&lt;/p&gt;
+&lt;h3 id=&#34;13-查看当前分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#13-查看当前分支&#34;&gt;#&lt;/a&gt; 13、查看当前分支；&lt;/h3&gt;
+&lt;p&gt;git branch&lt;/p&gt;
+&lt;h3 id=&#34;14-切换分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#14-切换分支&#34;&gt;#&lt;/a&gt; 14、切换分支；&lt;/h3&gt;
+&lt;p&gt;git checkout&lt;/p&gt;
+&lt;h3 id=&#34;15-合并分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#15-合并分支&#34;&gt;#&lt;/a&gt; 15、合并分支；&lt;/h3&gt;
+&lt;p&gt;git merge 分支名&lt;/p&gt;
+&lt;h3 id=&#34;16-查看当前所有分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#16-查看当前所有分支&#34;&gt;#&lt;/a&gt; 16、查看当前所有分支；&lt;/h3&gt;
+&lt;p&gt;git branch -a&lt;/p&gt;
+&lt;h3 id=&#34;17-删除本地分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#17-删除本地分支&#34;&gt;#&lt;/a&gt; 17、删除本地分支；&lt;/h3&gt;
+&lt;p&gt;git branch -D 分支名&lt;/p&gt;
+&lt;h3 id=&#34;18-删除远程分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#18-删除远程分支&#34;&gt;#&lt;/a&gt; 18、删除远程分支；&lt;/h3&gt;
+&lt;p&gt;git push origin --delete 分支名&lt;/p&gt;
+&lt;h3 id=&#34;19-本地仓库与远程仓库关联&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#19-本地仓库与远程仓库关联&#34;&gt;#&lt;/a&gt; 19、本地仓库与远程仓库关联；&lt;/h3&gt;
+&lt;p&gt;git remote add origin 仓库地址&lt;/p&gt;
+&lt;h3 id=&#34;20-推送到远程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-推送到远程&#34;&gt;#&lt;/a&gt; 20、推送到远程；&lt;/h3&gt;
+&lt;p&gt;git push -u origin 分支仓库名&lt;/p&gt;
+&lt;h3 id=&#34;20-查看本地分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看本地分支&#34;&gt;#&lt;/a&gt; 20、查看本地分支；&lt;/h3&gt;
+&lt;p&gt;git branch&lt;/p&gt;
+&lt;h3 id=&#34;20-查看本地和远程仓库的所有分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看本地和远程仓库的所有分支&#34;&gt;#&lt;/a&gt; 20、查看本地和远程仓库的所有分支；&lt;/h3&gt;
+&lt;p&gt;git branch -a&lt;/p&gt;
+&lt;h3 id=&#34;20-查看远程仓库的分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看远程仓库的分支&#34;&gt;#&lt;/a&gt; 20、查看远程仓库的分支&lt;/h3&gt;
+&lt;p&gt;git branch -r&lt;/p&gt;
+&lt;h3 id=&#34;20-查看本地库已经关联的远程仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看本地库已经关联的远程仓库&#34;&gt;#&lt;/a&gt; 20、查看本地库已经关联的远程仓库&lt;/h3&gt;
+&lt;p&gt;git remote -v&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2019/08/05/HTML/</guid>
+            <title>语义化标签了解</title>
+            <link>http://example.com/2019/08/05/HTML/</link>
+            <category>HTML基础</category>
+            <pubDate>Mon, 05 Aug 2019 09:32:12 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;概念： &lt;code&gt;合理正确的使用语义化标签来创建页面结构&lt;/code&gt; ，即正确的标签做正确的事情&lt;/li&gt;
+&lt;li&gt;优点：
+&lt;ul&gt;
+&lt;li&gt;无 CSS 样式编写时会呈现很好的内容效果&lt;/li&gt;
+&lt;li&gt;代码结构清晰，易于阅读，便于团队协作开发与维护，也有利于屏幕阅读器渲染页面&lt;/li&gt;
+&lt;li&gt;有利于搜索引擎优化 SEO，搜索引擎爬虫会根据不同的标签来赋予不同的权重&lt;/li&gt;
+&lt;li&gt;提升用户体验，比如 title、alt 可以用于解释名词或者图片信息，label 标签灵活应用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;标签 (切片元素)：header、nav、main、article、section、aside、footer
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt;  用来定义摘自另一个源的块引用，在该标签中的内容会被从常规文本中分离出来，默认会表现为左右两侧缩进的群本，缩近距离一般为 40 个像素 (即外边距 40px), 定义块引用，浏览器会在 blockquote 元素前后添加换行，并增加外边距，cite 属性标注引用的信息的来源文档或者相关信息的 URL&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;  定义页面的介绍展示区域，网站 logo、主导航、搜索框等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;  导航栏&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;  一个页面只能使用一次&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;  定义页面独立的内容，可以有自己的 header、footer、sections 等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;  用于标记文档的各个部分，例如长表单文章的章节或主要部分&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt;  定义与主要内容相关的内容块，通常显示为侧边栏&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;  定义文档的底部区域，通常包括文档作者、著作权信息等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt;  标签规定独立的流内容 (图像、图表、照片、代码等), 元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生影响&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;figcaption&amp;gt;&lt;/code&gt;  标签定义  &lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt;  元素的标题，元素应该被置于 “figure” 元素的第一个或最后一个子元素的位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;small&amp;gt;&lt;/code&gt;  为较不重要的内容定义小字体，如果被包围的字体已经是字体模型所支持的最小字号，那么  &lt;code&gt;&amp;lt;small&amp;gt;&lt;/code&gt;  标签将不起任何作用&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;  ~  &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;  定义页面的标题，h1 具有最高等级，h6 最低&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;  把文本定义为语气更强的强调的内容，以表示内容的重要性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;  标记内容着重点（大量用于提升段落文本语义），通常呈现为斜体文字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
     </channel>

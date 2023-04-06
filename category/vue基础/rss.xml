@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>XGG&amp;Blog • Posts by &#34;vue基础&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 11 May 2021 20:39:44 +0800</pubDate>
+        <lastBuildDate>Tue, 11 May 2021 20:39:44 +0800</lastBuildDate>
+        <category>Git</category>
+        <category>HTML基础</category>
+        <category>JavaScript</category>
+        <category>React</category>
+        <category>Vue</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/05/11/Vue/</guid>
+            <title>Vue</title>
+            <link>http://example.com/2021/05/11/Vue/</link>
+            <category>Vue</category>
+            <pubDate>Tue, 11 May 2021 20:39:44 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

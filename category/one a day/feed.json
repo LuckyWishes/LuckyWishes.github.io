@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "XGG&Blog • All posts by \"one a day\" category",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2019/08/05/HTML/",
+            "url": "http://example.com/2019/08/05/HTML/",
+            "title": "语义化标签了解",
+            "date_published": "2019-08-05T01:32:12.000Z",
+            "content_html": "<p>🌸  <span style=\"font-size:bold;color:purple\">Welcome to XGG &amp; blog!</span><br>\n🔭  <span style=\"font-size:bold;color:purple\">When you have eliminated the impossible,whatever remains,however improbable,must be the truth.</span><br>\n📫  <span style=\"font-size:initial;color:purple\">If you get any problems when looking blog,you can find the answer in <a href=\"https://juejin.cn/user/2784392994882045\">稀土掘金</a> or you can ask me on <a href=\"https://github.com/LuckyWishes\">GitHub</a>.</span></p>\n<hr />\n<ul>\n<li>概念： <code>合理正确的使用语义化标签来创建页面结构</code> ，即正确的标签做正确的事情</li>\n<li>优点：\n<ul>\n<li>无 CSS 样式编写时会呈现很好的内容效果</li>\n<li>代码结构清晰，易于阅读，便于团队协作开发与维护，也有利于屏幕阅读器渲染页面</li>\n<li>有利于搜索引擎优化 SEO，搜索引擎爬虫会根据不同的标签来赋予不同的权重</li>\n<li>提升用户体验，比如 title、alt 可以用于解释名词或者图片信息，label 标签灵活应用</li>\n</ul>\n</li>\n<li>标签 (切片元素)：header、nav、main、article、section、aside、footer\n<ul>\n<li><code>&lt;blockquote&gt;</code>  用来定义摘自另一个源的块引用，在该标签中的内容会被从常规文本中分离出来，默认会表现为左右两侧缩进的群本，缩近距离一般为 40 个像素 (即外边距 40px), 定义块引用，浏览器会在 blockquote 元素前后添加换行，并增加外边距，cite 属性标注引用的信息的来源文档或者相关信息的 URL</li>\n<li><code>&lt;header&gt;</code>  定义页面的介绍展示区域，网站 logo、主导航、搜索框等</li>\n<li><code>&lt;nav&gt;</code>  导航栏</li>\n<li><code>&lt;main&gt;</code>  一个页面只能使用一次</li>\n<li><code>&lt;article&gt;</code>  定义页面独立的内容，可以有自己的 header、footer、sections 等</li>\n<li><code>&lt;section&gt;</code>  用于标记文档的各个部分，例如长表单文章的章节或主要部分</li>\n<li><code>&lt;aside&gt;</code>  定义与主要内容相关的内容块，通常显示为侧边栏</li>\n<li><code>&lt;footer&gt;</code>  定义文档的底部区域，通常包括文档作者、著作权信息等</li>\n<li><code>&lt;figure&gt;</code>  标签规定独立的流内容 (图像、图表、照片、代码等), 元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生影响</li>\n<li><code>&lt;figcaption&gt;</code>  标签定义  <code>&lt;figure&gt;</code>  元素的标题，元素应该被置于 “figure” 元素的第一个或最后一个子元素的位置</li>\n<li><code>&lt;small&gt;</code>  为较不重要的内容定义小字体，如果被包围的字体已经是字体模型所支持的最小字号，那么  <code>&lt;small&gt;</code>  标签将不起任何作用</li>\n<li><code>&lt;h1&gt;</code>  ~  <code>&lt;h6&gt;</code>  定义页面的标题，h1 具有最高等级，h6 最低</li>\n<li><code>&lt;strong&gt;</code>  把文本定义为语气更强的强调的内容，以表示内容的重要性</li>\n<li><code>&lt;em&gt;</code>  标记内容着重点（大量用于提升段落文本语义），通常呈现为斜体文字</li>\n</ul>\n</li>\n</ul>\n",
+            "tags": [
+                "HTML基础"
+            ]
+        }
+    ]
+}

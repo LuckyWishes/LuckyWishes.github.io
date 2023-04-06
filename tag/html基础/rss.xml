@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>XGG&amp;Blog • Posts by &#34;html基础&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 05 Aug 2019 09:32:12 +0800</pubDate>
+        <lastBuildDate>Mon, 05 Aug 2019 09:32:12 +0800</lastBuildDate>
+        <category>Git</category>
+        <category>HTML基础</category>
+        <category>JavaScript</category>
+        <category>React</category>
+        <category>Vue</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2019/08/05/HTML/</guid>
+            <title>语义化标签了解</title>
+            <link>http://example.com/2019/08/05/HTML/</link>
+            <category>HTML基础</category>
+            <pubDate>Mon, 05 Aug 2019 09:32:12 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;概念： &lt;code&gt;合理正确的使用语义化标签来创建页面结构&lt;/code&gt; ，即正确的标签做正确的事情&lt;/li&gt;
+&lt;li&gt;优点：
+&lt;ul&gt;
+&lt;li&gt;无 CSS 样式编写时会呈现很好的内容效果&lt;/li&gt;
+&lt;li&gt;代码结构清晰，易于阅读，便于团队协作开发与维护，也有利于屏幕阅读器渲染页面&lt;/li&gt;
+&lt;li&gt;有利于搜索引擎优化 SEO，搜索引擎爬虫会根据不同的标签来赋予不同的权重&lt;/li&gt;
+&lt;li&gt;提升用户体验，比如 title、alt 可以用于解释名词或者图片信息，label 标签灵活应用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;标签 (切片元素)：header、nav、main、article、section、aside、footer
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt;  用来定义摘自另一个源的块引用，在该标签中的内容会被从常规文本中分离出来，默认会表现为左右两侧缩进的群本，缩近距离一般为 40 个像素 (即外边距 40px), 定义块引用，浏览器会在 blockquote 元素前后添加换行，并增加外边距，cite 属性标注引用的信息的来源文档或者相关信息的 URL&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;  定义页面的介绍展示区域，网站 logo、主导航、搜索框等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;  导航栏&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;  一个页面只能使用一次&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;  定义页面独立的内容，可以有自己的 header、footer、sections 等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;  用于标记文档的各个部分，例如长表单文章的章节或主要部分&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt;  定义与主要内容相关的内容块，通常显示为侧边栏&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;  定义文档的底部区域，通常包括文档作者、著作权信息等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt;  标签规定独立的流内容 (图像、图表、照片、代码等), 元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生影响&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;figcaption&amp;gt;&lt;/code&gt;  标签定义  &lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt;  元素的标题，元素应该被置于 “figure” 元素的第一个或最后一个子元素的位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;small&amp;gt;&lt;/code&gt;  为较不重要的内容定义小字体，如果被包围的字体已经是字体模型所支持的最小字号，那么  &lt;code&gt;&amp;lt;small&amp;gt;&lt;/code&gt;  标签将不起任何作用&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;  ~  &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;  定义页面的标题，h1 具有最高等级，h6 最低&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;  把文本定义为语气更强的强调的内容，以表示内容的重要性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;  标记内容着重点（大量用于提升段落文本语义），通常呈现为斜体文字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

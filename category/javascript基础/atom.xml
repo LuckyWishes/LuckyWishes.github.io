@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>XGG&amp;Blog • Posts by &#34;javascript基础&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2021-03-22T02:12:03.000Z</updated>
+    <category term="Git" />
+    <category term="HTML基础" />
+    <category term="JavaScript" />
+    <category term="React" />
+    <category term="Vue" />
+    <entry>
+        <id>http://example.com/2021/03/22/JavaScript/</id>
+        <title>JavaScript</title>
+        <link rel="alternate" href="http://example.com/2021/03/22/JavaScript/"/>
+        <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+</content>
+        <category term="JavaScript" />
+        <updated>2021-03-22T02:12:03.000Z</updated>
+    </entry>
+</feed>
