@@ -7,8 +7,8 @@
     <category term="Git" />
     <category term="HTML基础" />
     <category term="JavaScript" />
-    <category term="React" />
     <category term="Vue" />
+    <category term="React" />
     <entry>
         <id>http://example.com/2019/08/05/HTML/</id>
         <title>语义化标签了解</title>

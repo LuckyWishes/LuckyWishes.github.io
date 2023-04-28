@@ -24,7 +24,7 @@
 <meta property="og:description" content="🌸  Welcome to XGG &amp; blog! 🔭  When you have eliminated the impossible,whatever remains,however improbable,must be the truth. 📫  If you get any problems when looking blog,you can find the answer">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-22T02:12:03.000Z">
-<meta property="article:modified_time" content="2023-04-06T12:37:21.515Z">
+<meta property="article:modified_time" content="2023-04-28T03:12:33.532Z">
 <meta property="article:author" content="XGG">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary_large_image">
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          194 字
+          2.7k 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          2 分钟
+          23 分钟
         
       </span>
     
@@ -278,6 +278,114 @@
 🔭  <span style="font-size:bold;color:purple">When you have eliminated the impossible,whatever remains,however improbable,must be the truth.</span><br>
 📫  <span style="font-size:initial;color:purple">If you get any problems when looking blog,you can find the answer in <a target="_blank" rel="noopener" href="https://juejin.cn/user/2784392994882045">稀土掘金</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/LuckyWishes">GitHub</a>.</span></p>
 <hr />
+<h5 id="函数的this绑定"><a class="markdownIt-Anchor" href="#函数的this绑定">#</a> 函数的 this 绑定</h5>
+<ol>
+<li>
+<p>全局作用域下</p>
+<ol>
+<li>
+<p>浏览器环境：全局作用域下 <code>this</code>  绑定 window</p>
+</li>
+<li>
+<p>node 环境： <code>空对象&#123;&#125;</code></p>
+<ol>
+<li>执行步骤：首先将要执行的 js 文件作为模块，然后进行加载编译，此时将 js 代码所有文件放入一个函数中，执行该函数，但是该函数调用 <code>call()</code> , 在调用时向 <code>call()</code>  中传入一个空对象绑定为 <code>this</code>  即 <code>执行函数.call(&#123;&#125;)</code></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><em>函数作用域下</em> <code>this</code>  指向</p>
+<ol>
+<li>
+<p>函数在被调用时，JavaScript 会默认给 this 绑定一个值，this 指向与函数所处位置 (<strong>函数定义位置</strong>) 无关，与<strong>函数被调用的方式</strong>及调用位置有关，<strong>this 是在运行时被绑定</strong></p>
+</li>
+<li>
+<p><strong>默认绑定</strong></p>
+<ol>
+<li>
+<p>独立函数调用 <code>this</code>  指向的是全局对象 <code>window</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">foo</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>);<br>&#125;<br><span class="hljs-keyword">var</span> obj1 = &#123;<br>  <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;obj1&quot;</span>,<br>  <span class="hljs-attr">foo</span>: foo<br>&#125;<br><span class="hljs-comment">// 将obj1的foo赋值给bar</span><br><span class="hljs-keyword">var</span> bar = obj1.<span class="hljs-property">foo</span>;<br><span class="hljs-title function_">bar</span>();<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>隐式绑定</strong></p>
+<ol>
+<li>
+<p>通过某个对象进行调用，即调用位置中是<strong>通过某个对象发起的函数调用</strong> (谁发起函数调用 this 就绑定谁)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">foo</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>);<br>&#125;<br><span class="hljs-keyword">var</span> test = &#123;<br>  <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;test&quot;</span>,<br>  <span class="hljs-attr">foo</span>: foo<br>&#125;<br><span class="hljs-keyword">var</span> obj1 = &#123;<br>  <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;obj1&quot;</span>,<br>  <span class="hljs-attr">test</span>: test<br>&#125;<br><span class="hljs-keyword">var</span> obj2 = &#123;<br>  <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;obj2&quot;</span>,<br>  <span class="hljs-attr">obj1</span>: obj1<br>&#125;<br>obj2.<span class="hljs-property">obj1</span>.<span class="hljs-property">test</span>.<span class="hljs-title function_">foo</span>();<span class="hljs-comment">//test对象</span><br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>object.fn()</code> ：object 对象会被 js 引擎绑定到 fn 函数中的 this 上</p>
+</li>
+<li>
+<p>隐式绑定的前提条件</p>
+<ol>
+<li>必须在调用的对象内部有一个对函数的引用（比如一个属性）</li>
+<li>如果没有这样的引用，在进行调用时，会报找不到该函数的错误</li>
+<li>正是通过这个引用，间接的将 this 绑定到了这个对象上</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>显示绑定</strong></p>
+<ol>
+<li>
+<p><code>call()</code></p>
+<ol>
+<li>第一个参数为绑定对象，第二个参数为参数列表 (剩余参数形式)</li>
+</ol>
+</li>
+<li>
+<p><code>apply()</code></p>
+<ol>
+<li>第一个参数为绑定对象，第二个参数为参数列表 (数组形式)</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">sum</span>(<span class="hljs-params">num1,num2,num3</span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(num1+num2+num3,<span class="hljs-variable language_">this</span>);<br>&#125;<br>sum.<span class="hljs-title function_">call</span>(<span class="hljs-string">&quot;call&quot;</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>,<span class="hljs-number">40</span>);<span class="hljs-comment">//剩余参数形式</span><br>sum.<span class="hljs-title function_">apply</span>(<span class="hljs-string">&quot;apply&quot;</span>,[<span class="hljs-number">20</span>,<span class="hljs-number">30</span>,<span class="hljs-number">40</span>]);<span class="hljs-comment">//数组形式</span><br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>bind()</code></p>
+<ol>
+<li>第一个参数为绑定对象，第二个参数为参数列表 (剩余参数形式), <code>bind</code>  返回为一个新的函数</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">foo</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>);<br>&#125;<br><span class="hljs-comment">// 默认绑定和显示绑定bind冲突：优先级（显示绑定）</span><br><span class="hljs-keyword">var</span> newFoo = foo.<span class="hljs-title function_">bind</span>(<span class="hljs-string">&quot;aaaa&quot;</span>);<br><span class="hljs-title function_">newFoo</span>();<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>new 绑定</strong></p>
+<ol>
+<li>使用 new 关键字来调用函数执行如下的操作
+<ol>
+<li>创建一个全新的对象，<strong>并将该对象赋值给 this，函数最后返回该对象</strong></li>
+<li>这个新对象会被执行 prototype 连接</li>
+<li>这个新对象会绑定到函数调用的 this 上（this 的绑定在这个步骤完成）</li>
+<li>如果函数没有返回其他对象，表达式会返回这个新对象</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>内置函数绑定</strong></p>
+<ol>
+<li>
+<p><code>setTimeout</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 因为setTimeout内部实现函数调用时为独立函数调用，所以打印this时指向window</span><br><span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)&#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>);  <span class="hljs-comment">//window</span><br>&#125;, <span class="hljs-number">2000</span>);<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>数组.forEach/map/filter/find等高阶函数</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> names = [<span class="hljs-string">&quot;aaa&quot;</span>,<span class="hljs-string">&quot;bbb&quot;</span>,<span class="hljs-string">&quot;ccc&quot;</span>,<span class="hljs-string">&quot;ddd&quot;</span>];<br><span class="hljs-comment">// 函数直接独立调用指向window</span><br>names.<span class="hljs-title function_">forEach</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params">item</span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(item,<span class="hljs-variable language_">this</span>);<br>&#125;)<br><span class="hljs-comment">// forEach函数接收两个参数，第一个参数为一个函数，第二个参数为this绑定对象</span><br>names.<span class="hljs-title function_">forEach</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params">item</span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(item,<span class="hljs-variable language_">this</span>);<br>&#125;,<span class="hljs-string">&quot;forEach&quot;</span>)<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>div的点击</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 2、监听box盒子的点击,内部函数调用实现为：隐式this绑定调用进行打印即boxDiv.onclick()形式调用</span><br><span class="hljs-keyword">const</span> boxDiv = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&quot;.box&quot;</span>);<br><span class="hljs-comment">// 1.方式一：该方式添加监听事件会进行覆盖，也就是后面一个监听事件会覆盖前面一个，只生效一个最后一个事件</span><br>boxDiv.<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>);<br>&#125;<br><span class="hljs-comment">// 2.方式二：不会进行事件覆盖，会将函数收集到一个数组里面，执行时进行遍历</span><br><span class="hljs-comment">// 内部函数调用实现为：call()方式，即fn.call(boxDiv)</span><br>boxDiv.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&quot;click&quot;</span>,<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>);<br>&#125;)<br>boxDiv.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&quot;click&quot;</span>,<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>);<br>&#125;)<br>boxDiv.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&quot;click&quot;</span>,<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>);<br>&#125;)<br></code></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 
                 
               </div>
@@ -342,7 +450,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年4月6日</div>
+          <div>2023年4月28日</div>
         </div>
       
       

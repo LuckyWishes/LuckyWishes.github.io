@@ -7,8 +7,8 @@
     <category term="Git" />
     <category term="HTML基础" />
     <category term="JavaScript" />
-    <category term="React" />
     <category term="Vue" />
+    <category term="React" />
     <entry>
         <id>http://example.com/2021/05/11/Vue/</id>
         <title>Vue</title>
@@ -17,6 +17,31 @@
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
+&lt;h5 id=&#34;vue生命周期的理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vue生命周期的理解&#34;&gt;#&lt;/a&gt; Vue 生命周期的理解？&lt;/h5&gt;
+&lt;p&gt;每个 &lt;code&gt;Vue&lt;/code&gt;  实例在创建时都会经过一系列的初始化过程， &lt;code&gt;vue&lt;/code&gt;  的生命周期钩子，就是说在达到某一阶段或条件时去触发的函数，目的就是为了完成一些动作或者事件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;create阶段&lt;/code&gt; ：vue 实例被创建&lt;br&gt;
+ &lt;code&gt;beforeCreate&lt;/code&gt; : 最初调用触发，创建前，此时 data 和 methods 中的数据都还没有初始化，data 和 events 都不能用&lt;br&gt;
+ &lt;code&gt;created&lt;/code&gt; ： 创建完毕，data 中有值，未挂载，data 和 events 已经初始化好，data 已经具有响应式；在这里可以发送请求&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mount阶段&lt;/code&gt; ： vue 实例被挂载到真实 DOM 节点&lt;br&gt;
+ &lt;code&gt;beforeMount&lt;/code&gt; ：在模版编译之后，渲染之前触发，可以发起服务端请求，去数据，ssr 中不可用，基本用不上这个 hook&lt;br&gt;
+ &lt;code&gt;mounted&lt;/code&gt; : 在渲染之后触发，此时可以操作 DOM，并能访问组件中的 DOM 以及 $ref,SSR 中不可用&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;update阶段&lt;/code&gt; ：当 vue 实例里面的 data 数据变化时，触发组件的重新渲染&lt;br&gt;
+ &lt;code&gt;beforeUpdate&lt;/code&gt;  : 更新前，在数据变化后，模版改变前触发，切勿使用它监听数据变化&lt;br&gt;
+ &lt;code&gt;updated&lt;/code&gt; ：更新后，在数据改变后，模版改变后触发，常用于重渲染案后的打点，性能检测或触发 vue 组件中非 vue 组件的更新&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;destroy阶段&lt;/code&gt; ：vue 实例被销毁&lt;br&gt;
+ &lt;code&gt;beforeDestroy&lt;/code&gt; ：实例被销毁前，组件卸载前触发，此时可以手动销毁一些方法，可以在此时清理事件、计时器或者取消订阅操作&lt;br&gt;
+ &lt;code&gt;destroyed&lt;/code&gt; : 卸载完毕后触发，销毁后，可以做最后的打点或事件触发操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;组件生命周期&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#组件生命周期&#34;&gt;#&lt;/a&gt; 组件生命周期&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;生命周期（父子组件） 父组件 beforeCreate --&amp;gt; 父组件 created --&amp;gt; 父组件 beforeMount --&amp;gt; 子组件 beforeCreate --&amp;gt; 子组件 created --&amp;gt; 子组件 beforeMount --&amp;gt; 子组件 mounted --&amp;gt; 父组件 mounted --&amp;gt; 父组件 beforeUpdate --&amp;gt; 子组件 beforeDestroy–&amp;gt; 子组件 destroyed --&amp;gt; 父组件 updated&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;加载渲染过程&lt;/strong&gt; 父 beforeCreate-&amp;gt; 父 created-&amp;gt; 父 beforeMount-&amp;gt; 子 beforeCreate-&amp;gt; 子 created-&amp;gt; 子 beforeMount-&amp;gt; 子 mounted-&amp;gt; 父 mounted&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;挂载阶段&lt;/strong&gt; 父 created-&amp;gt; 子 created-&amp;gt; 子 mounted-&amp;gt; 父 mounted&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;父组件更新阶段&lt;/strong&gt; 父 beforeUpdate-&amp;gt; 父 updated&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;子组件更新阶段&lt;/strong&gt; 父 beforeUpdate-&amp;gt; 子 beforeUpdate-&amp;gt; 子 updated-&amp;gt; 父 updated&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;销毁阶段&lt;/strong&gt; 父 beforeDestroy-&amp;gt; 子 beforeDestroy-&amp;gt; 子 destroyed-&amp;gt; 父 destroyed&lt;/p&gt;
 </content>
         <category term="Vue" />
         <updated>2021-05-11T12:39:44.000Z</updated>
