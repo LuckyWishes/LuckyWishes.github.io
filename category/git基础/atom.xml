@@ -4,11 +4,11 @@
     <title>XGG&amp;Blog • Posts by &#34;git基础&#34; category</title>
     <link href="http://example.com" />
     <updated>2021-03-19T12:42:30.000Z</updated>
-    <category term="Git" />
     <category term="HTML基础" />
     <category term="JavaScript" />
-    <category term="Vue" />
+    <category term="Git" />
     <category term="React" />
+    <category term="Vue" />
     <entry>
         <id>http://example.com/2021/03/19/Git/</id>
         <title>Git常用命令</title>

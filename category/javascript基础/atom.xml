@@ -4,11 +4,11 @@
     <title>XGG&amp;Blog • Posts by &#34;javascript基础&#34; category</title>
     <link href="http://example.com" />
     <updated>2021-03-22T02:12:03.000Z</updated>
-    <category term="Git" />
     <category term="HTML基础" />
     <category term="JavaScript" />
-    <category term="Vue" />
+    <category term="Git" />
     <category term="React" />
+    <category term="Vue" />
     <entry>
         <id>http://example.com/2021/03/22/JavaScript/</id>
         <title>JavaScript</title>

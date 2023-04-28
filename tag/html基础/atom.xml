@@ -4,11 +4,11 @@
     <title>XGG&amp;Blog • Posts by &#34;html基础&#34; tag</title>
     <link href="http://example.com" />
     <updated>2019-08-05T01:32:12.000Z</updated>
-    <category term="Git" />
     <category term="HTML基础" />
     <category term="JavaScript" />
-    <category term="Vue" />
+    <category term="Git" />
     <category term="React" />
+    <category term="Vue" />
     <entry>
         <id>http://example.com/2019/08/05/HTML/</id>
         <title>语义化标签了解</title>

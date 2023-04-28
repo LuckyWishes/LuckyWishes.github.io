@@ -4,11 +4,11 @@
     <title>XGG&amp;Blog • Posts by &#34;javascript进阶&#34; category</title>
     <link href="http://example.com" />
     <updated>2022-11-23T14:12:56.000Z</updated>
-    <category term="Git" />
     <category term="HTML基础" />
     <category term="JavaScript" />
-    <category term="Vue" />
+    <category term="Git" />
     <category term="React" />
+    <category term="Vue" />
     <entry>
         <id>http://example.com/2022/11/23/JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/</id>
         <title>JavaScript执行上下文</title>

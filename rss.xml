@@ -7,11 +7,11 @@
         <language>zh-CN</language>
         <pubDate>Wed, 23 Nov 2022 22:12:56 +0800</pubDate>
         <lastBuildDate>Wed, 23 Nov 2022 22:12:56 +0800</lastBuildDate>
-        <category>Git</category>
         <category>HTML基础</category>
         <category>JavaScript</category>
-        <category>Vue</category>
+        <category>Git</category>
         <category>React</category>
+        <category>Vue</category>
         <item>
             <guid isPermalink="true">http://example.com/2022/11/23/JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
             <title>JavaScript执行上下文</title>
@@ -332,7 +332,7 @@
         </item>
         <item>
             <guid isPermalink="true">http://example.com/2021/06/23/React/</guid>
-            <title>React Hooks</title>
+            <title>React</title>
             <link>http://example.com/2021/06/23/React/</link>
             <category>React</category>
             <pubDate>Wed, 23 Jun 2021 20:40:35 +0800</pubDate>

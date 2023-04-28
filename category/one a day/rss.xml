@@ -7,11 +7,11 @@
         <language>zh-CN</language>
         <pubDate>Mon, 05 Aug 2019 09:32:12 +0800</pubDate>
         <lastBuildDate>Mon, 05 Aug 2019 09:32:12 +0800</lastBuildDate>
-        <category>Git</category>
         <category>HTML基础</category>
         <category>JavaScript</category>
-        <category>Vue</category>
+        <category>Git</category>
         <category>React</category>
+        <category>Vue</category>
         <item>
             <guid isPermalink="true">http://example.com/2019/08/05/HTML/</guid>
             <title>语义化标签了解</title>

@@ -4,11 +4,11 @@
     <title>XGG&amp;Blog • Posts by &#34;vue基础&#34; category</title>
     <link href="http://example.com" />
     <updated>2021-05-11T12:39:44.000Z</updated>
-    <category term="Git" />
     <category term="HTML基础" />
     <category term="JavaScript" />
-    <category term="Vue" />
+    <category term="Git" />
     <category term="React" />
+    <category term="Vue" />
     <entry>
         <id>http://example.com/2021/05/11/Vue/</id>
         <title>Vue</title>
