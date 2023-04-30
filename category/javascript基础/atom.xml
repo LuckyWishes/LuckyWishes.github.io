@@ -5,8 +5,8 @@
     <link href="http://example.com" />
     <updated>2022-06-15T11:12:03.000Z</updated>
     <category term="uni-app" />
-    <category term="浏览器" />
     <category term="Git" />
+    <category term="浏览器" />
     <category term="HTML基础" />
     <category term="JavaScript" />
     <category term="React" />
@@ -14,10 +14,10 @@
     <category term="Webpack" />
     <category term="Node" />
     <category term="TypeScript" />
-    <category term="数据结构" />
     <category term="计算机网络" />
-    <category term="计算机组成" />
+    <category term="数据结构" />
     <category term="操作系统" />
+    <category term="计算机组成" />
     <entry>
         <id>http://example.com/2022/06/15/4001_JavaScript/</id>
         <title>JavaScript</title>
