@@ -3,16 +3,25 @@
     <id>http://example.com</id>
     <title>XGG&amp;Blog • Posts by &#34;javascript&#34; tag</title>
     <link href="http://example.com" />
-    <updated>2022-11-23T14:12:56.000Z</updated>
+    <updated>2022-06-23T14:12:56.000Z</updated>
+    <category term="uni-app" />
     <category term="Git" />
+    <category term="浏览器" />
     <category term="HTML基础" />
     <category term="JavaScript" />
     <category term="React" />
     <category term="Vue" />
+    <category term="Webpack" />
+    <category term="Node" />
+    <category term="TypeScript" />
+    <category term="计算机网络" />
+    <category term="数据结构" />
+    <category term="计算机组成" />
+    <category term="操作系统" />
     <entry>
-        <id>http://example.com/2022/11/23/JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/</id>
+        <id>http://example.com/2022/06/23/4004_JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/</id>
         <title>JavaScript执行上下文</title>
-        <link rel="alternate" href="http://example.com/2022/11/23/JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/"/>
+        <link rel="alternate" href="http://example.com/2022/06/23/4004_JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/"/>
         <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
@@ -106,12 +115,12 @@
 &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;//经典面试题1&lt;/span&gt;&lt;br&gt;问题&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;：依次输出？&lt;br&gt;问题&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;：一共产生多少执行山下文对象？&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;gb:&amp;#x27;&lt;/span&gt;+i)&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; i = &lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;)&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;i&lt;/span&gt;)&amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;if&lt;/span&gt;(i == &lt;span class=&#34;hljs-number&#34;&gt;4&lt;/span&gt;)&amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt;&lt;br&gt;  &amp;#125;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;fb:&amp;#x27;&lt;/span&gt;+i)&lt;br&gt;  &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(i + &lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;)&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;fe:&amp;#x27;&lt;/span&gt;+i)&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;ge:&amp;#x27;&lt;/span&gt;+i)&lt;br&gt;&lt;br&gt;输出：&lt;br&gt;&lt;span class=&#34;hljs-literal&#34;&gt;undefined&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
         <category term="JavaScript" />
-        <updated>2022-11-23T14:12:56.000Z</updated>
+        <updated>2022-06-23T14:12:56.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/11/19/JavaScript%E5%8E%9F%E5%9E%8B%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/</id>
+        <id>http://example.com/2022/06/19/4003_JavaScript%E5%8E%9F%E5%9E%8B%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/</id>
         <title>原型 原型链 继承</title>
-        <link rel="alternate" href="http://example.com/2022/11/19/JavaScript%E5%8E%9F%E5%9E%8B%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/"/>
+        <link rel="alternate" href="http://example.com/2022/06/19/4003_JavaScript%E5%8E%9F%E5%9E%8B%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/"/>
         <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
@@ -278,12 +287,12 @@
 &lt;p&gt;一个作用域下可能包含若干个上下文环境。有可能从来没有过上下文环境（函数从来就没有被调用过）；有可能有过，现在函数被调用完毕后，上下文环境被销毁了；有可能同时存在一个或多个（闭包）。&lt;strong&gt;同一个作用域下，不同的调用会产生不同的执行上下文环境，继而产生不同的变量的值&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="JavaScript" />
-        <updated>2022-11-19T14:12:03.000Z</updated>
+        <updated>2022-06-19T14:12:03.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/11/17/JavaScript%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%B8%8E%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/</id>
+        <id>http://example.com/2022/06/17/4002_JavaScript%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%B8%8E%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/</id>
         <title>变量提升与函数提升</title>
-        <link rel="alternate" href="http://example.com/2022/11/17/JavaScript%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%B8%8E%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/"/>
+        <link rel="alternate" href="http://example.com/2022/06/17/4002_JavaScript%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%B8%8E%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/"/>
         <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
@@ -325,12 +334,12 @@
 &lt;/ol&gt;
 </content>
         <category term="JavaScript" />
-        <updated>2022-11-17T07:43:53.000Z</updated>
+        <updated>2022-06-17T07:43:53.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2021/03/22/JavaScript/</id>
+        <id>http://example.com/2022/06/15/4001_JavaScript/</id>
         <title>JavaScript</title>
-        <link rel="alternate" href="http://example.com/2021/03/22/JavaScript/"/>
+        <link rel="alternate" href="http://example.com/2022/06/15/4001_JavaScript/"/>
         <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
@@ -445,6 +454,1353 @@
 &lt;/ol&gt;
 </content>
         <category term="JavaScript" />
-        <updated>2021-03-22T02:12:03.000Z</updated>
+        <updated>2022-06-15T11:12:03.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2019/01/13/4000_JavaScript/</id>
+        <title>JavaScript</title>
+        <link rel="alternate" href="http://example.com/2019/01/13/4000_JavaScript/"/>
+        <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;1javascript介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1javascript介绍&#34;&gt;#&lt;/a&gt; 1.JavaScript 介绍&lt;/h2&gt;
+&lt;h3 id=&#34;1javascript应用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1javascript应用&#34;&gt;#&lt;/a&gt; 1.JavaScript 应用&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;web 端开发&lt;/li&gt;
+&lt;li&gt;移动端开发&lt;/li&gt;
+&lt;li&gt;小程序端开发&lt;/li&gt;
+&lt;li&gt;桌面应用开发&lt;/li&gt;
+&lt;li&gt;后端开发&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;2javascript运行环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2javascript运行环境&#34;&gt;#&lt;/a&gt; 2.JavaScript 运行环境&lt;/h2&gt;
+&lt;h3 id=&#34;1浏览器工作原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1浏览器工作原理&#34;&gt;#&lt;/a&gt; 1. 浏览器工作原理&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;浏览器内核&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Gecko：早期被 Netscape 和 Mozilla、Firefox 浏览器使用，代码完全公开，因此，其可开发程度很高，全世界的程序员都可以为其编写代码，增加功能&lt;/li&gt;
+&lt;li&gt;Trident：微软开发的一种排版引擎，被 IE4~IE11 浏览器使用，但是 Edge 浏览器已经转向 Blink&lt;/li&gt;
+&lt;li&gt;Webkit：苹果基于 KHTML 开发、开源的，用于 Safari 浏览器，Google Chrome 之前也在使用&lt;/li&gt;
+&lt;li&gt;Blink：Google 谷歌基于 webkit 内核开发的，目前应用于 Google Chrome、Edge、Opera 等&lt;/li&gt;
+&lt;li&gt;Presto:Opera 浏览器曾经使用过，特点是渲染速度的优化达到了极致，然而代价是牺牲了网页的兼容性&lt;/li&gt;
+&lt;li&gt;内核也称排班引擎、浏览器引擎、页面渲染引擎、样板引擎&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内核工作原理&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器渲染过程，需要将 JavaScript 代码转换为机器语言后交给 CPU 执行&lt;img src=&#34;../../all_photo/image-20220602085625470.png&#34; alt=&#34;image-20220602085625470&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Webkit浏览器&lt;/code&gt; 内核，由 WebCore 与 JavaScriptCore 两部分组成&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;WebCore：负责 HTML、CSS 解析、布局、渲染等相关工作&lt;/li&gt;
+&lt;li&gt;JavaScriptCore：解析、执行 JavaScript 代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2v8引擎工作原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2v8引擎工作原理&#34;&gt;#&lt;/a&gt; 2.V8 引擎工作原理&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;JavaScript 引擎（V8 引擎是 Google 开发）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;SpiderMonkey：第一款 JavaScript 引擎，由 BrendanEich 开发（也就是 JavaScript 作者）&lt;/li&gt;
+&lt;li&gt;Chakra：微软开发，用于 IT 浏览器&lt;/li&gt;
+&lt;li&gt;JavaScriptCore：WebKit 中的 JavaScript 引擎，Apple 公司开发&lt;/li&gt;
+&lt;li&gt;V8 引擎：Google 开发的强大 JavaScript 引擎，也帮助 Chrome 从众多浏览器中脱颖而出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;V8 引擎工作原理&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;V8 定义：C&lt;ins&gt; 编写的 Google 开源高性能 JavaScript 和 webAssembly 引擎，它用于 Chrome 和 Node.js，在很多环境及平台下可以运行，也可以单独运行，也可以嵌入 C&lt;/ins&gt; 应用程序中运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Parse：转换器，Parse 模块会将 JavaScript 代码转换成 AST (抽象语法树), 这是因为解释器并不直接认识 JavaScript 代码，如果函数没有被调用，那么是不会被转换成 AST (词法分析: &lt;code&gt;Scanner&lt;/code&gt;  转换生成多个 tokens:[{type:‘keyword’,value:‘const’}] 等、语法分析、)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意:js 代码转换为 AST 抽象语法树网站 (&lt;a href=&#34;https://astexplorer.net/&#34;&gt;https://astexplorer.net/&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lgnition：解释器，会将 AST 转换成 ByteCode（字节码）, 因为编写代码运行在具体什么样环境并不清楚，所以需要将该代码转换为字节码，字节码可以运行在各个环境，同时会收集 TurboFan 优化所需要的信息 (比如函数参数的类型信息，有了类型才能进行真实的运算), 如果函数只调用一次，Ignition 会解释执行字节码 ByteCode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TurboFan：编译器，可以将字节码编译为 CPU 可以直接执行的机器码；如果一个函数被多次调用，那么就会被标记为 &lt;code&gt;热点函数&lt;/code&gt; ，那么就会经过 TurboFan 转换成优化的机器码，提高代码的执行性能；但是机器码实际上也会被还原为 ByteCode，这是因为如果后续执行函数的过程中，类型发生了变化（比如 sum 函数原来执行的是 number 类型，后来执行变成了 string 类型），之前优化的机器码并不能正确的处理运算，就会逆向的经过 &lt;code&gt;Deoptimization&lt;/code&gt;  优化转换成字节码，继续进行执行 (从这一点也可以看出 typescript 代码运行效率会好一些，因为在编写时就已经确定参数的类型，减少了逆向转换为字节码再一次进行运行编译为汇编语言然后机器代码，越过这个过程就会快一些)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Orinoco：垃圾回收，将程序中不需要的内存回收？？？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;执行原理过程&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../all_photo/image-20220704154715013.png&#34; alt=&#34;image-20220704154715013&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;官方执行原理过程&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../all_photo/image-20220704160009294.png&#34; alt=&#34;image-20220704160009294&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JavaScript 源码解析过程&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Blink 将源码交给 V8 引擎，Stream 获取到源码并且进行编码转换&lt;/li&gt;
+&lt;li&gt;Scanner 会进行词法分析（lexical analysis），词法分析会将代码转换成各种 tokens&lt;/li&gt;
+&lt;li&gt;接下来 tokens 会被转换成 AST 树，经过 Parser 和 PreParser
+&lt;ol&gt;
+&lt;li&gt;Parser 就是直接将 tokens 转成 AST 树架构&lt;/li&gt;
+&lt;li&gt;PreParser 称之为预解析
+&lt;ol&gt;
+&lt;li&gt;因为并不是所有的 JavaScript 代码，在一开始时就会被执行。那么对所有的 JavaScript 代码进行解析，必然会影响网页的运行效率&lt;/li&gt;
+&lt;li&gt;所以 V8 引擎就实现了 Lazy Parsing（延迟解析）的方案，它的作用是将不必要的函数进行预解析，也就是只解析暂时需要的内容，而对&lt;strong&gt;函数的全量解析&lt;/strong&gt;是在&lt;strong&gt;函数被调用时&lt;/strong&gt;才会进行&lt;/li&gt;
+&lt;li&gt;比如我们在一个函数 outer 内部定义了另外一个函数 inner，那么 inner 函数就会进行预解析，生成 AST 树后，会被 Ignition 转成字节码（bytecode）, 之后的过程就是代码的执行过程（后续会详细分析）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JavaScript 源码执行具体操作&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;初始化全局对象
+&lt;ol&gt;
+&lt;li&gt;js 引擎会在执行代码之前，会在堆内存中创建一个全局对象：Global Object（GO）&lt;/li&gt;
+&lt;li&gt;该对象所有的作用域（scope）都可以访问，里面会包含 Date、Array、String、Number、setTimeout、setInterval 等等，其中有一个 window 属性指向自己&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;执行上下文栈 (调用栈)
+&lt;ol&gt;
+&lt;li&gt;js 引擎内部有一个执行上下文栈 (Execution Context Stack, 简称 ECS), 它是用于执行代码的调用栈&lt;/li&gt;
+&lt;li&gt;该栈执行的是全局代码块，全局的代码块为了执行会构建一个 Global Execution Context (GEC: 全局执行上下文),GEC 会被放入到 ECS 中执行&lt;/li&gt;
+&lt;li&gt;GEC 被放入到 ECS 中里面包含两部分内容
+&lt;ol&gt;
+&lt;li&gt;在代码执行前，在 parser 转成 AST 的过程中，会将全局定义的变量、函数等加入到 GlobalObject 中，但是并不会赋值，这个过程也称之为变量的作用域提升（hoisting）&lt;/li&gt;
+&lt;li&gt;在代码执行中，对变量赋值，或者执行其他的函数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;在执行的过程中执行到一个函数时，就会根据函数体创建一个函数执行上下文（Functional Execution Context，简称 FEC），并且压入到 EC Stack 中&lt;/li&gt;
+&lt;li&gt;FEC 中包含三部分内容
+&lt;ol&gt;
+&lt;li&gt;在解析函数成为 AST 树结构时，会创建一个 Activation Object (AO):AO 中包含形参、arguments、函数定义和指向函数对象、定义的变量（&lt;strong&gt;VO:AO&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;作用域链：由 VO（在函数中就是 AO 对象）和父级 VO 组成，查找时会一层层查找&lt;/li&gt;
+&lt;li&gt;this 绑定的值：根据不同的情况绑定 this&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;变量环境和记录 ( &lt;code&gt;作用域链考点&lt;/code&gt; )
+&lt;ol&gt;
+&lt;li&gt;概念
+&lt;ol&gt;
+&lt;li&gt;VO：全局变量对象，创建执行上下文时与之关联的会有一个变量对象，该上下文中的所有变量和函数全都保存在这个对象中&lt;/li&gt;
+&lt;li&gt;GO：全局对象，进入到一个执行上下文时，此执行上下文中的变量和函数都可以被访问 (全局)&lt;/li&gt;
+&lt;li&gt;AO：私有变量对象 (函数即将被执行，还没有还执行)，进入到一个执行上下文时，此执行上下文中的变量和函数都可以被访问 (局部)&lt;/li&gt;
+&lt;li&gt;GEC (global excution context) 全局执行上下文：执行全局代码，FEC (function excution context) 函数执行上下文：执行函数代码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;函数的作用域与函数定义位置有关，与调用位置无关&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;早期 ECMA 版本规范：每一个执行上下文被关联到一个变量对象 (variable,VO), 在源代码中的变量和函数声明会被作为属性添加到 VO 中，对于函数来说，参数也会被添加到 VO 中&lt;/li&gt;
+&lt;li&gt;在最新的 ECMA 的版本规范中，已经修改不称作 VO、GO、AO 等，而是称为变量环境，每添加的变量、函数叫作环境记录。每一个执行上下文会关联到一个 &lt;code&gt;变量环境&lt;/code&gt;  (VariableEnvironment 简称 VE) 中，在执行代码中变量和函数的声明会作为 &lt;code&gt;环境记录&lt;/code&gt;  (Environment Record) 添加到变量环境中，对于函数来说，参数也会被作为环境记录添加到变量环境中&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3javascript内存原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3javascript内存原理&#34;&gt;#&lt;/a&gt; 3.JavaScript 内存原理&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;内存管理
+&lt;ol&gt;
+&lt;li&gt;内存的管理有如下的生命周期
+&lt;ol&gt;
+&lt;li&gt;分配所申请的内存空间&lt;/li&gt;
+&lt;li&gt;使用所分配的内存空间&lt;/li&gt;
+&lt;li&gt;不使用时进行释放&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;管理内存的方式
+&lt;ol&gt;
+&lt;li&gt;手动管理内存：C、C++&lt;/li&gt;
+&lt;li&gt;自动管理内存：Java、JavaScript、python、Swift、Dart&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;内存分配
+&lt;ol&gt;
+&lt;li&gt;JS 对于基本数据类型内存的分配会在执行时，直接在栈空间进行分配&lt;/li&gt;
+&lt;li&gt;对于复杂数据类型内存的分配会在堆内存中开辟一块空间，并且将这块空间的指针返回值变量引用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;JS 的垃圾回收，Garbage Collection，简称&lt;strong&gt; GC&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;不再使用的对象，称之为垃圾，需要被回收释放更多的内存空间&lt;/li&gt;
+&lt;li&gt;Java 的运行环境 JVM，JavaScript 的运行环境 js 引擎都会有内存垃圾回收器&lt;/li&gt;
+&lt;li&gt;GC 算法
+&lt;ol&gt;
+&lt;li&gt;引用计数：内存中存在一个引用计数，retain count：默认为 0，缺点可能会产生循环引用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;标记清除&lt;/strong&gt;：设置一个根对象 (root object), 垃圾回收器会定期从这个根开始，找所有从开始有引用的对象，对于没有引用的对象，就认为是不可用对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;常见 GC 内存算法
+&lt;ol&gt;
+&lt;li&gt;JavaScript 垃圾回收&lt;/li&gt;
+&lt;li&gt;引用计数算法&lt;/li&gt;
+&lt;li&gt;标记清除算法&lt;/li&gt;
+&lt;li&gt;标记整理算法&lt;/li&gt;
+&lt;li&gt;分代回收算法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;V8 引擎内存管理
+&lt;ol&gt;
+&lt;li&gt;V8 的分代算法&lt;/li&gt;
+&lt;li&gt;V8 的内存分配&lt;/li&gt;
+&lt;li&gt;新生代对象回收&lt;/li&gt;
+&lt;li&gt;旧生代对象回收&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Performmance 调试&lt;/li&gt;
+&lt;li&gt;JavaScript 内存泄漏&lt;/li&gt;
+&lt;li&gt;严格模式
+&lt;ol&gt;
+&lt;li&gt;概念
+&lt;ol&gt;
+&lt;li&gt;严格模式是一种具有限制性的 JavaScript 模式，从而使代码隐式的脱离了 &lt;code&gt;懒散（sloppy）模式&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;支持严格模式的浏览器在检测到代码中有严格模式时，会以更加严格的方式对代码进行检测和执行&lt;/li&gt;
+&lt;li&gt;严格模式对正常的 JavaScript 语义进行了一些限制
+&lt;ol&gt;
+&lt;li&gt;严格模式通过抛出错误来消除一些原有的静默（silent）错误&lt;/li&gt;
+&lt;li&gt;严格模式让 JS 引擎在执行代码时可以进行更多的优化（不需要对一些特殊的语法进行处理）&lt;/li&gt;
+&lt;li&gt;严格模式禁用了在 ECMAScript 未来版本中可能会定义的一些语法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;开启严格模式
+&lt;ol&gt;
+&lt;li&gt;支持在 js 文件中开启严格模式&lt;/li&gt;
+&lt;li&gt;支持对某一个函数开启严格模式&lt;/li&gt;
+&lt;li&gt;严格模式通过在文件或者函数开头使用 use strict 来开启&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;严格模式限制
+&lt;ol&gt;
+&lt;li&gt;禁止意外创建全局变量&lt;/li&gt;
+&lt;li&gt;不允许函数有相同的参数名称&lt;/li&gt;
+&lt;li&gt;出现静默错误&lt;/li&gt;
+&lt;li&gt;不允许使用原先的八进制格式&lt;/li&gt;
+&lt;li&gt;with 语句不允许使用&lt;/li&gt;
+&lt;li&gt;eval 函数不会向上引用变量 (不会再向上层作用域添加变量)&lt;/li&gt;
+&lt;li&gt;严格模式下试图删除不可删除的属性&lt;/li&gt;
+&lt;li&gt;严格模式下，this 绑定不会默认转成对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4javascript事件循环&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4javascript事件循环&#34;&gt;#&lt;/a&gt; 4.JavaScript 事件循环&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器的进程模式
+&lt;ol&gt;
+&lt;li&gt;进程&lt;/li&gt;
+&lt;li&gt;线程&lt;/li&gt;
+&lt;li&gt;JavaScript 线程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;浏览器的事件循环
+&lt;ol&gt;
+&lt;li&gt;宏任务 macrotask&lt;/li&gt;
+&lt;li&gt;微任务 microtask&lt;/li&gt;
+&lt;li&gt;常见面试题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Node 的事件循环
+&lt;ol&gt;
+&lt;li&gt;libuv&lt;/li&gt;
+&lt;li&gt;阻塞 IO&lt;/li&gt;
+&lt;li&gt;非阻塞 IO&lt;/li&gt;
+&lt;li&gt;宏任务 macrotask&lt;/li&gt;
+&lt;li&gt;微任务 microtask&lt;/li&gt;
+&lt;li&gt;常见面试题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;3javascript作用域和函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3javascript作用域和函数&#34;&gt;#&lt;/a&gt; 3.JavaScript 作用域和函数&lt;/h2&gt;
+&lt;h3 id=&#34;1认识作用域&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1认识作用域&#34;&gt;#&lt;/a&gt; 1. 认识作用域&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;认识作用域&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;JavaScript 编译、执行&lt;/li&gt;
+&lt;li&gt;深入理解作用域&lt;/li&gt;
+&lt;li&gt;作用域的嵌套&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;词法作用域&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;认识词法分析&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;eval 函数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;eval 是一个特殊的函数，可以将传入的字符串当作 JavaScript 代码来运行&lt;/li&gt;
+&lt;li&gt;不建议在开发中使用
+&lt;ol&gt;
+&lt;li&gt;eval 代码可读性较差&lt;/li&gt;
+&lt;li&gt;eval 是一个字符串，可能在执行过程中被篡改，造成恶意攻击&lt;/li&gt;
+&lt;li&gt;eval 的执行必须经过 JS 解释器，不能被 JS 引擎优化&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; jsString = &lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;var message = &amp;quot;Hello World~~&amp;quot;;console.log(message);&amp;#x27;&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-built_in&#34;&gt;eval&lt;/span&gt;(jsString);&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;with 关键字&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;with&lt;/code&gt;  的使用，但不推荐使用，在严格模式下会报错&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// &amp;quot;use strict&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; message = &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;: &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;tests&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;age&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;12&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;message&lt;/span&gt;: &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;您好&amp;quot;&lt;/span&gt;&lt;br&gt;&amp;#125;;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// with语句:可以形成自己的作用域&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;with&lt;/span&gt; (object) &amp;#123;&lt;br&gt;      &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(message);&lt;br&gt;    &amp;#125;&lt;br&gt;  &amp;#125;&lt;br&gt;  &lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;();&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;();&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;作用域提升&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;编译器中变量声明和提升&lt;/li&gt;
+&lt;li&gt;函数和变量的提升&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;块级作用域&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;with 作用域
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;with&lt;/code&gt;  可以自己形成作用域，先查找传进来的对象，之后再去上层查找&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;try...catch...&lt;/code&gt;  作用域&lt;/li&gt;
+&lt;li&gt;let 变量声明&lt;/li&gt;
+&lt;li&gt;const 变量声明&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;作用域面试题&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2执行上下文&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2执行上下文&#34;&gt;#&lt;/a&gt; 2. 执行上下文&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;执行上下文
+&lt;ol&gt;
+&lt;li&gt;Global EC&lt;/li&gt;
+&lt;li&gt;Function EC&lt;/li&gt;
+&lt;li&gt;Eval EC&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;变量对象 VO
+&lt;ol&gt;
+&lt;li&gt;VO: 全局变量对象&lt;/li&gt;
+&lt;li&gt;AO: 私有变量对象&lt;/li&gt;
+&lt;li&gt;GO: 全局对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3深入函数执行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3深入函数执行&#34;&gt;#&lt;/a&gt; 3. 深入函数执行&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;call/apply执行函数&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;立即执行函数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Scopechain&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;深入闭包&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;补充&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;高阶函数：一个函数接收另一个函数作为参数或者一个函数会作为另一个函数的返回值返回&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filter&lt;/code&gt; : 过滤，接收一个&lt;strong&gt;返回布尔类型的函数为参数&lt;/strong&gt;，并且该函数具有三个参数分别为数组中的元素、数组中的元素的下标、数组本身&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;map&lt;/code&gt; : 映射，&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;forEach&lt;/code&gt; : 迭代遍历，无返回值&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find&lt;/code&gt; : 查找的为一个对象&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;findIndex&lt;/code&gt; : 查找的为对象索引值&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reduce&lt;/code&gt; : 累加计算&lt;/li&gt;
+&lt;li&gt;方法：对象里面的函数（特殊位置的函数），函数：独立的 function 称为函数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;闭包:Closure&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;维基百科：闭包又称词法闭包、函数闭包，是在支持头等函数的编程语言中，实现词法绑定的一种技术，闭包在实现上是一个结构体，它存储了一个函数和一个关联的环境，闭包和普通函数的区别在于，&lt;strong&gt;当捕捉闭包的时候，它的自由变量会在捕捉时被确定&lt;/strong&gt;，这样即使脱离了捕捉时的上下文，它也能照常运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MDN：&lt;strong&gt;一个函数和对其周围状态 (词法环境) 的引用捆绑&lt;/strong&gt;在一起 (说函数被引用包围)，这样的组合就是闭包，闭包让你可以在一个内层函数中访问到其外层函数的作用域，在 JavaScript 中，每当创建一个函数，闭包就会在函数创建时被创建出来&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;个人理解：&lt;strong&gt;一个普通的函数，如果它可以访问到外层作用域的自由变量，那么这个函数就是一个闭包。从广义角度：(可以访问到) JavaScript 中的函数都是闭包；从狭义角度 (有访问到)：JavaScript 中的一个函数，若访问了外层作用域的自由变量，那么它就是一个闭包&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;闭包引起的内存泄漏&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用完毕后本该销毁的内存而没有销毁继续存在称为内存泄露&lt;/li&gt;
+&lt;li&gt;内存释放将其设置为 &lt;code&gt;null&lt;/code&gt;  即可&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;闭包中引用的自由变量&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;AO 对象不会被销毁时，该对象里面被闭包引用的自由变量不会被销毁，没有引用的自由变量会被 js 引擎销毁&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; name = &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;GXX&amp;quot;&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; age = &lt;span class=&#34;hljs-number&#34;&gt;19&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;debugger&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(name);&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// 按照ECAM规范整个foo函数的AO对象不会删除，所以该对象中的age属性也应该存在，但是浏览器的js引擎即V8引擎会进行优化将其删除掉&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(age);&lt;span class=&#34;hljs-comment&#34;&gt;//bar函数中不访问变量age&lt;/span&gt;&lt;br&gt;  &amp;#125;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; bar;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; fn = &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;();&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;fn&lt;/span&gt;();&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4函数的this绑定&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4函数的this绑定&#34;&gt;#&lt;/a&gt; 4. 函数的 this 绑定&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;全局作用域下&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;浏览器环境：全局作用域下 &lt;code&gt;this&lt;/code&gt;  绑定 window&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;node 环境： &lt;code&gt;空对象&amp;#123;&amp;#125;&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;执行步骤：首先将要执行的 js 文件作为模块，然后进行加载编译，此时将 js 代码所有文件放入一个函数中，执行该函数，但是该函数调用 &lt;code&gt;call()&lt;/code&gt; , 在调用时向 &lt;code&gt;call()&lt;/code&gt;  中传入一个空对象绑定为 &lt;code&gt;this&lt;/code&gt;  即 &lt;code&gt;执行函数.call(&amp;#123;&amp;#125;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;函数作用域下&lt;/em&gt; &lt;code&gt;this&lt;/code&gt;  指向&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;函数在被调用时，JavaScript 会默认给 this 绑定一个值，this 指向与函数所处位置 (&lt;strong&gt;函数定义位置&lt;/strong&gt;) 无关，与&lt;strong&gt;函数被调用的方式&lt;/strong&gt;及调用位置有关，&lt;strong&gt;this 是在运行时被绑定&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;默认绑定&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;独立函数调用 &lt;code&gt;this&lt;/code&gt;  指向的是全局对象 &lt;code&gt;window&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; obj1 = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;: &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;obj1&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;foo&lt;/span&gt;: foo&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 将obj1的foo赋值给bar&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; bar = obj1.&lt;span class=&#34;hljs-property&#34;&gt;foo&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;();&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;隐式绑定&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;通过某个对象进行调用，即调用位置中是&lt;strong&gt;通过某个对象发起的函数调用&lt;/strong&gt; (谁发起函数调用 this 就绑定谁)&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; test = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;: &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;foo&lt;/span&gt;: foo&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; obj1 = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;: &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;obj1&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;test&lt;/span&gt;: test&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; obj2 = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;: &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;obj2&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;obj1&lt;/span&gt;: obj1&lt;br&gt;&amp;#125;&lt;br&gt;obj2.&lt;span class=&#34;hljs-property&#34;&gt;obj1&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;test&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;();&lt;span class=&#34;hljs-comment&#34;&gt;//test对象&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;object.fn()&lt;/code&gt; ：object 对象会被 js 引擎绑定到 fn 函数中的 this 上&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;隐式绑定的前提条件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;必须在调用的对象内部有一个对函数的引用（比如一个属性）&lt;/li&gt;
+&lt;li&gt;如果没有这样的引用，在进行调用时，会报找不到该函数的错误&lt;/li&gt;
+&lt;li&gt;正是通过这个引用，间接的将 this 绑定到了这个对象上&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;显示绑定&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;call()&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一个参数为绑定对象，第二个参数为参数列表 (剩余参数形式)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;apply()&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一个参数为绑定对象，第二个参数为参数列表 (数组形式)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;sum&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;num1,num2,num3&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(num1+num2+num3,&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;sum.&lt;span class=&#34;hljs-title function_&#34;&gt;call&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;call&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;40&lt;/span&gt;);&lt;span class=&#34;hljs-comment&#34;&gt;//剩余参数形式&lt;/span&gt;&lt;br&gt;sum.&lt;span class=&#34;hljs-title function_&#34;&gt;apply&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;apply&amp;quot;&lt;/span&gt;,[&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;40&lt;/span&gt;]);&lt;span class=&#34;hljs-comment&#34;&gt;//数组形式&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;bind()&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一个参数为绑定对象，第二个参数为参数列表 (剩余参数形式), &lt;code&gt;bind&lt;/code&gt;  返回为一个新的函数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 默认绑定和显示绑定bind冲突：优先级（显示绑定）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; newFoo = foo.&lt;span class=&#34;hljs-title function_&#34;&gt;bind&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;aaaa&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;newFoo&lt;/span&gt;();&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;new 绑定&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 new 关键字来调用函数执行如下的操作
+&lt;ol&gt;
+&lt;li&gt;创建一个全新的对象，&lt;strong&gt;并将该对象赋值给 this，函数最后返回该对象&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;这个新对象会被执行 prototype 连接&lt;/li&gt;
+&lt;li&gt;这个新对象会绑定到函数调用的 this 上（this 的绑定在这个步骤完成）&lt;/li&gt;
+&lt;li&gt;如果函数没有返回其他对象，表达式会返回这个新对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;内置函数绑定&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;setTimeout&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 因为setTimeout内部实现函数调用时为独立函数调用，所以打印this时指向window&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-built_in&#34;&gt;setTimeout&lt;/span&gt;(&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;)&amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);  &lt;span class=&#34;hljs-comment&#34;&gt;//window&lt;/span&gt;&lt;br&gt;&amp;#125;, &lt;span class=&#34;hljs-number&#34;&gt;2000&lt;/span&gt;);&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;数组.forEach/map/filter/find等高阶函数&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; names = [&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;aaa&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;bbb&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;ccc&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;ddd&amp;quot;&lt;/span&gt;];&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 函数直接独立调用指向window&lt;/span&gt;&lt;br&gt;names.&lt;span class=&#34;hljs-title function_&#34;&gt;forEach&lt;/span&gt;(&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;item&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(item,&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;)&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// forEach函数接收两个参数，第一个参数为一个函数，第二个参数为this绑定对象&lt;/span&gt;&lt;br&gt;names.&lt;span class=&#34;hljs-title function_&#34;&gt;forEach&lt;/span&gt;(&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;item&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(item,&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;,&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;forEach&amp;quot;&lt;/span&gt;)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;div的点击&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 2、监听box盒子的点击,内部函数调用实现为：隐式this绑定调用进行打印即boxDiv.onclick()形式调用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;const&lt;/span&gt; boxDiv = &lt;span class=&#34;hljs-variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;querySelector&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;.box&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 1.方式一：该方式添加监听事件会进行覆盖，也就是后面一个监听事件会覆盖前面一个，只生效一个最后一个事件&lt;/span&gt;&lt;br&gt;boxDiv.&lt;span class=&#34;hljs-property&#34;&gt;onclick&lt;/span&gt; = &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 2.方式二：不会进行事件覆盖，会将函数收集到一个数组里面，执行时进行遍历&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 内部函数调用实现为：call()方式，即fn.call(boxDiv)&lt;/span&gt;&lt;br&gt;boxDiv.&lt;span class=&#34;hljs-title function_&#34;&gt;addEventListener&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;click&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;)&lt;br&gt;boxDiv.&lt;span class=&#34;hljs-title function_&#34;&gt;addEventListener&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;click&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;)&lt;br&gt;boxDiv.&lt;span class=&#34;hljs-title function_&#34;&gt;addEventListener&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;click&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;规则的优先级&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;new 绑定 &amp;gt; 显示绑定 (bind/call/apply) &amp;gt; 隐式绑定 (object.foo ()) &amp;gt; 默认绑定 (独立函数调用)&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;默认规则 (独立调用) 的优先级最低&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;显示绑定优先级高于隐式绑定&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;object&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;foo&lt;/span&gt;:&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;object.&lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;();&lt;br&gt;object.&lt;span class=&#34;hljs-property&#34;&gt;foo&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;call&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;call&amp;quot;&lt;/span&gt;);&lt;span class=&#34;hljs-comment&#34;&gt;//call()绑定&lt;/span&gt;&lt;br&gt;object.&lt;span class=&#34;hljs-property&#34;&gt;foo&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;apply&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;apply&amp;quot;&lt;/span&gt;);&lt;span class=&#34;hljs-comment&#34;&gt;//apply()绑定&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; bar = object.&lt;span class=&#34;hljs-property&#34;&gt;foo&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;bind&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;bind&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;();&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;//bind()绑定优先级比较&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;object&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;foo&lt;/span&gt;:foo.&lt;span class=&#34;hljs-title function_&#34;&gt;bind&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;bind&amp;quot;&lt;/span&gt;)&lt;br&gt;&amp;#125;&lt;br&gt;object.&lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;();&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;new 绑定优先级高于隐式绑定&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;GXX&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;foo&lt;/span&gt;:&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// new的优先级高于隐式绑定&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; fn = &lt;span class=&#34;hljs-keyword&#34;&gt;new&lt;/span&gt; object.&lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;();&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;new 绑定优先级高于 bind&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 结论：new关键字不能和apply/call一起来使用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// new VS bind&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; bar = foo.&lt;span class=&#34;hljs-title function_&#34;&gt;bind&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;bind&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object = &lt;span class=&#34;hljs-keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;();&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;特殊情况 —— 忽略显示绑定&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;foo.&lt;span class=&#34;hljs-title function_&#34;&gt;call&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;call&amp;quot;&lt;/span&gt;);&lt;br&gt;foo.&lt;span class=&#34;hljs-title function_&#34;&gt;apply&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;apply&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// apply/call/bind:当传入null/undefined时，自动将this绑定成全局对象&lt;/span&gt;&lt;br&gt;foo.&lt;span class=&#34;hljs-title function_&#34;&gt;call&lt;/span&gt;(&lt;span class=&#34;hljs-literal&#34;&gt;null&lt;/span&gt;);&lt;br&gt;foo.&lt;span class=&#34;hljs-title function_&#34;&gt;call&lt;/span&gt;(&lt;span class=&#34;hljs-literal&#34;&gt;undefined&lt;/span&gt;); &lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; fn = foo.&lt;span class=&#34;hljs-title function_&#34;&gt;bind&lt;/span&gt;(&lt;span class=&#34;hljs-literal&#34;&gt;null&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// var fn = foo.bind(undefined);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;fn&lt;/span&gt;(); &lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;特殊情况 —— 间接函数引用&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object1 = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;object1&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;foo&lt;/span&gt;:&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object2 = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;object2&amp;quot;&lt;/span&gt;&lt;br&gt;&amp;#125;;&lt;br&gt;object2.&lt;span class=&#34;hljs-property&#34;&gt;bar&lt;/span&gt; = object1.&lt;span class=&#34;hljs-property&#34;&gt;foo&lt;/span&gt;;&lt;br&gt;object2.&lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;();&lt;span class=&#34;hljs-comment&#34;&gt;//打印object2对象&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 立即执行函数(匿名函数)，当作独立函数调用，打印全局对象window&lt;/span&gt;&lt;br&gt;(object2.&lt;span class=&#34;hljs-property&#34;&gt;bar&lt;/span&gt; = object1.&lt;span class=&#34;hljs-property&#34;&gt;foo&lt;/span&gt;)();&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;特殊情况 ——ES6 箭头函数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;根据外层作用域来决定 &lt;code&gt;this&lt;/code&gt;  指向&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object =&amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;data&lt;/span&gt;:[],&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;getData&lt;/span&gt;:&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/*     // 发送网络请求，将结果放到上面data属性中&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;    // 在箭头函数之前的解决方案&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;    // 使用闭包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;    var _this = this;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;    setTimeout(() =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;      var result = [&amp;quot;111&amp;quot;,&amp;quot;222&amp;quot;,&amp;quot;333&amp;quot;,&amp;quot;444&amp;quot;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;      _this.data = result;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;    &amp;#125;, 2000); */&lt;/span&gt;&lt;br&gt;    &lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// 箭头函数出现后&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-built_in&#34;&gt;setTimeout&lt;/span&gt;(&lt;span class=&#34;hljs-function&#34;&gt;() =&amp;gt;&lt;/span&gt; &amp;#123;&lt;br&gt;      &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result = [&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;111&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;222&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;333&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;444&amp;quot;&lt;/span&gt;];&lt;br&gt;      &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;data&lt;/span&gt; = result;&lt;br&gt;    &amp;#125;, &lt;span class=&#34;hljs-number&#34;&gt;2000&lt;/span&gt;);&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 隐式绑定，将getData方法中的this指向object对象，则_this就为object对象，即可拿到result数据&lt;/span&gt;&lt;br&gt;object.&lt;span class=&#34;hljs-title function_&#34;&gt;getData&lt;/span&gt;();&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;this指向面试题&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;对象花括号不是作用域&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object = &amp;#123;&lt;br&gt;	&lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;,&lt;br&gt;	&lt;span class=&#34;hljs-attr&#34;&gt;foo&lt;/span&gt;:&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;)&amp;#123;&lt;br&gt;	&lt;span class=&#34;hljs-comment&#34;&gt;//上层作用域为全局&lt;/span&gt;&lt;br&gt;	&amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;箭头函数不看绑定，向上层作用域查找&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一定要看：&lt;strong&gt;执行时看是谁发起函数调用&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;箭头函数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;介绍及简写语法练习&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;call&amp;amp;apply&amp;amp;bind&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;call实现&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 给所有的函数添加一个hycall方法&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-title class_&#34;&gt;Function&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;prototype&lt;/span&gt;&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;hycall&lt;/span&gt; = &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;thisArg,...args&lt;/span&gt;) &amp;#123;&lt;span class=&#34;hljs-comment&#34;&gt;//...args没有传入参数是一个空的数组&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第一步：获取哪一个函数调用hycall&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; fn = &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第二步：对thisArg转成对象类型(防止传入的是非对象类型),使用thisArg对象时,当thisArg为字符串、数字、布尔等类型时需要进行转换为对应的对象&lt;/span&gt;&lt;br&gt;  thisArg = (thisArg !== &lt;span class=&#34;hljs-literal&#34;&gt;null&lt;/span&gt; &amp;amp;&amp;amp; thisArg !== &lt;span class=&#34;hljs-literal&#34;&gt;undefined&lt;/span&gt; &amp;amp;&amp;amp; thisArg == &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;) ? &lt;span class=&#34;hljs-title class_&#34;&gt;Object&lt;/span&gt;(thisArg) : &lt;span class=&#34;hljs-variable language_&#34;&gt;window&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第三步：调用需要被执行的函数&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 1、使用call实现&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// fn.call(thisArg);&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 2、使用thisArg对象实现&lt;/span&gt;&lt;br&gt;  thisArg.&lt;span class=&#34;hljs-property&#34;&gt;fn&lt;/span&gt; = fn;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result = thisArg.&lt;span class=&#34;hljs-title function_&#34;&gt;fn&lt;/span&gt;(...args);&lt;span class=&#34;hljs-comment&#34;&gt;//展开时至少是一个空的数组&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// delete thisArg.fn;&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第四步：将最终的结果返回出去&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; result;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;num1,num2&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;foo函数被执行&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;,num1,num2);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;sum&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;num1,num2&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;sum函数被执行&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;,num1,num2);&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; num1 + num2;&lt;br&gt;&amp;#125;&lt;br&gt;foo.&lt;span class=&#34;hljs-title function_&#34;&gt;hycall&lt;/span&gt;(&amp;#123;&amp;#125;);&lt;br&gt;foo.&lt;span class=&#34;hljs-title function_&#34;&gt;hycall&lt;/span&gt;(&amp;#123;&amp;#125;,&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;);&lt;br&gt;foo.&lt;span class=&#34;hljs-title function_&#34;&gt;hycall&lt;/span&gt;(&lt;span class=&#34;hljs-literal&#34;&gt;null&lt;/span&gt;);&lt;br&gt;foo.&lt;span class=&#34;hljs-title function_&#34;&gt;hycall&lt;/span&gt;(&lt;span class=&#34;hljs-literal&#34;&gt;undefined&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;6&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;6&lt;/span&gt;);&lt;br&gt;sum.&lt;span class=&#34;hljs-title function_&#34;&gt;hycall&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;hycall&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;9&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;9&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result = &lt;span class=&#34;hljs-title function_&#34;&gt;sum&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(result);&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;apply实现&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-title class_&#34;&gt;Function&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;prototype&lt;/span&gt;&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;hyapply&lt;/span&gt; = &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;thisArg,argArray&lt;/span&gt;) &amp;#123;&lt;span class=&#34;hljs-comment&#34;&gt;//argArray没有传入参数是undefined&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第一步：获取那一个函数调用hyapply方法&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; fn = &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第二步：保证传入都是对象类型&lt;/span&gt;&lt;br&gt;  thisArg = (thisArg !== &lt;span class=&#34;hljs-literal&#34;&gt;null&lt;/span&gt; &amp;amp;&amp;amp; thisArg !== &lt;span class=&#34;hljs-literal&#34;&gt;undefined&lt;/span&gt; &amp;amp;&amp;amp; thisArg == &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;) ? &lt;span class=&#34;hljs-title class_&#34;&gt;Object&lt;/span&gt;(thisArg) : &lt;span class=&#34;hljs-variable language_&#34;&gt;window&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第三步：调用执行函数&lt;/span&gt;&lt;br&gt;  thisArg.&lt;span class=&#34;hljs-property&#34;&gt;fn&lt;/span&gt; = fn;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 判断是否传入参数&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 方式一：!argArray为true没有参数，为false有参数&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result = !argArray ? thisArg.&lt;span class=&#34;hljs-title function_&#34;&gt;fn&lt;/span&gt;() : thisArg.&lt;span class=&#34;hljs-title function_&#34;&gt;fn&lt;/span&gt;(...argArray);&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 方式二：使用&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/*   // 方式三：使用或运算符&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  // argArray = argArray ? argArray:[]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  argArray = argArray || [];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  var result = thisArg.fn(...argArray); */&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;delete&lt;/span&gt; thisArg.&lt;span class=&#34;hljs-property&#34;&gt;fn&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; result;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;sum&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;num1,num2&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;sum函数被调用了&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;,num1,num2);&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; num1 + num2;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 特殊情况一个参数也需要放入数组中&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;num&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;foo函数被调用了&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;,num);&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; num;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;bar函数被执行了&amp;quot;&lt;/span&gt;,&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;sum.&lt;span class=&#34;hljs-title function_&#34;&gt;hyapply&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;,[&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;]);&lt;br&gt;sum.&lt;span class=&#34;hljs-title function_&#34;&gt;hyapply&lt;/span&gt;(&lt;span class=&#34;hljs-literal&#34;&gt;null&lt;/span&gt;,[&lt;span class=&#34;hljs-number&#34;&gt;11&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;11&lt;/span&gt;]);&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; res1 = sum.&lt;span class=&#34;hljs-title function_&#34;&gt;hyapply&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;hyapply&amp;quot;&lt;/span&gt;,[&lt;span class=&#34;hljs-number&#34;&gt;12&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;12&lt;/span&gt;]);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(res1);&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; res2 = foo.&lt;span class=&#34;hljs-title function_&#34;&gt;hyapply&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;hyapply&amp;quot;&lt;/span&gt;,[&lt;span class=&#34;hljs-number&#34;&gt;12&lt;/span&gt;]);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(res2);&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; res3 = bar.&lt;span class=&#34;hljs-title function_&#34;&gt;hyapply&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;hyapply&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 边界判断(edge case)&lt;/span&gt;&lt;br&gt;bar.&lt;span class=&#34;hljs-title function_&#34;&gt;hyapply&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;);&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;bind实现&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-title class_&#34;&gt;Function&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;prototype&lt;/span&gt;&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;hybind&lt;/span&gt; = &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;thisArg, ...argArray&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第一步：获取到真实需要调用的函数&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; fn = &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第二步：绑定this&lt;/span&gt;&lt;br&gt;  thisArg = (thisArg !== &lt;span class=&#34;hljs-literal&#34;&gt;null&lt;/span&gt; &amp;amp;&amp;amp; thisArg !== &lt;span class=&#34;hljs-literal&#34;&gt;undefined&lt;/span&gt;) ? &lt;span class=&#34;hljs-title class_&#34;&gt;Object&lt;/span&gt;(thisArg) : &lt;span class=&#34;hljs-variable language_&#34;&gt;window&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;proxyFn&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;...args&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第三步：将函数放到thisArg中进行调用&lt;/span&gt;&lt;br&gt;    thisArg.&lt;span class=&#34;hljs-property&#34;&gt;fn&lt;/span&gt; = fn;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// 特殊处理：对两个传入的参数进行合并&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; finalArgs = [...argArray, ...args]&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result = thisArg.&lt;span class=&#34;hljs-title function_&#34;&gt;fn&lt;/span&gt;(...finalArgs);&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;delete&lt;/span&gt; thisArg.&lt;span class=&#34;hljs-property&#34;&gt;fn&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 第四步：返回结果&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; result;&lt;br&gt;  &amp;#125;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; proxyFn;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;foo函数被调用&amp;quot;&lt;/span&gt;, &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;);&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;sum&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;num1, num2, num3, num4&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(num1, num2, num3, num4);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/* // 系统的bind调用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;var bar = foo.bind(&amp;quot;bind&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;bar();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 传入参数的方式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 方式一&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;var newSum = sum.bind(&amp;quot;bind&amp;quot;,11,22,33,44);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;newSum();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 方式二&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;var newSum = sum.bind(&amp;quot;bind&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;newSum(11,22,33,44);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 方式三&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;var newSum = sum.bind(&amp;quot;bind&amp;quot;,11,22);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;newSum(33,44); */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/* var bar = foo.hybind(&amp;quot;hybind&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;var res = bar();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;console.log(res); */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; newSum = sum.&lt;span class=&#34;hljs-title function_&#34;&gt;hybind&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;hybind&amp;quot;&lt;/span&gt;, &lt;span class=&#34;hljs-number&#34;&gt;10&lt;/span&gt;, &lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; res = &lt;span class=&#34;hljs-title function_&#34;&gt;newSum&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;, &lt;span class=&#34;hljs-number&#34;&gt;40&lt;/span&gt;); &lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;arguments&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;类数组对象 (array-like)，形式像是一个数组，本质上是一个对象，即为对象类型，不能使用数组的方法&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;arguments参数转换数组&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;num1,num2&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;arguments&lt;/span&gt;);&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// arguments转换为数组类型方式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/*   // 1、使用for循环遍历&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  var newArray1 = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  for (let i = 0; i &amp;lt; arguments.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;    newArray1.push(arguments[i] * 10);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  console.log(newArray1); */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/*   // 2、将arguments转换为array&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  var newArray2 = Array.prototype.slice.call(arguments);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  console.log(newArray2);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  var newArray3 = [].slice.call(arguments);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  console.log(newArray3); */&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// 3、使用ES6的语法&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; newArray4 = &lt;span class=&#34;hljs-title class_&#34;&gt;Array&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;from&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;arguments&lt;/span&gt;);&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(newArray4);&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; newArray5 = [...&lt;span class=&#34;hljs-variable language_&#34;&gt;arguments&lt;/span&gt;];&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(newArray5);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;10&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;40&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;50&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;60&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/* // Array中slice方法实现     &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;Array.prototype.hyslice = function (start,end) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  var array = this;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  start = start || 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  end = end || array.length;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  var newArray = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  for (let i = start; i &amp;lt; end; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;    newArray.push(array[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  return newArray;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// var newArrayFinal = Array.prototype.hyslice.call([&amp;quot;aaa&amp;quot;,&amp;quot;bbb&amp;quot;,&amp;quot;ccc&amp;quot;],1,3);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;var newArrayFinal = Array.prototype.hyslice.call([&amp;quot;aaa&amp;quot;,&amp;quot;bbb&amp;quot;,&amp;quot;ccc&amp;quot;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;console.log(newArrayFinal); */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/* // slice方法的使用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;var names = [&amp;quot;111&amp;quot;,&amp;quot;222&amp;quot;,&amp;quot;333&amp;quot;,&amp;quot;444&amp;quot;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;console.log(names.slice(1,3)); */&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;箭头函数中没有arguments&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器的全局作用域中没有 arguments&lt;/li&gt;
+&lt;li&gt;node 环境下存在全局的 arguments&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;箭头函数可以使用剩余参数 &lt;code&gt;(...args)&lt;/code&gt;  方式获取参数&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编程方式&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;函数式编程范式&lt;/li&gt;
+&lt;li&gt;面向对象式编程范式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;5函数的柯里化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5函数的柯里化&#34;&gt;#&lt;/a&gt; 5. 函数的柯里化&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;纯函数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;纯函数的条件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;确定的输入，一定会产生确定的输出&lt;/li&gt;
+&lt;li&gt;函数在执行过程中，不能产生副作用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;副作用理解&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;表示在执行一个函数时，除了返回函数值之外，还对调用函数产生了附加的影响，比如修改了全局变量，修改参数或者改变外部的存储&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// test是一个纯函数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;test&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;info&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &amp;#123;&lt;br&gt;    ...info,&lt;span class=&#34;hljs-comment&#34;&gt;//展开运算符，对原对象进行浅拷贝，并没有修改原对象&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-attr&#34;&gt;age&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;10&lt;/span&gt;&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; obj1 = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;111&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;age&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;12&lt;/span&gt;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; obj2 = &lt;span class=&#34;hljs-title function_&#34;&gt;test&lt;/span&gt;(obj1);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(obj2);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(obj1);&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;纯函数的优势&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安心的编写和安心的使用&lt;/li&gt;
+&lt;li&gt;只是单纯实现自己的业务逻辑即可，不需要关心传入的内容是如何获得的或者依赖其他的外部变量是否已经发生了修改&lt;/li&gt;
+&lt;li&gt;你在用的时候，你确定你的输入内容不会被任意篡改，并且自己确定的输入，一定会有确定的输出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;纯函数的案例学习&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;展开运算符，对原对象进行浅拷贝，并没有修改原对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;柯里化是什么&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;柯里化 (英语：Currying) 又译为 &lt;code&gt;卡瑞化&lt;/code&gt; 或 &lt;code&gt;加里化&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;只传递给函数&lt;strong&gt;一部分参数&lt;/strong&gt;来调用它，让它返回&lt;strong&gt;一个函数&lt;/strong&gt;去处理&lt;strong&gt;剩余的参数&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实现柯里化&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;//一般函数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;add&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;x,y,z&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; (x+y+z);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 使用柯里化技术&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;bax&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;x&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;y&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;z&lt;/span&gt;) &amp;#123;&lt;br&gt;      &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; (x+y+z);&lt;br&gt;    &amp;#125;&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 一般函数实现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result1 = &lt;span class=&#34;hljs-title function_&#34;&gt;add&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;10&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(result1);&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 柯里化实现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result2 = &lt;span class=&#34;hljs-title function_&#34;&gt;bax&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;11&lt;/span&gt;)(&lt;span class=&#34;hljs-number&#34;&gt;22&lt;/span&gt;)(&lt;span class=&#34;hljs-number&#34;&gt;33&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(result2);&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 简化柯里化操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt; = (&lt;span class=&#34;hljs-params&#34;&gt;x&lt;/span&gt;) =&amp;gt; &lt;span class=&#34;hljs-function&#34;&gt;(&lt;span class=&#34;hljs-params&#34;&gt;y&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;hljs-function&#34;&gt;(&lt;span class=&#34;hljs-params&#34;&gt;z&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &amp;#123;&lt;br&gt; &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; (x+y+z);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result3 = &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;22&lt;/span&gt;)(&lt;span class=&#34;hljs-number&#34;&gt;33&lt;/span&gt;)(&lt;span class=&#34;hljs-number&#34;&gt;44&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(result3);&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;柯里化函数的实现 (自动)&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;add&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;x,y,z&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; (x+y+z);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 柯里化函数的实现hyCurrying&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;hyCurrying&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;fn&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;curried1&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;...args1&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// 判断接收参数args和函数本身需要接收的参数数量是否一致&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;// 当传入的参数大于等于函数需要的参数时，就执行函数&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;if&lt;/span&gt; (args1.&lt;span class=&#34;hljs-property&#34;&gt;length&lt;/span&gt; &amp;gt;= fn.&lt;span class=&#34;hljs-property&#34;&gt;length&lt;/span&gt;) &amp;#123;&lt;br&gt;      &lt;span class=&#34;hljs-comment&#34;&gt;//方式一&lt;/span&gt;&lt;br&gt;      &lt;span class=&#34;hljs-comment&#34;&gt;// return fn(...args1);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/*       // 方式二&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;      return fn.call(this,...args1); */&lt;/span&gt;&lt;br&gt;      &lt;span class=&#34;hljs-comment&#34;&gt;// 方式三&lt;/span&gt;&lt;br&gt;      &lt;span class=&#34;hljs-comment&#34;&gt;// 此处this理解:若curryAdd.apply(&amp;quot;test&amp;quot;)即curried1中的this，把this绑定在fn函数中 &lt;/span&gt;&lt;br&gt;      &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; fn.&lt;span class=&#34;hljs-title function_&#34;&gt;apply&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;,args1);&lt;br&gt;    &amp;#125; &lt;span class=&#34;hljs-keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;br&gt;      &lt;span class=&#34;hljs-comment&#34;&gt;// 没有达到函数所需参数数量时，需要返回一个新的函数，继续来接收参数&lt;/span&gt;&lt;br&gt;      &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;curried2&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;...args2&lt;/span&gt;) &amp;#123;&lt;br&gt;        &lt;span class=&#34;hljs-comment&#34;&gt;// 接收到参数后，需要递归调用curried1来检查函数的参数个数是否达到所需参数的个数&lt;/span&gt;&lt;br&gt;        &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; curried1.&lt;span class=&#34;hljs-title function_&#34;&gt;apply&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;,[...args1,...args2])&lt;br&gt;        &lt;span class=&#34;hljs-comment&#34;&gt;// return curried1.apply(this,args.concat(args2))&lt;/span&gt;&lt;br&gt;      &amp;#125;&lt;br&gt;      &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; curried2;&lt;br&gt;    &amp;#125;&lt;br&gt;  &amp;#125;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; curried1;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; curryAdd = &lt;span class=&#34;hljs-title function_&#34;&gt;hyCurrying&lt;/span&gt;(add);&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result1 = &lt;span class=&#34;hljs-title function_&#34;&gt;curryAdd&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;10&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result2 = &lt;span class=&#34;hljs-title function_&#34;&gt;curryAdd&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;10&lt;/span&gt;)(&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;)(&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(result1);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(result2);&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;柯里化的应用&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;函数的职责单一&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 一般函数实现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;add&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;x, y, z&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;x&lt;/span&gt;: x + &lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;y&lt;/span&gt;: y * &lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;z&lt;/span&gt;: z * z;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; (x + y + z)&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-title function_&#34;&gt;add&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;10&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;,&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;));&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 柯里化实现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt; = (&lt;span class=&#34;hljs-params&#34;&gt;x&lt;/span&gt;) =&amp;gt; &amp;#123;&lt;br&gt;  x+=&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;hljs-function&#34;&gt;(&lt;span class=&#34;hljs-params&#34;&gt;y&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &amp;#123;&lt;br&gt;    y*=&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;hljs-function&#34;&gt;(&lt;span class=&#34;hljs-params&#34;&gt;z&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &amp;#123;&lt;br&gt;      z*=z;&lt;br&gt;      &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; (x+y+z);&lt;br&gt;    &amp;#125;&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result = &lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;10&lt;/span&gt;)(&lt;span class=&#34;hljs-number&#34;&gt;20&lt;/span&gt;)(&lt;span class=&#34;hljs-number&#34;&gt;30&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(result);&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;逻辑复用&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/* // 23 + x = ？(x = 任意实数)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 一般函数实现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;function log(date, type, message) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;  console.log(`[$&amp;#123;date.getHours()&amp;#125;:$&amp;#123;date.getMinutes()&amp;#125;][$&amp;#123;type&amp;#125;]:[$&amp;#123;message&amp;#125;]`);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;log(new Date(), &amp;quot;DEBUG&amp;quot;, &amp;quot;查询数据错误&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;log(new Date(), &amp;quot;DEBUG&amp;quot;, &amp;quot;轮播图的错误&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;log(new Date(), &amp;quot;DEBUG&amp;quot;, &amp;quot;查询表单错误&amp;quot;); */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 柯里化实现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt; = date =&amp;gt; &lt;span class=&#34;hljs-function&#34;&gt;&lt;span class=&#34;hljs-params&#34;&gt;type&lt;/span&gt; =&amp;gt;&lt;/span&gt; &lt;span class=&#34;hljs-function&#34;&gt;&lt;span class=&#34;hljs-params&#34;&gt;message&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;`[&lt;span class=&#34;hljs-subst&#34;&gt;$&amp;#123;date.getHours()&amp;#125;&lt;/span&gt;:&lt;span class=&#34;hljs-subst&#34;&gt;$&amp;#123;date.getMinutes()&amp;#125;&lt;/span&gt;][&lt;span class=&#34;hljs-subst&#34;&gt;$&amp;#123;type&amp;#125;&lt;/span&gt;]:[&lt;span class=&#34;hljs-subst&#34;&gt;$&amp;#123;message&amp;#125;&lt;/span&gt;]`&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 柯里化--复用时间逻辑&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; nowLog = &lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;hljs-title class_&#34;&gt;Date&lt;/span&gt;());&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;nowLog&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;6666&amp;quot;&lt;/span&gt;)(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;undefined&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 柯里化--复用时间逻辑、错误信息逻辑&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; newAndDebug = &lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;hljs-title class_&#34;&gt;Date&lt;/span&gt;())(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;同一类型错误信息&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;newAndDebug&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;undefined&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-title function_&#34;&gt;newAndDebug&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;null&amp;quot;&lt;/span&gt;);&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;组合函数&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;将多个函数组合起来，自动依次调用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实现组合函数 (多个函数，多个参数)&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;hyCompose&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;...fns&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// var length = fns.length;&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; i = &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;; i &amp;lt; fns.&lt;span class=&#34;hljs-property&#34;&gt;length&lt;/span&gt;; i++) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;if&lt;/span&gt; (&lt;span class=&#34;hljs-keyword&#34;&gt;typeof&lt;/span&gt; fns[i] !== &lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;function&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;br&gt;      &lt;span class=&#34;hljs-keyword&#34;&gt;throw&lt;/span&gt; &lt;span class=&#34;hljs-title class_&#34;&gt;TypeError&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;Expected arguments are functions&amp;quot;&lt;/span&gt;);&lt;br&gt;    &amp;#125;&lt;br&gt;  &amp;#125;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;compose&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;...args&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; index = &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; result = fns.&lt;span class=&#34;hljs-property&#34;&gt;length&lt;/span&gt; ? fns[index].&lt;span class=&#34;hljs-title function_&#34;&gt;apply&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;,args):args;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;while&lt;/span&gt; (++index &amp;lt; fns.&lt;span class=&#34;hljs-property&#34;&gt;length&lt;/span&gt;) &amp;#123;&lt;br&gt;      result = fns[index].&lt;span class=&#34;hljs-title function_&#34;&gt;call&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;,result);&lt;br&gt;    &amp;#125;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; result;&lt;br&gt;  &amp;#125;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; compose;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;double&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;num1&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; num1*&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;square&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;num2&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; num2**&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; newFn = &lt;span class=&#34;hljs-title function_&#34;&gt;hyCompose&lt;/span&gt;(double,square);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-title function_&#34;&gt;newFn&lt;/span&gt;(&lt;span class=&#34;hljs-number&#34;&gt;10&lt;/span&gt;));&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4javascript面向对象&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4javascript面向对象&#34;&gt;#&lt;/a&gt; 4.JavaScript 面向对象&lt;/h2&gt;
+&lt;h3 id=&#34;1深入理解对象&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1深入理解对象&#34;&gt;#&lt;/a&gt; 1. 深入理解对象&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;补充&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;JavaScript 支持多种编程范式，包括函数式编程、面向对象编程&lt;/li&gt;
+&lt;li&gt;JavaScript 中的对象被设计成一组属性的无序集合，类似哈希表&lt;/li&gt;
+&lt;li&gt;key 是一个标识符名称，value 可以是任意类型，也可以是其他对象或者函数类型&lt;/li&gt;
+&lt;li&gt;如果值是一个函数，那么我们可以称之为是对象的方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对象的语法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建对象的两种方式
+&lt;ol&gt;
+&lt;li&gt;使用 &lt;code&gt;new&lt;/code&gt;  关键字及 &lt;code&gt;Object类&lt;/code&gt; 进行创建&lt;/li&gt;
+&lt;li&gt;通过字面量进行创建&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;对象字面量&lt;/li&gt;
+&lt;li&gt;对象的类型&lt;/li&gt;
+&lt;li&gt;函数对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对象的内容&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;属性和方法定义&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对象方法补充
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;preventExtensions&lt;/code&gt; : 禁止对象扩展新属性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seal&lt;/code&gt; : 密封对象，不允许配置和删除属性，禁止对象配置 / 删除里面的属性即设置 &lt;code&gt;configurable:false&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;freeze&lt;/code&gt; : 冻结对象，不允许修改现有的属性，使属性不可以修改即设置 &lt;code&gt;writable:false&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对象属性描述符&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;想要对一个属性进行比较精准的操作控制，那么我们就可以使用属性描述符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过属性描述符可以精准的添加或修改对象的属性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;属性描述符需要使用 ** &lt;code&gt;Object.defineProperty()&lt;/code&gt; ** 来对属性进行添加或者修改&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Object.defineProperty(obj,prop,descriptor)&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;obj&lt;/code&gt; : 需要定义属性的对象&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prop&lt;/code&gt; : 将要定义或修改的属性名称或 &lt;code&gt;Symbol&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;descriptor&lt;/code&gt; : 将要定义或修改的&lt;strong&gt;属性描述符&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;该方式添加的属性默认是不可枚举的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;Object.defineProperties()&lt;/code&gt; &lt;/strong&gt;: 在一个对象上定义多个新的属性或修改现有属性，返回该对象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;属性描述符&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;数据属性描述符&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;configurable&lt;/code&gt; : 属性是否可以通过 delete 删除属性，是否可以修改它的特性，或者是否可以将它修改为存取属性描述符
+&lt;ol&gt;
+&lt;li&gt;当我们直接在一个对象上定义某个属性时，这个属性的 [Configurable] 为 true&lt;/li&gt;
+&lt;li&gt;当我们通过属性描述符定义一个属性时，这个属性的 [Configurable] 默认为 false&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;enumerable&lt;/code&gt; : 属性是否可以通过 for-in 或者 Object.keys () 返回该属性
+&lt;ol&gt;
+&lt;li&gt;当我们直接在一个对象上定义某个属性时，这个属性的 [[Enumerable]] 为 true&lt;/li&gt;
+&lt;li&gt;当我们通过属性描述符定义一个属性时，这个属性的 [[Enumerable]] 默认为 false&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;value&lt;/code&gt; : 属性的 value 值，读取属性时会返回该值，修改属性时，会对其进行修改
+&lt;ol&gt;
+&lt;li&gt;默认情况下这个值是 undefined&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;writable&lt;/code&gt; : 表示是否可以修改属性的值
+&lt;ol&gt;
+&lt;li&gt;当我们直接在一个对象上定义某个属性时，这个属性的 [[Writable]] 为 true&lt;/li&gt;
+&lt;li&gt;当我们通过属性描述符定义一个属性时，这个属性的 [[Writable]] 默认为 false&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;存取 (访问器) 属性描述符&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;configurable&lt;/code&gt; : 属性是否可以通过 delete 删除属性，是否可以修改它的特性，或者是否可以将它修改为存取属性描述符
+&lt;ol&gt;
+&lt;li&gt;当我们直接在一个对象上定义某个属性时，这个属性的 [Configurable] 为 true&lt;/li&gt;
+&lt;li&gt;当我们通过属性描述符定义一个属性时，这个属性的 [Configurable] 默认为 false&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;enumerable&lt;/code&gt; : 属性是否可以通过 for-in 或者 Object.keys () 返回该属性
+&lt;ol&gt;
+&lt;li&gt;当我们直接在一个对象上定义某个属性时，这个属性的 [[Enumerable]] 为 true&lt;/li&gt;
+&lt;li&gt;当我们通过属性描述符定义一个属性时，这个属性的 [[Enumerable]] 默认为 false&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;get&lt;/code&gt; : 获取属性时会执行的函数，默认值为 &lt;code&gt;undefined&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;set&lt;/code&gt; : 设置属性时会执行的函数，默认值为 undefined&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; object = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;德尔蓝卡&amp;quot;&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;age&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;12&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;_address&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;北京市&amp;quot;&lt;/span&gt;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 存取属性描述符&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 1、隐藏某一个私有属性不希望直接被外界使用和赋值&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 2、截获某一个属性它访问和设置值的过程时，会使用存储属性描述符&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-title class_&#34;&gt;Object&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;defineProperty&lt;/span&gt;(object,&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;address&amp;quot;&lt;/span&gt;,&amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;configurable&lt;/span&gt;:&lt;span class=&#34;hljs-literal&#34;&gt;true&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;enumerable&lt;/span&gt;:&lt;span class=&#34;hljs-literal&#34;&gt;true&lt;/span&gt;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;get&lt;/span&gt;:&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;();&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;_address&lt;/span&gt;;&lt;br&gt;  &amp;#125;,&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;set&lt;/span&gt;:&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;value&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;();&lt;br&gt;    &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;_address&lt;/span&gt; = value&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;)&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(object.&lt;span class=&#34;hljs-property&#34;&gt;address&lt;/span&gt;);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(object);&lt;br&gt;object.&lt;span class=&#34;hljs-property&#34;&gt;address&lt;/span&gt; = &lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;上海市&amp;quot;&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(object);&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;foo&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;获取一次属性&amp;quot;&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;bar&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;设置一次属性值&amp;quot;&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;configurable&lt;/th&gt;
+&lt;th&gt;enumerable&lt;/th&gt;
+&lt;th&gt;value&lt;/th&gt;
+&lt;th&gt;writable&lt;/th&gt;
+&lt;th&gt;get&lt;/th&gt;
+&lt;th&gt;set&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;数据属性描述符&lt;/td&gt;
+&lt;td&gt;可以&lt;/td&gt;
+&lt;td&gt;可以&lt;/td&gt;
+&lt;td&gt;可以&lt;/td&gt;
+&lt;td&gt;可以&lt;/td&gt;
+&lt;td&gt;不可以&lt;/td&gt;
+&lt;td&gt;不可以&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;存取属性描述符&lt;/td&gt;
+&lt;td&gt;可以&lt;/td&gt;
+&lt;td&gt;可以&lt;/td&gt;
+&lt;td&gt;不可以&lt;/td&gt;
+&lt;td&gt;不可以&lt;/td&gt;
+&lt;td&gt;可以&lt;/td&gt;
+&lt;td&gt;可以&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;获取对象的属性描述符&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;getOwnPropertyDescriptor&lt;/code&gt; : 获取某一个特定属性的属性描述符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getOwnPropertyDescriptors&lt;/code&gt; : 获取所有属性的属性描述符&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;访问器属性使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对象属性判断&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对象的拷贝&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对象的引用赋值&lt;/li&gt;
+&lt;li&gt;对象的浅拷贝&lt;/li&gt;
+&lt;li&gt;对象的深拷贝&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ES6 对象增强&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Object.is()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;简写属性名&lt;/li&gt;
+&lt;li&gt;可计算属性名称&lt;/li&gt;
+&lt;li&gt;简写方法名&lt;/li&gt;
+&lt;li&gt;对象解构
+&lt;ol&gt;
+&lt;li&gt;嵌套解构&lt;/li&gt;
+&lt;li&gt;部分解构&lt;/li&gt;
+&lt;li&gt;参数上下文匹配&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2面向对象编程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2面向对象编程&#34;&gt;#&lt;/a&gt; 2. 面向对象编程&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;理解面向对象&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;什么是面向对象编程&lt;/li&gt;
+&lt;li&gt;面向对象编程的特性
+&lt;ol&gt;
+&lt;li&gt;封装&lt;/li&gt;
+&lt;li&gt;继承&lt;/li&gt;
+&lt;li&gt;多态&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;类和对象的关系&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建对象方式&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;工厂模式创建
+&lt;ol&gt;
+&lt;li&gt;该模式可以减少代码的重复量，缺点是无法获取对象的真实类型，获取对象类型都是 &lt;code&gt;object&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;构造函数创建
+&lt;ol&gt;
+&lt;li&gt;构造函数也称之为构造器 (constructor), 通常是我们在创建对象时会调用的函数&lt;/li&gt;
+&lt;li&gt;一个普通的函数被使用 new 操作符来调用了，那么这个函数就称之为是一个构造函数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;new&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;在函数内存中创建一个新的对象（空对象）&lt;/li&gt;
+&lt;li&gt;这个对象内部的 [[prototype]] 属性会被赋值为该构造函数的 prototype 属性&lt;/li&gt;
+&lt;li&gt;构造函数内部的 this，会指向创建出来的新对象&lt;/li&gt;
+&lt;li&gt;执行函数的内部代码（函数体代码）&lt;/li&gt;
+&lt;li&gt;如果构造函数没有返回非空对象，则返回创建出来的新对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;缺点：构造函数的缺点，需要为每一个对象的函数去创建一个函数对象实例，重复的创建对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;原型创建模式
+&lt;ol&gt;
+&lt;li&gt;认识原型&lt;/li&gt;
+&lt;li&gt;对象的原型（隐式原型）
+&lt;ol&gt;
+&lt;li&gt;JavaScript 当中每个对象都有一个特殊的内置属性 [[prototype]]，这个特殊的对象可以指向另外一个对象&lt;/li&gt;
+&lt;li&gt;原型对象的作用
+&lt;ol&gt;
+&lt;li&gt;当我们通过引用对象的属性 key 来获取一个 value 时，它会触发 [[Get]] 的操作&lt;/li&gt;
+&lt;li&gt;这个操作会首先检查该属性是否有对应的属性，如果有的话就使用它&lt;/li&gt;
+&lt;li&gt;如果对象中没有该属性，那么会访问对象 [[prototype]] 内置属性指向的对象上的属性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;获取原型的方式
+&lt;ol&gt;
+&lt;li&gt;通过对象的__proto__属性可以获取到（但是这个是早期浏览器自己添加的，存在一定的兼容性问题）&lt;/li&gt;
+&lt;li&gt;通过 Object.getPrototypeOf 方法可以获取到&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;函数的原型（显示原型）
+&lt;ol&gt;
+&lt;li&gt;所有的函数都有一个 prototype 的属性&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prototype属性&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;指向对象的显式原型&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;constructor属性&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;原型对象的属性：返回构造函数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__proto__属性&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;指向对象的隐式原型&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;面向对象继承&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;认识原型链&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;深入原型对象
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Object&lt;/code&gt;  是顶层对象， &lt;code&gt;Object的原型对象上面没有原型对象而是null&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;object&lt;/code&gt;  是所有类的父类&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;简洁的原型语法&lt;/li&gt;
+&lt;li&gt;修改原型的属性
+&lt;ol&gt;
+&lt;li&gt;需要在原型上添加过多的属性，通常我们会重新整个原型对象&lt;/li&gt;
+&lt;li&gt;每创建一个函数，就会同时创建它的 prototype 对象，这个对象也会自动获取 constructor 属性&lt;/li&gt;
+&lt;li&gt;这里给 prototype 重新赋值了一个对象，那么这个新对象的 constructor 属性，会指向 Object 构造函数，而不是 Person 构造函数了&lt;/li&gt;
+&lt;li&gt;默认情况下原生的 constructor 属性是不可枚举&lt;/li&gt;
+&lt;li&gt;如果希望解决这个问题，就可以使用我们前面介绍的 Object.defineProperty () 函数了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;深入理解原型链
+&lt;ol&gt;
+&lt;li&gt;可以使用原型链继承&lt;/li&gt;
+&lt;li&gt;原型链最顶层的原型对象就是 &lt;code&gt;Object&lt;/code&gt;  的原型对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;原型和实例的关系
+&lt;ol&gt;
+&lt;li&gt;实例的属性 &lt;code&gt;__proto__&lt;/code&gt; 指向原型对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;继承的实现&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;原型链实现继承&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;实现方式： &lt;code&gt;子类.prototype = new 父类();&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;原型链实现继承的弊端
+&lt;ol&gt;
+&lt;li&gt;通过直接打印对象是看不到继承的属性&lt;/li&gt;
+&lt;li&gt;这个属性会被多个对象共享，如果这个属性是一个引用类型，，其中一个共享对象进行修改时，那么就会造成问题，若是基本数据类型则不会出现该问题&lt;/li&gt;
+&lt;li&gt;不能给 Person 传递参数，因为这个对象是一次性创建的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;借用构造函数实现继承 (经典继承)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;constructor stealing&lt;/code&gt; : 称之为借用构造函数、经典继承、伪造对象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;因为函数可以在任意的时刻被调用，因此通过 apply () 和 call () 方法也可以在新创建的对象上执行构造函数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实现方式&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 子类:私有属性和方法定义&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;hljs-title function_&#34;&gt;Student&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;name,age,friends,son&lt;/span&gt;) &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-comment&#34;&gt;// this指的是通过new绑定创建的stu对象&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-title class_&#34;&gt;Person&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;call&lt;/span&gt;(&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;,name,age,friends);&lt;br&gt;  &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;sno&lt;/span&gt; = son;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;借用构造函数继承存在的弊端&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;父类 Person 函数至少被调用了两次&lt;/li&gt;
+&lt;li&gt;stu 原型对象上多出一些属性，而这些属性出现重复，因为子类本身就已经存在，但是这些属性没有存在的必要&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;组合借用继承方式（&lt;strong&gt;和借用继承没有不同&lt;/strong&gt;）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;实现方式&lt;/li&gt;
+&lt;li&gt;存在弊端
+&lt;ol&gt;
+&lt;li&gt;一般都会调用两次父类构造函数，一次在创建子类原型的时候，一次在子类构造函数内部 (也就是每次创建子类实例的时候)&lt;/li&gt;
+&lt;li&gt;所有的子类实例事实上会拥有两份父类的属性，一份在当前的实例自己里面 (也就是 person 本身的)，另一份在子类对应的原型对象中 (也就是 person.__proto__里面), 无需担心访问出现问题，默认一定是访问实例本身的属性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;寄生式继承函数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;实现方式&lt;/li&gt;
+&lt;li&gt;存在弊端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;集成式组合继承&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;释放方式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ES6 类的使用&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;class 类的定义
+&lt;ol&gt;
+&lt;li&gt;声明式、表达式两种&lt;/li&gt;
+&lt;li&gt;构造方法&lt;/li&gt;
+&lt;li&gt;属性定义&lt;/li&gt;
+&lt;li&gt;方法定义&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;类的实例化过程
+&lt;ol&gt;
+&lt;li&gt;类的构建过程解析&lt;/li&gt;
+&lt;li&gt;类的类型、function 类型&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;属性分类解析
+&lt;ol&gt;
+&lt;li&gt;实例属性和方法&lt;/li&gt;
+&lt;li&gt;原型属性和访问器&lt;/li&gt;
+&lt;li&gt;static 类方法和属性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;class 类的继承
+&lt;ol&gt;
+&lt;li&gt;extends 关键字&lt;/li&gt;
+&lt;li&gt;super 函数的使用
+&lt;ol&gt;
+&lt;li&gt;构造函数&lt;/li&gt;
+&lt;li&gt;普通函数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Babel 的处理
+&lt;ol&gt;
+&lt;li&gt;Babel 工具对 class 的处理
+&lt;ol&gt;
+&lt;li&gt;阅读 Babel 转换后的代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Babel 对继承的转换处理
+&lt;ol&gt;
+&lt;li&gt;Babel 继承的源码阅读&lt;/li&gt;
+&lt;li&gt;_inherits&lt;/li&gt;
+&lt;li&gt;_possibleConstructorReturn&lt;/li&gt;
+&lt;li&gt;_classCallCheck&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;面向对象面试题&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;5es6~12新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5es6~12新特性&#34;&gt;#&lt;/a&gt; 5.ES6~12 新特性&lt;/h2&gt;
+&lt;h3 id=&#34;1es6常见新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1es6常见新特性&#34;&gt;#&lt;/a&gt; 1.ES6 常见新特性&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;基础补充
+&lt;ol&gt;
+&lt;li&gt;对象增强写法&lt;/li&gt;
+&lt;li&gt;数组 / 对象解构&lt;/li&gt;
+&lt;li&gt;var 与 let/const 区别&lt;/li&gt;
+&lt;li&gt;作用域提升&lt;/li&gt;
+&lt;li&gt;不允许重复声明变量&lt;/li&gt;
+&lt;li&gt;window 对象的区别，let/const 不会添加到 window 对象上，&lt;strong&gt;保存的位置与之前也会有一定的区别&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2es7常见新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2es7常见新特性&#34;&gt;#&lt;/a&gt; 2.ES7 常见新特性&lt;/h3&gt;
+&lt;h3 id=&#34;3es8常见新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3es8常见新特性&#34;&gt;#&lt;/a&gt; 3.ES8 常见新特性&lt;/h3&gt;
+&lt;h3 id=&#34;4es9常见新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4es9常见新特性&#34;&gt;#&lt;/a&gt; 4.ES9 常见新特性&lt;/h3&gt;
+&lt;h3 id=&#34;5es10常见新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5es10常见新特性&#34;&gt;#&lt;/a&gt; 5.ES10 常见新特性&lt;/h3&gt;
+&lt;h3 id=&#34;6es11常见新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6es11常见新特性&#34;&gt;#&lt;/a&gt; 6.ES11 常见新特性&lt;/h3&gt;
+&lt;h3 id=&#34;7es12常见新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7es12常见新特性&#34;&gt;#&lt;/a&gt; 7.ES12 常见新特性&lt;/h3&gt;
+&lt;h2 id=&#34;6proxy-reflect&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6proxy-reflect&#34;&gt;#&lt;/a&gt; 6.Proxy-Reflect&lt;/h2&gt;
+&lt;h3 id=&#34;1proxy&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1proxy&#34;&gt;#&lt;/a&gt; 1.Proxy&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;在 ES6 中，新增了一个 Proxy 类，这个类从名字就可以看出来，是用于帮助我们创建一个代理&lt;/li&gt;
+&lt;li&gt;如果我们希望监听一个对象的相关操作，那么我们可以先创建一个代理对象（Proxy 对象）&lt;/li&gt;
+&lt;li&gt;之后对该对象的所有操作，都通过代理对象来完成，代理对象可以监听我们想要对原对象进行哪些操作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2reflect&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2reflect&#34;&gt;#&lt;/a&gt; 2.Reflect&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Reflect 也是 ES6 新增的一个 API，它是一个对象，字面的意思是反射&lt;/li&gt;
+&lt;li&gt;它主要提供了很多操作 JavaScript 对象的方法，有点像 Object 中操作对象的方法&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;7异步处理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7异步处理&#34;&gt;#&lt;/a&gt; 7. 异步处理&lt;/h2&gt;
+&lt;h3 id=&#34;1迭代器和生成器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1迭代器和生成器&#34;&gt;#&lt;/a&gt; 1. 迭代器和生成器&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;迭代器&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;本身为一个对象，使用户在容器对象上遍访的对象，使用该接口无需关心对象的内部实现细节，&lt;strong&gt;迭代器是帮助我们对某个数据结构进行遍历的对象&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;在 JavaScript 中，&lt;strong&gt;迭代器也是一个具体的对象，这个对象需要符合迭代器协议 (iterator protocol)&lt;/strong&gt;, 迭代器协议定义了产生一系列值 (无论是有限还是无限个) 的标准方式，那么在 js 中这个标准就是一个&lt;strong&gt;特定的 next 方法&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;next 方法有如下的要求
+&lt;ol&gt;
+&lt;li&gt;一个无参数函数或者含有一个参数的函数，返回一个应当拥有以下两个属性的对象
+&lt;ol&gt;
+&lt;li&gt;done（boolean）
+&lt;ol&gt;
+&lt;li&gt;如果迭代器可以产生序列中的下一个值，则为 false，这等价于没有指定 done 这个属性&lt;/li&gt;
+&lt;li&gt;如果迭代器已将序列迭代完毕，则为 true。这种情况下，value 是可选的，如果它依然存在，即为迭代结束之后的默认返回值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;value
+&lt;ol&gt;
+&lt;li&gt;迭代器返回的任何 JavaScript 值，done 为 true 时可省略&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可迭代对象&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;当一个对象实现了 ** &lt;code&gt;iterable protocol&lt;/code&gt; ** 协议时，它就是一个可迭代对象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;这个对象要求是必须实现 &lt;code&gt;@@iterator方法&lt;/code&gt; ，即 ** &lt;code&gt;[Symbol.iterator]属性对应着一个函数&lt;/code&gt;  ** 在代码中我们使用 &lt;code&gt;Symbol.iterator&lt;/code&gt;  访问该属性&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;//可迭代对象iteratorObj&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;const&lt;/span&gt; iteratorObj = &amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;array&lt;/span&gt;: [&lt;span class=&#34;hljs-number&#34;&gt;111&lt;/span&gt;, &lt;span class=&#34;hljs-number&#34;&gt;222&lt;/span&gt;, &lt;span class=&#34;hljs-number&#34;&gt;333&lt;/span&gt;],&lt;br&gt;  [&lt;span class=&#34;hljs-title class_&#34;&gt;Symbol&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;iterator&lt;/span&gt;]: &lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &amp;#123;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;let&lt;/span&gt; index = &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;    &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &amp;#123;&lt;br&gt;      &lt;span class=&#34;hljs-comment&#34;&gt;// 返回一个迭代器&lt;/span&gt;&lt;br&gt;      &lt;span class=&#34;hljs-attr&#34;&gt;next&lt;/span&gt;:&lt;span class=&#34;hljs-function&#34;&gt;() =&amp;gt;&lt;/span&gt; &amp;#123;&lt;br&gt;        &lt;span class=&#34;hljs-keyword&#34;&gt;if&lt;/span&gt; (index &amp;lt; &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;array&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;length&lt;/span&gt;) &amp;#123;&lt;br&gt;          &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &amp;#123; &lt;span class=&#34;hljs-attr&#34;&gt;done&lt;/span&gt;: &lt;span class=&#34;hljs-literal&#34;&gt;false&lt;/span&gt;, &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;: &lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;array&lt;/span&gt;[index++] &amp;#125;&lt;br&gt;        &amp;#125; &lt;span class=&#34;hljs-keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;br&gt;          &lt;span class=&#34;hljs-keyword&#34;&gt;return&lt;/span&gt; &amp;#123; &lt;span class=&#34;hljs-attr&#34;&gt;done&lt;/span&gt;: &lt;span class=&#34;hljs-literal&#34;&gt;true&lt;/span&gt;, &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;: &lt;span class=&#34;hljs-literal&#34;&gt;undefined&lt;/span&gt; &amp;#125;&lt;br&gt;        &amp;#125;&lt;br&gt;      &amp;#125;&lt;br&gt;    &amp;#125;&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iteratorObj[&lt;span class=&#34;hljs-title class_&#34;&gt;Symbol&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;iterator&lt;/span&gt;]);&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 调用该方法会生成一个可迭代对象&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;const&lt;/span&gt; iterator = iteratorObj[&lt;span class=&#34;hljs-title class_&#34;&gt;Symbol&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;iterator&lt;/span&gt;]();&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator.&lt;span class=&#34;hljs-title function_&#34;&gt;next&lt;/span&gt;());&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator.&lt;span class=&#34;hljs-title function_&#34;&gt;next&lt;/span&gt;());&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator.&lt;span class=&#34;hljs-title function_&#34;&gt;next&lt;/span&gt;());&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator.&lt;span class=&#34;hljs-title function_&#34;&gt;next&lt;/span&gt;());&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;// 返回一个新的可迭代对象&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;const&lt;/span&gt; iterator2 = iteratorObj[&lt;span class=&#34;hljs-title class_&#34;&gt;Symbol&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;iterator&lt;/span&gt;]();&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator2);&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator2.&lt;span class=&#34;hljs-title function_&#34;&gt;next&lt;/span&gt;());&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator2.&lt;span class=&#34;hljs-title function_&#34;&gt;next&lt;/span&gt;());&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator2.&lt;span class=&#34;hljs-title function_&#34;&gt;next&lt;/span&gt;());&lt;br&gt;&lt;span class=&#34;hljs-variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;log&lt;/span&gt;(iterator2.&lt;span class=&#34;hljs-title function_&#34;&gt;next&lt;/span&gt;());&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;原生迭代器对象，已经实现可迭代协议有： &lt;code&gt;String、Array、Map、Set、arguments对象、NodeList集合&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可迭代对象的应用&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;JavaScript 语法： &lt;code&gt;for...of&lt;/code&gt; 、 &lt;code&gt;展开语法(spread syntax)&lt;/code&gt; 、 &lt;code&gt;yield*&lt;/code&gt; 、 &lt;code&gt;解构赋值&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;创建一些对象时： &lt;code&gt;new Map&lt;/code&gt; 、 &lt;code&gt;new WeakMap&lt;/code&gt; 、 &lt;code&gt;new Set&lt;/code&gt; 、 &lt;code&gt;new WeakSet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;一些方法调用： &lt;code&gt;Promise.all(iterator)&lt;/code&gt; 、 &lt;code&gt;Promise.race(iterator)&lt;/code&gt; 、 &lt;code&gt;Array.from(iterator)&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;生成器&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;生成器是 ES6 中新增的一种函数控制、使用的方案，它可以让我们更加灵活的控制函数什么时候继续执行、暂停执行等&lt;/li&gt;
+&lt;li&gt;生成器函数也是一个函数，但是和普通的函数有一些区别
+&lt;ol&gt;
+&lt;li&gt;生成器函数需要&lt;strong&gt;在 function 的后面加一个符号 &lt;code&gt;*&lt;/code&gt; &lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;生成器函数可以通过 ** &lt;code&gt;yield关键字&lt;/code&gt;  ** 来控制函数的执行流程&lt;/li&gt;
+&lt;li&gt;生成器函数的&lt;strong&gt;返回值是一个 Generator&lt;/strong&gt;（生成器）&lt;/li&gt;
+&lt;li&gt;生成器事实上是一种&lt;strong&gt;特殊的迭代器&lt;/strong&gt;，MDN：Instead,they return a special type of iterator,called aGenerator&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2promise的使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2promise的使用&#34;&gt;#&lt;/a&gt; 2.Promise 的使用&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Promise&lt;/code&gt;  是一个类，可以翻译为承诺、许诺、期约&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;then&lt;/code&gt;  是一个 Promise 对象上的一个方法：实际上是 Promise 原型上的 &lt;code&gt;Promise.prototype.then()&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;浏览器的循环事件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;进程与线程理解&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;进程：计算已经运行的程序，是操作系统管理程序的一种方式，启动一个应用程序，就会默认启动一个进程 (也可能是多个进程)&lt;/li&gt;
+&lt;li&gt;线程：操作系统能够运行运算调度的最小单位，通常情况下它被包含在进程中，启动每一个进程中，都会启动至少一个线程用来执行程序中的代码，这个线程被称为主线程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;浏览器中的 JavaScript 线程&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;JavaScript 是单线程，拥有自己的容器进程：浏览器或 node&lt;/li&gt;
+&lt;li&gt;浏览器是多进程的，当我们打开一个 tab 页面时就会开启一个新的进程，这是为了防止一个页面卡死而造成所有页面无法响应，整个浏览器需要强制退出&lt;/li&gt;
+&lt;li&gt;JavaScript 同一时刻只能做一件事情，如果该事情非常耗时，那么当前的线程就会被阻塞，然而浏览器每一个进程是多线程的，那么其他的线程可以来完成这个耗时的操作，如：网络请求、定时器等，我们只需要在特定的时刻执行回调即可&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;事件循环图解&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../all_photo/image-20220725112224437.png&#34; alt=&#34;image-20220725112224437&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;微任务和宏任务&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;微任务队列 (microtask queue)：一般有 queueMicrotask ()、Promise 的 then 回调、MutationObserver 的 API: 监听 DOM 的调用&lt;/li&gt;
+&lt;li&gt;宏任务队列 (macrotask queue)：一般有定时器、ajax、DOM 事件点击、UI Rendering 渲染&lt;/li&gt;
+&lt;li&gt;规范：在执行任何的宏任务之前，都需要先保证微任务队列已经被清空&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;事件循环对于两个队列的优先级&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;main script&lt;/code&gt;  代码优先执行&lt;/li&gt;
+&lt;li&gt;在执行任何一个宏任务之前 (不是队列，而是一个宏任务)，都会先查看微任务队列中是否有任务需要执行，也就是说宏任务执行之前，必须保证微任务对队列是空的，若果不为空，那么就优先执行微任务队列中的任务 (回调函数)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;node 的事件循环&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器中 &lt;code&gt;EventLoop即事件循环&lt;/code&gt; 是根据 HTML5 定义的规范来实现的，不同的浏览器可能会有不同的实现，而 node 中是由 &lt;code&gt;libuv库&lt;/code&gt; 现实的&lt;/li&gt;
+&lt;li&gt;微任务和宏任务
+&lt;ol&gt;
+&lt;li&gt;宏任务 (macrotask)：setTimeout、setInterval、IO 事件、setImmediate、close 事件&lt;/li&gt;
+&lt;li&gt;微任务 (microtask)：Promise 的 then 回调、process.nextTick、queueMicrotask&lt;/li&gt;
+&lt;li&gt;node 队列执行顺序
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;next tick microtask queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;other microtask queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timer queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;poll queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;check queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;close queue&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3async和await&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3async和await&#34;&gt;#&lt;/a&gt; 3.async 和 await&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;async&lt;/code&gt;  关键字用于声明一个异步函数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;async&lt;/code&gt;  是 &lt;code&gt;asynchronous&lt;/code&gt;  单词的缩写，意思为异步、非同步&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sync&lt;/code&gt;  是 &lt;code&gt;synchronous&lt;/code&gt;  单词的缩写，意思为同步、同时&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;8模块化与包管理工具&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8模块化与包管理工具&#34;&gt;#&lt;/a&gt; 8. 模块化与包管理工具&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;模块化开发
+&lt;ol&gt;
+&lt;li&gt;认识模块化开发
+&lt;ol&gt;
+&lt;li&gt;事实上模块化开发最终的目的是将程序划分成一个个小的结构，这个结构中编写属于自己的逻辑代码，有自己的作用域，不会影响到其他的结构，这个结构可以将自己希望暴露的变量、函数、对象等导出给其结构使用，也可以通过某种方式，导入另外结构中的变量、函数、对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;commonJS规范&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;CommonJS和Node关系&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;CommonJS 是一个规范，最初是在浏览器以外的地方使用，当时被命名为&lt;strong&gt; ServerJS&lt;/strong&gt;，后来为了体现它的广泛性，修改为&lt;strong&gt; CommonJS&lt;/strong&gt;，平时我们也会简称为&lt;strong&gt; CJS&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Node 是 CommonJS 在服务器端一个具有代表性的实现，Browserify 是 CommonJS 在浏览器中的一种实现，webpack 打包工具具备对 CommonJS 的支持和转换，Node 中对 CommonJS 进行了支持和实现，让我们在开发 node 的过程中可以方便的进行模块化开发，在 Node 中每一个 js 文件都是一个单独的模块，这个模块中包括 CommonJS 规范的核心变量：exports、module.exports、require，我们可以使用这些变量来方便的进行模块化开发，前面我们提到过模块化的核心是导出和导入，Node 中对其进行了实现：exports 和 module.exports 可以负责对模块中的内容进行导出，require 函数可以帮助我们导入其他模块（自定义模块、系统模块、第三方库模块）中的内容&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AMD和CMD规范&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ESModule规范化&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ES Module和CommonJS&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;npm 包管理工具&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="JavaScript" />
+        <updated>2019-01-13T06:12:03.000Z</updated>
     </entry>
 </feed>

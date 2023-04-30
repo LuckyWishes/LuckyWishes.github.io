@@ -5,19 +5,126 @@
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Mon, 05 Aug 2019 09:32:12 +0800</pubDate>
-        <lastBuildDate>Mon, 05 Aug 2019 09:32:12 +0800</lastBuildDate>
+        <pubDate>Sun, 25 Nov 2018 21:02:36 +0800</pubDate>
+        <lastBuildDate>Sun, 25 Nov 2018 21:02:36 +0800</lastBuildDate>
+        <category>uni-app</category>
         <category>Git</category>
+        <category>浏览器</category>
         <category>HTML基础</category>
         <category>JavaScript</category>
         <category>React</category>
         <category>Vue</category>
+        <category>Webpack</category>
+        <category>Node</category>
+        <category>TypeScript</category>
+        <category>计算机网络</category>
+        <category>数据结构</category>
+        <category>计算机组成</category>
+        <category>操作系统</category>
         <item>
-            <guid isPermalink="true">http://example.com/2019/08/05/HTML/</guid>
-            <title>语义化标签了解</title>
-            <link>http://example.com/2019/08/05/HTML/</link>
+            <guid isPermalink="true">http://example.com/2018/11/25/3001_CSS/</guid>
+            <title>CSS基础</title>
+            <link>http://example.com/2018/11/25/3001_CSS/</link>
             <category>HTML基础</category>
-            <pubDate>Mon, 05 Aug 2019 09:32:12 +0800</pubDate>
+            <pubDate>Sun, 25 Nov 2018 21:02:36 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&#34;src与href的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#src与href的区别&#34;&gt;#&lt;/a&gt; src 与 href 的区别&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;src
+&lt;ul&gt;
+&lt;li&gt;引用外部资源 (img、script、video、iframe)&lt;/li&gt;
+&lt;li&gt;替换当前元素内容&lt;/li&gt;
+&lt;li&gt;暂停其他资源的下载，同步加载执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;href
+&lt;ul&gt;
+&lt;li&gt;连接外部资源 (a、link)&lt;/li&gt;
+&lt;li&gt;不会替换当前元素内容&lt;/li&gt;
+&lt;li&gt;不会暂停其他资源的加载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;src 是指向外部资源的位置，指向的内容会嵌⼊到⽂档中当前标签所在的位置，在请求 src 资源时会将其指向的资源下载并应⽤到⽂档内如 js 脚本、img 图⽚和 iframe 等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执⾏完毕，因此⼀般 js 脚本会放在底部⽽不是头部。&lt;br&gt;
+href 是指向⽹络资源所在位置（的超链接，⽤来建⽴和当前元素或⽂档之间的连接，当浏览器识别到它他指向的⽂件时，就会异步下载资源，不会停⽌对当前⽂档的执行&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2018/11/06/2002_HTML/</guid>
+            <title>语义化标签了解</title>
+            <link>http://example.com/2018/11/06/2002_HTML/</link>
+            <category>HTML基础</category>
+            <pubDate>Tue, 06 Nov 2018 09:32:12 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;渐进增强与优雅降级的理解及区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#渐进增强与优雅降级的理解及区别&#34;&gt;#&lt;/a&gt; 渐进增强与优雅降级的理解及区别&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;渐进增强（Progressive Enhancement）：&lt;/strong&gt;&lt;br&gt;
+一开始就针对低版本浏览器进行构建页面，完成基本的功能，然后再针对高级浏览器进行效果、交互、追加功能达到更好的体验。&lt;br&gt;
+&lt;strong&gt;优雅降级（Graceful Degradation）：&lt;/strong&gt;&lt;br&gt;
+一开始就构建站点的完整功能，然后针对浏览器测试和修复。比如一开始使用 CSS3 的特性构建了一个应用，然后逐步针对各大浏览器进行 hack 使其可以在低版本浏览器上正常浏览。&lt;br&gt;
+&lt;strong&gt;两者区别&lt;/strong&gt;&lt;br&gt;
+ 1、广义：&lt;br&gt;
+其实要定义一个基准线，在此之上的增强叫做渐进增强，在此之下的兼容叫优雅降级&lt;br&gt;
+ 2、狭义：&lt;br&gt;
+渐进增强一般说的是使用 CSS3 技术，在不影响老浏览器的正常显示与使用情形下来增强体验，而优雅降级则是体现 html 标签的语义，以便在 js/css 的加载失败 / 被禁用时，也不影响用户的相应功能。&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-comment&#34;&gt;/* 例子 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-selector-class&#34;&gt;.transition&lt;/span&gt; &amp;#123; &lt;span class=&#34;hljs-comment&#34;&gt;/*渐进增强写法*/&lt;/span&gt;&lt;br&gt;  -webkit-&lt;span class=&#34;hljs-attribute&#34;&gt;transition&lt;/span&gt;: all .&lt;span class=&#34;hljs-number&#34;&gt;5s&lt;/span&gt;;&lt;br&gt;     -moz-&lt;span class=&#34;hljs-attribute&#34;&gt;transition&lt;/span&gt;: all .&lt;span class=&#34;hljs-number&#34;&gt;5s&lt;/span&gt;;&lt;br&gt;       -o-&lt;span class=&#34;hljs-attribute&#34;&gt;transition&lt;/span&gt;: all .&lt;span class=&#34;hljs-number&#34;&gt;5s&lt;/span&gt;;&lt;br&gt;          &lt;span class=&#34;hljs-attribute&#34;&gt;transition&lt;/span&gt;: all .&lt;span class=&#34;hljs-number&#34;&gt;5s&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-selector-class&#34;&gt;.transition&lt;/span&gt; &amp;#123; &lt;span class=&#34;hljs-comment&#34;&gt;/*优雅降级写法*/&lt;/span&gt;&lt;br&gt;          &lt;span class=&#34;hljs-attribute&#34;&gt;transition&lt;/span&gt;: all .&lt;span class=&#34;hljs-number&#34;&gt;5s&lt;/span&gt;;&lt;br&gt;       -o-&lt;span class=&#34;hljs-attribute&#34;&gt;transition&lt;/span&gt;: all .&lt;span class=&#34;hljs-number&#34;&gt;5s&lt;/span&gt;;&lt;br&gt;     -moz-&lt;span class=&#34;hljs-attribute&#34;&gt;transition&lt;/span&gt;: all .&lt;span class=&#34;hljs-number&#34;&gt;5s&lt;/span&gt;;&lt;br&gt;  -webkit-&lt;span class=&#34;hljs-attribute&#34;&gt;transition&lt;/span&gt;: all .&lt;span class=&#34;hljs-number&#34;&gt;5s&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;常见的兼容性问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常见的兼容性问题&#34;&gt;#&lt;/a&gt; 常见的兼容性问题&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li margin:0;padding:0;=&#34;&#34;&gt;不同浏览器的标签默认的 margin 和 padding 不一样。*&lt;/li&gt;
+&lt;li&gt;IE6 双边距 bug：块属性标签 float 后，又有横行的 margin 情况下，在 IE6 显示 margin 比设置的大。hack：display:inline; 将其转化为行内属性。&lt;/li&gt;
+&lt;li&gt;设置较小高度标签（一般小于 10px），在 IE6，IE7 中高度超出自己设置高度。hack：给超出高度的标签设置 overflow:hidden; 或者设置行高 line-height 小于你设置的高度。&lt;/li&gt;
+&lt;li&gt;Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示，可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决。&lt;/li&gt;
+&lt;li&gt;超链接访问过后 hover 样式就不出现了，被点击访问过的超链接样式不再具有 hover 和 active 了。解决方法是改变 CSS 属性的排列顺序：L-V-H-A (love hate): a:link {} a:visited {} a:hover {} a:active {}&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;浏览器模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#浏览器模式&#34;&gt;#&lt;/a&gt; 浏览器模式&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;怪异模式：页面以一种比较宽松的向后兼容的非标准行为&lt;/li&gt;
+&lt;li&gt;接近标准模式：只有少数的怪异模式&lt;/li&gt;
+&lt;li&gt;标准模式：由 HTML 和 CSS 的规范描述行为&lt;br&gt;
+ &lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt;  唯一的作用是启用标准模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;标签的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#标签的区别&#34;&gt;#&lt;/a&gt; 标签的区别&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;strong：加重语气，b: 简单加粗，浏览器搜索引擎更侧重 strong 标签&lt;/li&gt;
+&lt;li&gt;title：无明确意义，只表示标题；h1：层次明确的标题，对页面信息的抓取有很大的影响&lt;/li&gt;
+&lt;li&gt;i 内容展示为斜体，em 表示强调文本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;导入css文件方式及区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#导入css文件方式及区别&#34;&gt;#&lt;/a&gt; 导入 CSS 文件方式及区别&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;内联方式&lt;/li&gt;
+&lt;li&gt;嵌入方式&lt;/li&gt;
+&lt;li&gt;外链方式 &lt;code&gt;link&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;link&lt;/code&gt;  是 html 标签，而 &lt;code&gt;@import&lt;/code&gt;  是 css 的&lt;/li&gt;
+&lt;li&gt;页面被加载时， &lt;code&gt;link&lt;/code&gt;  会同时被加载，而 &lt;code&gt;@import&lt;/code&gt;  引用的 css 会等到页面被加载完再加载&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;link&lt;/code&gt;  的权重高于 &lt;code&gt;@import&lt;/code&gt;  的权重&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;import&lt;/code&gt;  导入方式
+&lt;ul&gt;
+&lt;li&gt;该方式是 CSS 属性，只能加载 CSS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;script标签中defer和async的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#script标签中defer和async的区别&#34;&gt;#&lt;/a&gt;  &lt;code&gt;script&lt;/code&gt;  标签中 defer 和 async 的区别&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; : 浏览器会立即并执行相应的脚本，不会等待后续加载的文档元素，只要读取到就会开始加载、执行，这种情况就阻塞了后续文档的加载&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;script defer&amp;gt;&lt;/code&gt; ：异步加载外部的 js 脚本文件，不会阻塞页面的解析；多个带 defer 属性的标签，按照加载顺序执行；加载后续文档的过程和 js 脚本的加载是并行进行的即异步的 (此时仅加载不执行)，js 脚本需要等到文档所有元素解析完成之后才执行，DOMContentLoaded 事件触发执行之前？？？&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;script async&amp;gt;&lt;/code&gt; ：异步加载外部的 js 脚本文件，不会阻塞页面的解析；多个带 async 属性的标签，不能保证加载的顺序；表示后续文档的加载和执行与 js 脚本的加载和执行是并行进行的即异步执行；&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2018/11/05/2001_HTML/</guid>
+            <title>语义化标签了解</title>
+            <link>http://example.com/2018/11/05/2001_HTML/</link>
+            <category>HTML基础</category>
+            <pubDate>Mon, 05 Nov 2018 13:32:31 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
@@ -51,6 +158,751 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2018/11/04/2004_HTML/</guid>
+            <title>HTML基础</title>
+            <link>http://example.com/2018/11/04/2004_HTML/</link>
+            <category>HTML基础</category>
+            <pubDate>Sun, 04 Nov 2018 22:32:45 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&#34;flex-布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#flex-布局&#34;&gt;#&lt;/a&gt; Flex 布局&lt;/h4&gt;
+&lt;p&gt;布局的传统解决方案，基于盒状模型，依赖 display 属性 + position 属性 + float 属性。它对于那些特殊布局非常不方便，比如，垂直居中就不容易实现。&lt;br&gt;
+Flex 是 Flexible Box 的缩写，意为 &amp;quot;弹性布局&amp;quot;, 用来为盒状模型提供最大的灵活性。指定容器 display: flex 即可。 简单的分为容器属性和元素属性。&lt;br&gt;
+容器的属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;flex-direction：决定主轴的方向（即子 item 的排列方法）flex-direction: row | row-reverse | column | column-reverse;&lt;/li&gt;
+&lt;li&gt;flex-wrap：决定换行规则 flex-wrap: nowrap | wrap | wrap-reverse;&lt;/li&gt;
+&lt;li flex-flow:=&#34;&#34; ||=&#34;&#34; ;=&#34;&#34;&gt;flex-flow： .box&lt;/li&gt;
+&lt;li&gt;justify-content：对其方式，水平主轴对齐方式&lt;/li&gt;
+&lt;li&gt;align-items：对齐方式，竖直轴线方向&lt;/li&gt;
+&lt;li&gt;align-content&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;项目的属性（元素的属性）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;order 属性：定义项目的排列顺序，顺序越小，排列越靠前，默认为 0&lt;/li&gt;
+&lt;li&gt;flex-grow 属性：定义项目的放大比例，即使存在空间，也不会放大&lt;/li&gt;
+&lt;li&gt;flex-shrink 属性：定义了项目的缩小比例，当空间不足的情况下会等比例的缩小，如果 定义个 item 的 flow-shrink 为 0，则为不缩小&lt;/li&gt;
+&lt;li&gt;flex-basis 属性：定义了在分配多余的空间，项目占据的空间。&lt;/li&gt;
+&lt;li&gt;flex：是 flex-grow 和 flex-shrink、flex-basis 的简写，默认值为 0 1 auto。&lt;/li&gt;
+&lt;li&gt;align-self：允许单个项目与其他项目不一样的对齐方式，可以覆盖&lt;/li&gt;
+&lt;li&gt;align-items，默认属 性为 auto，表示继承父元素的 align-items 比如说，用 flex 实现圣杯布局&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2018/10/28/2003_HTML/</guid>
+            <title>HTML基础</title>
+            <link>http://example.com/2018/10/28/2003_HTML/</link>
+            <category>HTML基础</category>
+            <pubDate>Sun, 28 Oct 2018 11:02:36 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;网页笔记&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网页笔记&#34;&gt;#&lt;/a&gt; 网页笔记&lt;/h3&gt;
+&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&#34;一-html&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-html&#34;&gt;#&lt;/a&gt; 一、HTML&lt;/h2&gt;
+&lt;h3 id=&#34;1-bs和cs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-bs和cs&#34;&gt;#&lt;/a&gt; 1. B/S 和 C/S&lt;/h3&gt;
+&lt;p&gt;B/S：浏览器中的网页（无需安装、无需更新、跨平台）&lt;/p&gt;
+&lt;p&gt;C/S：移动端的 APP&lt;/p&gt;
+&lt;p&gt;补充：&lt;/p&gt;
+&lt;p&gt;客户端：用户通过客户端来使用软件&lt;/p&gt;
+&lt;p&gt;服务器：服务器负责在远程处理业务逻辑&lt;/p&gt;
+&lt;p&gt;服务器开发语言：Java、PHP、C#、Python、Node.js&lt;/p&gt;
+&lt;p&gt;客户端形式：文字客户端、图形化界面、网页&lt;/p&gt;
+&lt;h3 id=&#34;2-特点bs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-特点bs&#34;&gt;#&lt;/a&gt; 2. 特点（B/S）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;无需安装&lt;/li&gt;
+&lt;li&gt;无需更新&lt;/li&gt;
+&lt;li&gt;跨平台&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-简史&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-简史&#34;&gt;#&lt;/a&gt; 3. 简史&lt;/h3&gt;
+&lt;p&gt;​	万维网的发明人：蒂姆伯纳斯李，制作网页的标准规范 W3C（万维网联盟）&lt;/p&gt;
+&lt;h3 id=&#34;4-结构htmlhypertext-markup-language&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-结构htmlhypertext-markup-language&#34;&gt;#&lt;/a&gt; 4. 结构–HTML（Hypertext Markup Language）&lt;/h3&gt;
+&lt;p&gt;​	HTML：超文本标记语言&lt;/p&gt;
+&lt;h3 id=&#34;5-属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-属性&#34;&gt;#&lt;/a&gt; 5. 属性&lt;/h3&gt;
+&lt;p&gt;属性在开始标签里面写，属性是一个名值对；&lt;/p&gt;
+&lt;p&gt;有些属性有属性值，有些属性没有属性值；&lt;/p&gt;
+&lt;p&gt;​	属性具有属性值，但是有一些属性没有属性值也对&lt;/p&gt;
+&lt;h3 id=&#34;6-文档声明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-文档声明&#34;&gt;#&lt;/a&gt; 6. 文档声明&lt;/h3&gt;
+&lt;p&gt;&amp;lt;! doctype html&amp;gt; 放在第一行，告诉浏览器网页版本 HTML5&lt;/p&gt;
+&lt;p&gt;注意：注释不能嵌套&lt;/p&gt;
+&lt;h3 id=&#34;7-进制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-进制&#34;&gt;#&lt;/a&gt; 7. 进制&lt;/h3&gt;
+&lt;p&gt;所有数据在计算机中底层都是以二进制形式保存&lt;/p&gt;
+&lt;p&gt;1 byte = 8 bit&lt;br&gt;
+1 kb（千字节）= 1024 byte&lt;br&gt;
+1 mb （兆字节）= 1024 kb&lt;br&gt;
+1 gb （吉字节）= 1024 mb&lt;br&gt;
+1 tb （特字节）= 1024 gb&lt;br&gt;
+1 pb = 1024 tb&lt;/p&gt;
+&lt;h3 id=&#34;8-编码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-编码&#34;&gt;#&lt;/a&gt; 8. 编码&lt;/h3&gt;
+&lt;head&gt;&lt;/head&gt;网页的头部，标签里面的内容不显示在网页里面，主要帮助浏览器和搜索引擎来解析网页的
+&lt;p&gt;将字符转换为二进制码的过程称为编码&lt;/p&gt;
+&lt;p&gt;将二进制码转换为字符的过程称为解码&lt;/p&gt;
+&lt;p&gt;字符集（charset）编码和解码所采用的规则称为字符集，编码和解码所采用的字符集的不同会导致乱码现象&lt;/p&gt;
+&lt;p&gt;常见的字符集：ASCII（美国标准码）、ISO88591（欧洲）、GBK（中国）、GB2312（中国）、UTF-8（万国码，所有国家均适用）&lt;/p&gt;
+&lt;p&gt;设置编码字符格式：charset=“utf-8”&lt;/p&gt;
+&lt;meta charset= &#34;utf-8&#34;&gt; 
+告诉浏览器编码格式  
+&lt;/meta&gt;
+&lt;h3 id=&#34;9-标签文档&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-标签文档&#34;&gt;#&lt;/a&gt; 9. 标签文档&lt;/h3&gt;
+&lt;p&gt;目的查看标签的作用，网上可以查看&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://xn--www-e82fs70b28vt66a.w3school.com.cn&#34;&gt;建议查看 www.w3school.com.cn&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;10-实体-转义字符&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10-实体-转义字符&#34;&gt;#&lt;/a&gt; 10. 实体（ 转义字符）&lt;/h3&gt;
+&lt;p&gt;实体查询和符号参考手册相关链接：&lt;a href=&#34;https://www.w3school.com.cn/html/html_entities.asp&#34;&gt;https://www.w3school.com.cn/html/html_entities.asp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在网页中编写多个空格会被浏览器默认为一个空格；若写特殊的字符时，需要使用转义字符&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs html&#34;&gt;//实体的语法&lt;br&gt;&lt;span class=&#34;hljs-symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;//空格&lt;br&gt;&lt;span class=&#34;hljs-symbol&#34;&gt;&amp;amp;gt;&lt;/span&gt;//大于号&lt;br&gt;&lt;span class=&#34;hljs-symbol&#34;&gt;&amp;amp;lt;&lt;/span&gt;//小于号&lt;br&gt;&lt;span class=&#34;hljs-symbol&#34;&gt;&amp;amp;copy;&lt;/span&gt;//版权符号&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;11-meta标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-meta标签&#34;&gt;#&lt;/a&gt; 11. meta 标签&lt;/h3&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs html&#34;&gt;meta：主要用于设置一些网页中的元数据，元数据不是给用户看的&lt;br&gt;charset：指定网页的字符集&lt;br&gt;name：指定的数据名称&lt;br&gt;content：制定的数据内容&lt;br&gt;keywords：网页关键字&lt;br&gt;description：用于网页的描述&lt;br&gt;http-equiv=&amp;quot;X-UA-Compatible&amp;quot;：将网页重定向到另一个网站&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;12-标签元素&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12-标签元素&#34;&gt;#&lt;/a&gt; 12. 标签元素&lt;/h3&gt;
+&lt;p&gt;块级元素：一般通过块级元素对网页进行布局&lt;/p&gt;
+&lt;p&gt;页面中独占一行的元素是块级元素&lt;/p&gt;
+&lt;p&gt;行内元素：一般包裹文字&lt;/p&gt;
+&lt;p&gt;在页面中不会独占一行的元素为行内元素&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;77&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs html&#34;&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;hgroup&lt;/span&gt;&amp;gt;&lt;/span&gt;标题组标签&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;hgroup&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;em&lt;/span&gt;&amp;gt;&lt;/span&gt;加重标签&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;em&lt;/span&gt;&amp;gt;&lt;/span&gt;		//内联元素&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;blockquote&lt;/span&gt;&amp;gt;&lt;/span&gt;长引用&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;blockquote&lt;/span&gt;&amp;gt;&lt;/span&gt;//引用标签&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;q&lt;/span&gt;&amp;gt;&lt;/span&gt;短引用&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;q&lt;/span&gt;&amp;gt;&lt;/span&gt;//使用&amp;quot;&amp;quot;包裹起来&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;换行&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;不能放任何的块级元素&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;header&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;header&lt;/span&gt;&amp;gt;&lt;/span&gt;网页的头部&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;main&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;main&lt;/span&gt;&amp;gt;&lt;/span&gt;网页的主体部分&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;footer&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;footer&lt;/span&gt;&amp;gt;&lt;/span&gt;网页的底部&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;aside&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;aside&lt;/span&gt;&amp;gt;&lt;/span&gt;侧边栏内容&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;nav&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;nav&lt;/span&gt;&amp;gt;&lt;/span&gt;网页的导航栏&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;article&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;article&lt;/span&gt;&amp;gt;&lt;/span&gt;表示一个独立的文章&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;section&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;section&lt;/span&gt;&amp;gt;&lt;/span&gt;表示一个独立的区块 &lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;行内元素，一般用于网页中选中文字&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;s&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;s&lt;/span&gt;&amp;gt;&lt;/span&gt;有误文本&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;无序列表 &lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;ol&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;ol&lt;/span&gt;&amp;gt;&lt;/span&gt;有序列表&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;列表项&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;dl&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;dl&lt;/span&gt;&amp;gt;&lt;/span&gt;创建一个定义列表&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;dt&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;dt&lt;/span&gt;&amp;gt;&lt;/span&gt;定义的内容&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;dd&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;dd&lt;/span&gt;&amp;gt;&lt;/span&gt;对内容进行解释说明&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;herf&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;目标地址路径&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;打开的页面的属性&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;行内元素，可以嵌套除自身之外的任何元素超链接，实现网页之间的跳转&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;herf&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;#id的属性值&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;锚点跳转&lt;br&gt;herf:&amp;quot;javascript:;&amp;quot;作为herf的属性，点击超链接什么也不会发生&lt;br&gt;_self:在当前页面打开超链接&lt;br&gt;_blank:在新的页面打开超链接&lt;br&gt;./当前文件所在目录&lt;br&gt;../当前文件所在目录的上一级目录&lt;br&gt;锚链接的用法：&lt;br&gt;1. 本页面锚链接(使用#name跳转到对应锚点)&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;#top&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;_self&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;这是一个超链接&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;2. 页面间锚链接(跳转到其他页面的指定位置，设置锚点)&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;herf&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;t.html#nav&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;跳转到新页面指定部分&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;块级标签与行级标签的特点与区别:&lt;br&gt;块级标签自动换行，前后隔一行；行级标签不会自动换行，从左往右依次显示&lt;br&gt;块级标签的宽度默认是100%；行级标签的宽度由文字内容撑开&lt;br&gt;块级标签可以设置宽度、高度、边距等属性；行级标签不能设置上述属性&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;图片路径&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;图片描述&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;width&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;height&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;title&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;图片标识&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;替换元素，基于块级元素与行内元素之间,成比例缩放，单位像素，一般在PC端不建议修改图片大小，在移动端需要修改图片&lt;br&gt;title 属性：设置图片的标题，当鼠标指在图片上后显示的文字&lt;br&gt;alt 属性：设置由于图片无法加载时显示的文字&lt;br&gt;align属性：设置图片周围文字相对于图片的位置&lt;br&gt;src：文件路径&lt;br&gt;1. 相对路径&lt;br&gt;2. 绝对路径&lt;br&gt;绝对路径只在当前计算机生效，若将网站转移服务器，则路径会失效。&lt;br&gt;通过绝对路径打开图片使用的是 file 协议，但网页中使用的是 http 协议，因此会出 现跨域问题，造成图片无法显示&lt;br&gt;3. 网络地址&lt;br&gt;&lt;br&gt;图片格式：&lt;br&gt;jpeg（jpg）：支持的颜色比较丰富，不支持透明效果，不支持动图；一般用来显示照片&lt;br&gt;gif：支持的颜色比较少，支持简单透明，支持动图；颜色单一的图片，动图&lt;br&gt;png：支持颜色丰富，支持复杂透明，不支持动图&lt;br&gt;webp：谷歌推出的，专门用来显示网页图片的一种格式，具备其他图片格式的所有优点，文件较小，兼容性不好&lt;br&gt;base64：可以把图片转换为字符，通过字符的形式引入图片&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;iframe&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;内联网页路径&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;frameborder&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;0&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;iframe&lt;/span&gt;&amp;gt;&lt;/span&gt; //frameborder表示内联网页的框架边框&lt;br&gt;音频文件：&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;audio&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;视频资源的路径&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;controls&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;autoplay&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;loop&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;audio&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;br&gt;audio相关属性：&lt;br&gt;controls：是否允许用户控制播放 &lt;br&gt;autoplay：音频文件是否自动播放，该属性用的较少，一般页面无自动播放，用户体验不好&lt;br&gt;loop：音频是否循环播放&lt;br&gt;除了使用src来指定外部文件的路径以外，还可以使用source指定外部文件&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;audio&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;文件路径（MP3）&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;大部分浏览器&lt;br&gt;  &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;文件路径（ogg）&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;小部分浏览器&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;audio&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;IE8浏览器，该标签时间较早&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;embed&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;文件路径&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;文件类型（audio/MP3）&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;视频文件：&lt;br&gt;方式一：&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;video&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;video&lt;/span&gt;&amp;gt;&lt;/span&gt;    &lt;br&gt;方式二：&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;video&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;…….webm&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;…….MP4&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;video&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;补充&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;HTML5 新增结构标签及作用&lt;/p&gt;
+&lt;p&gt;![截屏 2022-03-30 上午 9.06.20](/Users/xiaoyunfei/Library/Application Support/typora-user-images/ 截屏 2022-03-30 上午 9.06.20.png)&lt;/p&gt;
+&lt;p&gt;![截屏 2022-03-30 上午 9.07.21](/Users/xiaoyunfei/Library/Application Support/typora-user-images/ 截屏 2022-03-30 上午 9.07.21.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;表格&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;​		&lt;tr&gt;行&lt;/tr&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;​        &lt;th&gt;表头单元格&lt;/th&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;​        &lt;td&gt;普通单元格&lt;/td&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;colspan：占有列（合并列）横向合并单元格&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rowspan：占有行（合并行）纵向合并单元格&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;表格&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;表头：thead&lt;/li&gt;
+&lt;li&gt;主体：tbody&lt;/li&gt;
+&lt;li&gt;底部：tfoot&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;border-spacing&lt;/code&gt; : 指定边框之间的距离&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;border-collapse&lt;/code&gt; : 设置边框的合并&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;不同行的样式设置&lt;/strong&gt;： &lt;code&gt;tr:nth-child(odd)&amp;#123;&amp;#125;奇数行样式设置&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择器知识点：如果表格中没有使用 &lt;code&gt;tbody&lt;/code&gt;  而是直接使用 &lt;code&gt;tr&lt;/code&gt; , 那么浏览器会自动创建一个 &lt;code&gt;tbody&lt;/code&gt; , 并且将所有的 &lt;code&gt;tr&lt;/code&gt;  放到 &lt;code&gt;tbody&lt;/code&gt;  中，因此 &lt;code&gt;tr&lt;/code&gt;  不是 &lt;code&gt;table&lt;/code&gt;  的子元素&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;display:table-cell&lt;/code&gt;  设置为单元格进行居中操作&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;表格属性&lt;/p&gt;
+&lt;p&gt;![截屏 2022-03-30 上午 9.08.18](/Users/xiaoyunfei/Library/Application Support/typora-user-images/ 截屏 2022-03-30 上午 9.08.18.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;行和列的属性 (&lt;em&gt;当表格属性与行列属性冲突时，以行列属性为准&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;![截屏 2022-03-30 上午 9.10.13](/Users/xiaoyunfei/Library/Application Support/typora-user-images/ 截屏 2022-03-30 上午 9.10.13.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/Rice_w/article/details/123696681?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22123696681%22%2C%22source%22%3A%22Rice_w%22%7D&amp;amp;ctrtid=3BNev&#34;&gt;表格的结构化和直列化&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/Rice_w/article/details/123696681?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22123696681%22%2C%22source%22%3A%22Rice_w%22%7D&amp;amp;ctrtid=3BNev&#34;&gt;HTML5 表单&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;表单知识&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;form&lt;/code&gt;  的属性 &lt;code&gt;action&lt;/code&gt;  表单要提交的服务器地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文本框&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs html&#34;&gt;1. 文本框数据要提交到服务器中，必须要为元素指定name属性&lt;br&gt;2. 表单例子&lt;br&gt; &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;form&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;action&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;movies.html&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    姓名: &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;username&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    密码: &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;password&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;password&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-comment&#34;&gt;&amp;lt;!-- 类似选择框，必须要指定一个value属性，value属性最终会作为用户的填写信息发送给服务器，checked默认选中 --&amp;gt;&lt;/span&gt;&lt;br&gt;   &lt;span class=&#34;hljs-comment&#34;&gt;&amp;lt;!-- autocapitalize=&amp;quot;off&amp;quot;:关闭自动补全&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;         readonly:将表单项设置为只读，数据会提交&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;         disabled:将表单项设置为禁用，数据不会提交&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;         autofocus:设置表单项自动获取焦点	--&amp;gt;&lt;/span&gt;&lt;br&gt;    性别: &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;sex&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;男&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;         &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;sex&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;女&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    多选框: &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;11&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;           &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;22&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;           &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;33&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;           &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;44&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    下拉列表: &lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;demo&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;      &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;option&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;111&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;111&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;option&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;br&gt;      &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;option&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;222&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;222&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;option&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;br&gt;      &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;option&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;333&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;selected&lt;/span&gt;&amp;gt;&lt;/span&gt;333&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;option&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;br&gt;      &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;option&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;444&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;444&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;option&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;select&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    颜色选择器: &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;color&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;color&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    电子邮件: &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;email&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;email&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    时间: &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;datetime-local&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;time&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;br&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;submit&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;提交&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;reset&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;重置&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;按钮&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;  &lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;form&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;二-css&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-css&#34;&gt;#&lt;/a&gt; 二、CSS&lt;/h2&gt;
+&lt;h3 id=&#34;1-简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-简介&#34;&gt;#&lt;/a&gt; 1. 简介&lt;/h3&gt;
+&lt;p&gt;层叠样式：网页实际上是一个多层的结构，通过 CSS 可以为网页的每一层设置样式，最终我们只看到最上面一层，总之，css 就是设置设置网页中的样式&lt;/p&gt;
+&lt;h3 id=&#34;2-css编写位置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-css编写位置&#34;&gt;#&lt;/a&gt; 2. CSS 编写位置&lt;/h3&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs html&#34;&gt;1. 内联样式（开发时不推荐使用）&lt;br&gt;	&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;style&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;color:red;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;2. 内部样式&lt;br&gt;	&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;相关样式&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;3. 外部样式（使用浏览器的缓存机制，加快网页的加载速度，提升用户 体验）&lt;br&gt;	&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;link&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;rel&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;外部css文件地址&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;3-选择器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-选择器&#34;&gt;#&lt;/a&gt; 3. 选择器&lt;/h3&gt;
+&lt;p&gt;通过选择器可以选中页面中的指定元素进而设置相关样式&lt;br&gt;
+声明块：通过声明块来指定为元素设置样式&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;元素选择器
+&lt;ol&gt;
+&lt;li&gt;作用：根据标签名选择元素&lt;/li&gt;
+&lt;li&gt;语法： &lt;code&gt;标签名&amp;#123;&amp;#125;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;id 选择器 (id 属性值不能重复)
+&lt;ol&gt;
+&lt;li&gt;作用：根据元素的 id 属性值选中一个元素&lt;/li&gt;
+&lt;li&gt;语法： &lt;code&gt;id属性值&amp;#123;&amp;#125;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;类选择器（可以为一个元素设置多个 class 属性值，且使用空格隔开）
+&lt;ol&gt;
+&lt;li&gt;作用：根据元素的 class 属性值选中一组元素&lt;/li&gt;
+&lt;li&gt;语法： &lt;code&gt;.class属性值&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;通配选择器
+&lt;ol&gt;
+&lt;li&gt;作用：选中页面中所有的元素&lt;/li&gt;
+&lt;li&gt;语法： &lt;code&gt;*&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;复合选择器 (交集选择器)
+&lt;ol&gt;
+&lt;li&gt;选择同时符合多个条件的元素 (注意：交集选择器中如果有元素选择器，必须使用元素选择器开头)&lt;/li&gt;
+&lt;li&gt;语法： &lt;code&gt;选择器1选择器2选择器n&amp;#123;&amp;#125;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;选择器分组（并集选择器）
+&lt;ol&gt;
+&lt;li&gt;同时选择多个选择器对应的元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;选择器1,选择器2,选择器n&amp;#123;&amp;#125;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;子元素选择器
+&lt;ol&gt;
+&lt;li&gt;作用：选中指定父元素的指定子元素&lt;/li&gt;
+&lt;li&gt;语法： &lt;code&gt;父元素 &amp;gt; 子元素&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;后代元素选择器
+&lt;ol&gt;
+&lt;li&gt;作用：选中指定元素内的指定后代&lt;/li&gt;
+&lt;li&gt;语法： &lt;code&gt;祖先 后代&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;兄弟选择器 1
+&lt;ol&gt;
+&lt;li&gt;作用：选择紧靠后面的兄弟元素&lt;/li&gt;
+&lt;li&gt;语法： &lt;code&gt;前一个元素 + 后一个元素&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;兄弟选择器 2
+&lt;ol&gt;
+&lt;li&gt;作用：选择后面所有的兄弟元素&lt;/li&gt;
+&lt;li&gt;语法： &lt;code&gt;兄元素~弟元素&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;属性选择器
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;[属性名]&lt;/code&gt;  选择含有指定属性的元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[属性名 = 属性值]&lt;/code&gt;  选择含有指定属性和属性值的元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[属性名 ^= 属性值]&lt;/code&gt;  选择属性值以指定值开头的元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[属性名 $= 属性值]&lt;/code&gt;  选择属性值以指定值结尾的元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[属性名 *= 属性值]&lt;/code&gt;  选择属性值中含有某值的元素&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;伪类选择器 (伪类不存在的类，特殊的类)
+&lt;ol&gt;
+&lt;li&gt;伪类用来描述一个元素的&lt;strong&gt;特殊状态&lt;/strong&gt;，例如：第一个元素，被点击的元素、鼠标移入的元素……&lt;/li&gt;
+&lt;li&gt;一般使用 &lt;code&gt;:&lt;/code&gt;  开头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:first-child&lt;/code&gt;  第一个子元素（参考对象为所有的子元素进行排序）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:last-child&lt;/code&gt;  最后一个子元素（参考对象为所有的子元素进行排序）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:nth-child()&lt;/code&gt;  选中第 n 个子元素（参考对象为所有的子元素进行排序）
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt;  第 n 个，n 的范围是 0~+∞&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2n+1或even&lt;/code&gt;  表示选中偶数位的元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2n+1或odd&lt;/code&gt;  表示选中奇数位的元素&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:first-of-type&lt;/code&gt;  作用同上（同类型元素中进行排序）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:last-of-type&lt;/code&gt;  作用同上（同类型元素中进行排序）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:nth-of-type&lt;/code&gt;  作用同上（同类型元素中进行排序）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:not()&lt;/code&gt;  否定伪类，将符合条件的元素从选择器中去除&lt;/li&gt;
+&lt;li&gt;超链接的伪类
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;a:link&lt;/code&gt;  表示未访问过的链接（正常链接）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a:visited&lt;/code&gt;  表示访问过的链接（由于隐私的原因，所以 visited 伪类只能修改链接颜色）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:hover&lt;/code&gt;  表示鼠标移入的状态&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:active&lt;/code&gt;  表示鼠标点击、激活的状态&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;伪元素选择器
+&lt;ol&gt;
+&lt;li&gt;伪元素：表示页面中特殊的并不真实存在的元素（&lt;strong&gt;特殊位置&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;一般使用 &lt;code&gt;::&lt;/code&gt;  开头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;::first-letter&lt;/code&gt;  表示第一个字母&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;::first-line&lt;/code&gt;  表示第一行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;::selection&lt;/code&gt;  表示选中的内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;::before&lt;/code&gt;  元素的开始（必须结合 content 属性使用）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;::after&lt;/code&gt;  元素的最后（必须结合 content 属性使用）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4-样式的继承&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-样式的继承&#34;&gt;#&lt;/a&gt; 4. 样式的继承&lt;/h3&gt;
+&lt;p&gt;我们为一个元素设置的样式同时也会应用到它的后代元素的上，继承是发生在祖先后代之间&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：不是所有的元素都会被继承，比如背景相关的样式、布局相关的样式均不会被继承&lt;/p&gt;
+&lt;h3 id=&#34;5-选择器的权重&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-选择器的权重&#34;&gt;#&lt;/a&gt; 5. 选择器的权重&lt;/h3&gt;
+&lt;p&gt;当通过不同的选择器选中相同元素时，并且给相同的样式设置不同的值时，有可能发生样式冲突，这个时候有选择器的权重决定&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs html&#34;&gt;内联样式&amp;gt;id选择器&amp;gt;类和伪类选择器&amp;gt;元素选择器&amp;gt;通配选择器&amp;gt;继承的样式（无优先级）&lt;br&gt;比较优先级时，需要将所有的优先级进行相加运算，最后优先级越高则越优先显示（分组选择器是单独计算的）&lt;br&gt;选择器的累加不会超过最大数量级，类选择器再高也不会超过id选择器，若是优先级相同，则优先使用靠下的样式&lt;br&gt;使用!important时，获得最高优先级，超过内联样式的优先级，慎用！&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;6-单位&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-单位&#34;&gt;#&lt;/a&gt; 6. 单位&lt;/h3&gt;
+&lt;p&gt;像素：屏幕实际是由许多的小点构成，不同屏幕大小的像素是不同的，像素越小的屏幕显示效果越清晰&lt;/p&gt;
+&lt;p&gt;百分比：属性值设置为相对于父元素属性的百分比，设置百分比可以可以使子元素跟随父元素的改变而改变&lt;/p&gt;
+&lt;p&gt;em：相对于自身元素的字体大小计算，1em = 1 font-size，em 会根据字体大小的改变而改变（一般默认 font-size = 16 像素）&lt;/p&gt;
+&lt;p&gt;rem：相对于根元素的字体大小计算&lt;/p&gt;
+&lt;h3 id=&#34;7-颜色&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-颜色&#34;&gt;#&lt;/a&gt; 7. 颜色&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;css 里面可以使用颜色名，但是不是很方便描述&lt;/li&gt;
+&lt;li&gt;常见一般使用 RGB 值，通过三种颜色进行调整，每一种颜色值的范围是 0~255;&lt;/li&gt;
+&lt;li&gt;rgba：增加了一个值，一共有四个值，最后一个表示不透明度（1 表示完全不透明、0 表示完全透明、.5 表示半透明）&lt;/li&gt;
+&lt;li&gt;十六进制颜色值（语法：#aabbcc 简写为 #abc）&lt;/li&gt;
+&lt;li&gt;HSL 值：H: 色相、S：饱和度、L：亮度；HSLA 值：不透明度&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;8-文档流&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-文档流&#34;&gt;#&lt;/a&gt; 8. 文档流&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;文档流是一个位置，在最底层，文档流是网页的基础，我们创建的元素默认都在文档流中进行排列，元素分为两个状态在文档流中、不在文档流中&lt;/li&gt;
+&lt;li&gt;块级元素
+&lt;ol&gt;
+&lt;li&gt;块级元素会在页面中独占一行（自上向下垂直排列）&lt;/li&gt;
+&lt;li&gt;默认宽度是父级元素的全部（把父元素撑满）&lt;/li&gt;
+&lt;li&gt;默认高度被内容撑开（子元素撑开）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;行内元素
+&lt;ol&gt;
+&lt;li&gt;行内元素不会独占页面的一行，只占自身的大小&lt;/li&gt;
+&lt;li&gt;行内元素在页面里面自左向右水平排列，如果一行之中不能排列完，则元素会换到第二行继续自左向右水平排列&lt;/li&gt;
+&lt;li&gt;行内元素默认的宽度和高度都是被内容水平撑开的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;9-盒子模型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-盒子模型&#34;&gt;#&lt;/a&gt; 9. 盒子模型&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;盒子是有四个部分组成分别为：content：内容区、padding：内边距、border：边框、margin：外边距&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;weith：内容区的宽度、height：内容区的高度&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;边框属于盒子的边缘，边框的大小会影响盒子的大小，需要设置边框的样式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内边距的设置会影响盒子的大小，背景颜色会延伸到内边距上&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;外边距不会影响盒子可见框的大小，但是外边距会影响盒子的位置，默认情况下设置左和上会影响该元素，若是设置右和下会影响其他的元素，margin 会影响盒子的实际占用空间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;水平方向的布局&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;垂直方向的布局&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;border-style&lt;/span&gt;:dotted;&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;border-bottom-width&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt;;//专门指定某一个边的宽度&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;border-color&lt;/span&gt;: red;&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;border-width&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;border&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt; solid red;//边框三个属性简写&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;padding&lt;/span&gt;：&lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt;;//内边距三个属性简写&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;margin&lt;/span&gt;：&lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;hljs-number&#34;&gt;1px&lt;/span&gt;;//外边距三个属性简写&lt;br&gt;&lt;br&gt;水平方向的布局&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;margin-left&lt;/span&gt;+&lt;span class=&#34;hljs-attribute&#34;&gt;border-left&lt;/span&gt;+&lt;span class=&#34;hljs-attribute&#34;&gt;padding-left&lt;/span&gt;+&lt;span class=&#34;hljs-attribute&#34;&gt;width&lt;/span&gt;+&lt;span class=&#34;hljs-attribute&#34;&gt;margin&lt;/span&gt;-rigth+&lt;span class=&#34;hljs-attribute&#34;&gt;border&lt;/span&gt;-rigth+&lt;span class=&#34;hljs-attribute&#34;&gt;padding&lt;/span&gt;-rigth=父元素内容区的宽度&lt;br&gt;//若是不够默认会修改&lt;span class=&#34;hljs-attribute&#34;&gt;margin&lt;/span&gt;-rigth,有auto优先auto&lt;br&gt;//如果两个外边距设置为auto，宽度固定值，则会将外边距设置为相同的值，可以利用这个特点是子元素在父元素中居中 &lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;width&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;10px&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;margin&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt; auto;&lt;br&gt;&lt;br&gt;垂直方向的布局&lt;br&gt;如果子元素的大小超过了父元素，则子元素会从父元素中溢出，可以使用是&lt;span class=&#34;hljs-attribute&#34;&gt;overflow&lt;/span&gt;属性进行处理&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;overflow&lt;/span&gt;:hidden;&lt;br&gt;visible:默认值，子元素会从父元素中显示出来&lt;br&gt;hidden:隐藏，溢出内容将会被裁减不会显示出来&lt;br&gt;scroll:生成两个滚动条，通过滚动条进行查看内容&lt;br&gt;auto:根据需要生成滚动条&lt;br&gt;&lt;br&gt;overflow-x:&lt;span class=&#34;hljs-number&#34;&gt;10px&lt;/span&gt;;//水平大小&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;overflow-y&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;10px&lt;/span&gt;;//垂直大小&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;10垂直外边距折叠块级0&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10垂直外边距折叠块级0&#34;&gt;#&lt;/a&gt; 10. 垂直外边距折叠（块级 0）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;相邻的垂直方向外边距会发生重叠现象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;兄弟元素&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兄弟元素间的相邻垂直外边距会取两者之间较大值（两者都是正值）&lt;/li&gt;
+&lt;li&gt;特殊情况
+&lt;ol&gt;
+&lt;li&gt;相邻的外边距一正一负，则取两者之和&lt;/li&gt;
+&lt;li&gt;相邻的外边距都是负值，取两者中绝对值较大的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;父子元素&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;父子元素间相邻外边距，子元素会传递父元素（上外边距）&lt;/li&gt;
+&lt;li&gt;父子外边距的折叠会影响页面的布局，必须进行处理（设置为兄弟元素即可）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;行内元素&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;行内元素不支持设置宽度和高度&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;行内元素可以设置 padding、border、margin，垂直方向的 padding、border、margin 不会影响页面布局&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;figcaption data-lang=&#34;CSS&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//display用来设置元素显示的类型&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;可选值为：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;inline 将元素设置为行内元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;block 将元素设置为块元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;inline-block 将元素设置为行内块元素，行内块既可以设置高度和宽度，也不会独占一行&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;table 将元素设置为一个表格&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;none 元素不在页面中显示&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//visibility 用来设置元素的显示状态&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;可选值：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;visible 元素在页面中正常显示&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hidden 元素在页面中隐藏不显示，但依然占据页面中的位置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//去除项目符号&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;list-style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;none&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//去除a链接的下划线&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;text-decoration&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; none&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//设置居中&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;50px auto&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//子元素的行高和父元素高相同，则实现垂直居中效果&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;line-height&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 48px&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;//父元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 48px&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;//子元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs awk&#34;&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;### 11.浏览器的默认样式&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;. 通常浏览器会为元素设置一些默认样式，有时候默认样式会影响页面布局，通常情况下会去除浏览器的默认样式（PC端）&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-comment&#34;&gt;### 12.盒子的大小设置&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;. ```css&lt;br&gt;   &lt;span class=&#34;hljs-regexp&#34;&gt;//&lt;/span&gt;默认情况下，盒子的大小是由内容区、内边距、边框共同决定&lt;br&gt;   &lt;span class=&#34;hljs-regexp&#34;&gt;//&lt;/span&gt;box-sizing用来设置盒子尺寸的计算方法（设置width和height的作用）&lt;br&gt;   box-sizing: border-box;&lt;span class=&#34;hljs-regexp&#34;&gt;//&lt;/span&gt;默认值，宽度和高度用来设置内容区的大小&lt;br&gt;   &lt;br&gt;   &lt;span class=&#34;hljs-regexp&#34;&gt;//&lt;/span&gt;宽度和高度用来设置整个盒子可见框的大小&lt;br&gt;   box-sizing: content-box;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;13-轮廓阴影和圆角&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#13-轮廓阴影和圆角&#34;&gt;#&lt;/a&gt; 13. 轮廓阴影和圆角&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;figcaption data-lang=&#34;CSS&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//用来设置元素的轮廓线，使用方法和border一模一样&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//区别是轮廓不会影响可见框的大小&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;outline&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;1px solid red&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;//轮廓的设置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;outline-offset&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; //轮廓距离边框的距离&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//用来设置元素的阴影效果，阴影不会影响页面布局&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//第一个值，水平偏移量，设置阴影的水平位置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//第二个值，垂直偏移量，设置阴影的垂直位置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//第三个值，阴影的模糊半径&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//第四个值，阴影的颜色&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;box-shadow&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 10px 10px 10px red&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//用来设置圆角，圆角设置圆的半径大小（若为两个值可以考虑为椭圆）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;border-radius&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 1px&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;border-radius&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 50%&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;//该设置为一个圆&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs markdown&#34;&gt;&lt;br&gt;&lt;span class=&#34;hljs-section&#34;&gt;### 14.浮动元素&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;1.&lt;/span&gt; 通过浮动使一个元素向其父元素的左侧和右侧移动&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;2.&lt;/span&gt; 使用&lt;span class=&#34;hljs-code&#34;&gt;`float`&lt;/span&gt;属性设置元素浮动，none：不浮动、left：向左浮动、right：向右浮动&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;3.&lt;/span&gt; 元素使用浮动之后会脱离文档流，不占用文档流的位置，水平布局的等式不需要成立&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;4.&lt;/span&gt; 浮动的特点&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;   1.&lt;/span&gt; 浮动元素不会覆盖文字，文字会自动环绕在浮动元素的周围，利用浮动实现文字环绕效果&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;   2.&lt;/span&gt; 浮动元素会完全脱离文档流，不再占用文档流的位置&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;   3.&lt;/span&gt; 设置浮动之后元素就会向父元素左侧或者右侧移动，不会从父元素中移出&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;   4.&lt;/span&gt; 浮动元素向左或向右移动时，不会超过它前面的其他浮动元素&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;   5.&lt;/span&gt; 如果浮动元素上边是一个没有浮动的块元素，则浮动元素无法上移&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;   6.&lt;/span&gt; 浮动元素不会超过上边浮动的兄弟元素，最多和兄弟元素一样高&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;5.&lt;/span&gt; 作用：让页面中的元素水平排列&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;6.&lt;/span&gt; 脱离文档流的特点（不需要区分块级和行内元素）&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;   1.&lt;/span&gt; 块元素&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;      1.&lt;/span&gt; 块级元素不在独占页面的一行&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;      2.&lt;/span&gt; 脱离文档流之后块级元素的宽度和高度默认都被内容撑开&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;   2.&lt;/span&gt; 行内元素&lt;br&gt;&lt;span class=&#34;hljs-bullet&#34;&gt;      1.&lt;/span&gt; 行内元素脱离文档流之后变成块级元素，特点和块级元素一样&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-section&#34;&gt;### 15. 块级元素水平排列可以使用浮动设置&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-section&#34;&gt;### 16.高度塌陷和BFC&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-code&#34;&gt;```css&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-code&#34;&gt;// 高度塌陷问题&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-code&#34;&gt;在浮动布局中，父元素的高度默认是被子元素撑开的，当子元素浮动后，其会完全脱离文档流，子元素从文档流中脱离，将会无法撑开父元素的高度，导致父元素的高度丢失，父元素高度丢失以后，下面的元素会自动上移，导致页面布局混乱，所以高度塌陷是浮动布局中常见的问题，必须进行处理&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-code&#34;&gt;BFC:(Block Formatting Context)	块级格式化环境&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-code&#34;&gt;BFC是一个css中的隐含属性，可以为一个元素开启BFC，开启BFC之后该元素变成一个独立的布局区域&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;元素开启 BFC 的特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;开启 BFC 的元素不会被浮动元素所覆盖&lt;/li&gt;
+&lt;li&gt;开启 BFC 的元素子元素和父元素外边距不会重叠&lt;/li&gt;
+&lt;li&gt;开启 BFC 的元素可以包含浮动的子元素&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可以通过一些特殊方式开启 BFC&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;设置元素的浮动（宽度丢失）【不推荐】 &lt;code&gt;例如：float:left;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将元素设置为行内元素【不推荐】 &lt;code&gt;例如：display:inline-block&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将元素的 &lt;code&gt;overflow&lt;/code&gt;  设置为一个非 &lt;code&gt;visible&lt;/code&gt;  的值     &lt;code&gt;例如：overflow:hidden&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;after伪类解决高度塌陷即 元素名::after&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-selector-tag&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;hljs-selector-pseudo&#34;&gt;::after&lt;/span&gt;&amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;content&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;display&lt;/span&gt;:bolck;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;clear&lt;/span&gt;:both;&lt;br&gt;&amp;#125;&lt;br&gt;//after伪元素默认是行内元素，需要设置为块级元素&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解决外边距重叠问题&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-selector-tag&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;hljs-selector-pseudo&#34;&gt;::before&lt;/span&gt;&amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;content&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;display&lt;/span&gt;:table;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;clearfix类&lt;/code&gt; 可以同时解决高度塌陷和外边距重叠&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-selector-class&#34;&gt;.clearfix&lt;/span&gt;&lt;span class=&#34;hljs-selector-pseudo&#34;&gt;::before&lt;/span&gt;,&lt;span class=&#34;hljs-selector-class&#34;&gt;.clearfix&lt;/span&gt;&lt;span class=&#34;hljs-selector-pseudo&#34;&gt;::after&lt;/span&gt;&amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;content&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;display&lt;/span&gt;:table;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;clear&lt;/span&gt;:both;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;17清除浮动&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#17清除浮动&#34;&gt;#&lt;/a&gt; 17. 清除浮动&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;作用：清除浮动元素对当前元素所产生的影响&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可选值：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;left&lt;/code&gt; ：清除左侧浮动元素对当前元素所产生的影响&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;right&lt;/code&gt; ：清除左侧浮动元素对当前元素所产生的影响&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;both&lt;/code&gt; ：清除两侧浮动元素对当前元素所产生最大影响的那侧&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;原理&lt;/p&gt;
+&lt;p&gt;设置清除浮动元素以后，浏览器会自动为元素添加一个上外边距，使其位置不受影响&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;18定位更加高级的布局手段可以摆放到页面的任何位置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#18定位更加高级的布局手段可以摆放到页面的任何位置&#34;&gt;#&lt;/a&gt; 18. 定位：更加高级的布局手段，可以摆放到页面的任何位置&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;position属性设置&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  默认值，元素是静止的，未开启定位&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;relative&lt;/code&gt; ：开启元素的相对定位&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;absolute&lt;/code&gt; ：开启元素的绝对定位&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fixed&lt;/code&gt; ：开启元素的固定定位&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sticky&lt;/code&gt; ：开启元素的粘滞定位&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;静态定位 &lt;code&gt;position:static&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;取消原有定位，对定位进行覆盖&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设置不设置有什么区别&lt;/strong&gt;？？？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;相对定位 &lt;code&gt;position:relative&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;开启相对定位后，不设置偏移量不会发生任何变化&lt;/li&gt;
+&lt;li&gt;相对定位是参照于元素在文档流中的位置进行定位的&lt;/li&gt;
+&lt;li&gt;相对定位会提升元素的层级&lt;/li&gt;
+&lt;li&gt;相对定位元素不会脱离文档流&lt;/li&gt;
+&lt;li&gt;相对定位不会改变元素的性质，块依然是块，行内依然为行内&lt;/li&gt;
+&lt;li&gt;偏移量
+&lt;ol&gt;
+&lt;li&gt;top：定位元素和定位位置上边的距离&lt;/li&gt;
+&lt;li&gt;bottom：定位元素和定位位置下边的距离&lt;/li&gt;
+&lt;li&gt;left：定位元素和定位位置左侧的距离&lt;/li&gt;
+&lt;li&gt;right：定位元素和定位位置右侧的距离&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;绝对定位 &lt;code&gt;position:absolute&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;开启绝对定位后，不设置偏移量不会发生任何变化&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;绝对定位元素会脱离文档流&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;绝对定位改变元素的性质，行内元素变成块级元素，块的宽高被内容撑开&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;绝对定位会提升元素的层级&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;绝对定位元素是相对于其包含块进行定位的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;包含块&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;正常情况下，包含块就是距离当前元素最近的祖先元素&lt;/li&gt;
+&lt;li&gt;绝对定位的包含块就是距离当前元素开启了定位的祖先元素，如果所有的祖先元素都没有开启定位则根元素就是它的包含块（html：根元素、初始包含块）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;补充：水平方向的公式 和垂直方向的公式&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;margin-left&lt;/code&gt; 、 &lt;code&gt;border-left&lt;/code&gt; 、 &lt;code&gt;padding-left&lt;/code&gt; 、 &lt;code&gt;width&lt;/code&gt; 、 &lt;code&gt;margin-right&lt;/code&gt; 、 &lt;code&gt;border-right&lt;/code&gt; 、 &lt;code&gt;padding-right&lt;/code&gt;  之和等于包含块内容区的宽度&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开启决定定位之后公式左边需要添加 &lt;code&gt;left&lt;/code&gt; 、 &lt;code&gt;right&lt;/code&gt;  等于包含块内容区的宽度（可设置 auto 的属性 &lt;code&gt;margin&lt;/code&gt; 、 &lt;code&gt;width&lt;/code&gt; 、 &lt;code&gt;left&lt;/code&gt; 、 &lt;code&gt;right&lt;/code&gt; ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果 &lt;code&gt;left&lt;/code&gt; 、 &lt;code&gt;right&lt;/code&gt;  的默认值是 &lt;code&gt;auto&lt;/code&gt; ，等式不满足的时候自动调整这两个值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;垂直方向和水平方向相同&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;//水平居中&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;right&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;margin-left&lt;/span&gt;: auto;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;margin-right&lt;/span&gt;: auto;&lt;br&gt;&lt;br&gt;//垂直居中&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;top&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;bottom&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;margin-top&lt;/span&gt;: auto;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;margin-bottom&lt;/span&gt;: auto;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;. 父元素存在相对定位 &lt;br&gt;&lt;span class=&#34;hljs-selector-class&#34;&gt;.box1&lt;/span&gt;&amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;300px&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;300px&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;background-color&lt;/span&gt;: aqua;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;position&lt;/span&gt;: relative;//父元素中要开启相对定位&lt;br&gt;&amp;#125;&lt;br&gt;&lt;span class=&#34;hljs-selector-class&#34;&gt;.box2&lt;/span&gt;&amp;#123;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;60px&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;60px&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;background-color&lt;/span&gt;: red;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;right&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;top&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;bottom&lt;/span&gt;: &lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;margin&lt;/span&gt;: auto;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;固定定位 &lt;code&gt;position:fixed&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;特殊的绝对定位，部分特点和绝对定位一样&lt;/li&gt;
+&lt;li&gt;固定定位永远参照与浏览器的视口进行定位&lt;/li&gt;
+&lt;li&gt;固定定位的元素不会随着网页的滚动条滚动&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;粘滞定位 &lt;code&gt;position:sticky&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兼容性不太好，部分特点和相对定位一样&lt;/li&gt;
+&lt;li&gt;粘滞定位可以在元素到达某个位置时将其固定&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;19元素的层级&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#19元素的层级&#34;&gt;#&lt;/a&gt; 19. 元素的层级&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;定位层级都是相同的，不分绝对定位还是相对定位&lt;/li&gt;
+&lt;li&gt;设置透明 &lt;code&gt;background-color: rgba(255, 0, 0, .3);&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;开启定位的元素可以利用 &lt;code&gt;z-index:1;&lt;/code&gt;  给元素设置层级（里面是一个整数，值越大元素就越优先显示）&lt;/li&gt;
+&lt;li&gt;如果元素的优先级相同，那么就优先显示靠下的元素；祖先元素的层级再高也不会覆盖后代元素&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;20轮播图练习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20轮播图练习&#34;&gt;#&lt;/a&gt; 20. 轮播图练习&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;figcaption data-lang=&#34;CSS&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;lt;a class=&lt;span class=&#34;token string&#34;&gt;&#34;active&#34;&lt;/span&gt; href=&lt;span class=&#34;token string&#34;&gt;&#34;#&#34;&lt;/span&gt;&gt;&amp;lt;/a&gt;//active默认激活&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;background-clip&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; border-box&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;//将背景颜色设置到内容区，边框和内边距不在有背景颜色&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;border&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 1px solid transparent&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;//边框为透明色&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;br&gt;### &lt;span class=&#34;hljs-number&#34;&gt;21&lt;/span&gt;.字体族&lt;br&gt;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;. ```css&lt;br&gt;   问题：&lt;br&gt;   &lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;. 加载速度&lt;br&gt;   &lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;. 版权&lt;br&gt;   &lt;span class=&#34;hljs-number&#34;&gt;3&lt;/span&gt;. 字体格式&lt;br&gt;   &lt;span class=&#34;hljs-keyword&#34;&gt;@font-face&lt;/span&gt;&amp;#123;&lt;br&gt;   &lt;span class=&#34;hljs-comment&#34;&gt;/* 指定字体的名字 */&lt;/span&gt;&lt;br&gt;   &lt;span class=&#34;hljs-attribute&#34;&gt;font-family&lt;/span&gt;: &lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;Courier New&amp;#x27;&lt;/span&gt;, Courier, monospace;&lt;br&gt;   &lt;span class=&#34;hljs-comment&#34;&gt;/* 服务器中字体的路径 */&lt;/span&gt;&lt;br&gt;   &lt;span class=&#34;hljs-attribute&#34;&gt;src&lt;/span&gt;:&lt;span class=&#34;hljs-built_in&#34;&gt;url&lt;/span&gt;(&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;字体路径&amp;quot;&lt;/span&gt;);&lt;br&gt;   &amp;#125;&lt;br&gt;   字体相关的样式&lt;br&gt;   &lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;. &lt;span class=&#34;hljs-attribute&#34;&gt;color&lt;/span&gt;		设置字体颜色&lt;br&gt;   &lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;. &lt;span class=&#34;hljs-attribute&#34;&gt;font-size&lt;/span&gt;		设置字体大小&lt;br&gt;   		单位：&lt;br&gt;   				&lt;span class=&#34;hljs-selector-tag&#34;&gt;em&lt;/span&gt;：相当于当前元素的一个&lt;span class=&#34;hljs-attribute&#34;&gt;font-size&lt;/span&gt;&lt;br&gt;   				rem：相当于根元素的一个&lt;span class=&#34;hljs-attribute&#34;&gt;font-size&lt;/span&gt;&lt;br&gt;   &lt;span class=&#34;hljs-number&#34;&gt;3&lt;/span&gt;. &lt;span class=&#34;hljs-attribute&#34;&gt;font-family&lt;/span&gt;		字体族（字体的格式）&lt;br&gt;   		可选值：&lt;br&gt;   					serif		衬线字体&lt;br&gt;   					sans-serif		非衬线字体&lt;br&gt;   					monospace		等宽字体&lt;br&gt;   指定字体的类型，浏览器会自动使用该类型下的字体&lt;br&gt;   &lt;span class=&#34;hljs-attribute&#34;&gt;font-family&lt;/span&gt;  可以指定多个字体，多个字体间使用，隔开。若第一个无效时依次尝试去&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;22图标字体将图标直接设置为字体class类-实体-伪元素三种方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#22图标字体将图标直接设置为字体class类-实体-伪元素三种方式&#34;&gt;#&lt;/a&gt; 22. 图标字体：将图标直接设置为字体（ &lt;code&gt;class类&lt;/code&gt; 、实体、伪元素三种方式）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;通过伪元素来设置图标字体&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;找到要设置图标的元素通过 &lt;code&gt;before&lt;/code&gt;  和 &lt;code&gt;after&lt;/code&gt;  选中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在属性 &lt;code&gt;content&lt;/code&gt;  中设置字体编码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置字体样式&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-selector-tag&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;hljs-selector-pseudo&#34;&gt;::before&lt;/span&gt;&amp;#123;&lt;br&gt;	&lt;span class=&#34;hljs-attribute&#34;&gt;content&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;\f1b0&amp;#x27;&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;font-family&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;字体样式&amp;#x27;&lt;/span&gt;;//fab、fas等&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;font-weight&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;900px&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;或&lt;br&gt;&amp;lt;&lt;span class=&#34;hljs-selector-tag&#34;&gt;span&lt;/span&gt; class=&amp;quot;fas&amp;quot;&amp;gt;&amp;amp;&lt;span class=&#34;hljs-selector-id&#34;&gt;#x&lt;/span&gt;图标的编码&amp;lt;/&lt;span class=&#34;hljs-selector-tag&#34;&gt;span&lt;/span&gt;&amp;gt;//另一种方式&lt;br&gt;&lt;br&gt;阿里图标字体库的使用方式&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;. 直接使用类 class = iconfont&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;. 使用伪元素的方式 &lt;br&gt;&lt;span class=&#34;hljs-selector-tag&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;hljs-selector-pseudo&#34;&gt;::before&lt;/span&gt;&amp;#123;&lt;br&gt;	&lt;span class=&#34;hljs-attribute&#34;&gt;content&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;\f1b0&amp;#x27;&lt;/span&gt;;&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;font-family&lt;/span&gt;:&lt;span class=&#34;hljs-string&#34;&gt;&amp;#x27;字体样式&amp;#x27;&lt;/span&gt;;//fab、fas等&lt;br&gt;  &lt;span class=&#34;hljs-attribute&#34;&gt;font-weight&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;900px&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;23文本样式的相关设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#23文本样式的相关设置&#34;&gt;#&lt;/a&gt; 23. 文本样式的相关设置&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;行高的设置&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;可以将行高和高度设置相同的值，使单行文字在一个元素中垂直居中&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;height&lt;/span&gt;:&lt;span class=&#34;hljs-number&#34;&gt;100px&lt;/span&gt;&lt;br&gt;line-height:&lt;span class=&#34;hljs-number&#34;&gt;100px&lt;/span&gt;;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;行高是指文字占有的实际高度，可以通过 line-height 来设置行高，行高可以指定一个大小 (em、px), 也可以设置一个整数，表示为字体的整数倍&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;行高设置文字的行间距，行间距 = 行高 - 字体大小&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;字体框：字体存在的格子，可以通过 font-size 设置字体框的高度&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;行高会在字体框的上下平均分配&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;字体的简写属性&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;font&lt;/span&gt;:字体大小/行高(可省略) 字体族&lt;br&gt;font-weight:字重(字体的加粗)&lt;br&gt;	可选值&lt;br&gt;			normal	默认值，不加粗&lt;br&gt;			bold	加粗&lt;br&gt;			&lt;span class=&#34;hljs-number&#34;&gt;100&lt;/span&gt;~&lt;span class=&#34;hljs-number&#34;&gt;900&lt;/span&gt;级别&lt;br&gt;font-style:字体的风格&lt;br&gt;			normal	正常&lt;br&gt;			italic	斜体&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文本的水平和垂直对齐&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;. &lt;span class=&#34;hljs-attribute&#34;&gt;text-align&lt;/span&gt;  文本的水平对齐&lt;br&gt;	可选值&lt;br&gt;		&lt;span class=&#34;hljs-attribute&#34;&gt;left&lt;/span&gt;		左侧对齐&lt;br&gt;		&lt;span class=&#34;hljs-attribute&#34;&gt;right&lt;/span&gt;		右侧对齐&lt;br&gt;		center	居中对齐	&lt;br&gt;		justify	两端对齐&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;. &lt;span class=&#34;hljs-attribute&#34;&gt;vertical-align&lt;/span&gt;	设置元素垂直对齐的方式&lt;br&gt;	可选值&lt;br&gt;		baseline	默认值，基线对齐&lt;br&gt;		&lt;span class=&#34;hljs-attribute&#34;&gt;top&lt;/span&gt;				顶部对齐&lt;br&gt;		&lt;span class=&#34;hljs-attribute&#34;&gt;bottom&lt;/span&gt;		底部对齐&lt;br&gt;		middle		居中对齐&lt;br&gt;附加:若是图片和父元素存在缝隙，可以使用vertical-align:bottom;解决&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文本样式的设置&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;. &lt;span class=&#34;hljs-attribute&#34;&gt;text-decoration&lt;/span&gt;  设置文本修饰&lt;br&gt;	可选值&lt;br&gt;		&lt;span class=&#34;hljs-attribute&#34;&gt;none&lt;/span&gt;	无下划线&lt;br&gt;		underline		下划线&lt;br&gt;		line-through	删除线&lt;br&gt;		overline			上划线&lt;br&gt;		例:text-decoration:underline red dotted;&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;. &lt;span class=&#34;hljs-attribute&#34;&gt;white-space&lt;/span&gt;	设置网页如何处理空白&lt;br&gt;	可选值&lt;br&gt;		&lt;span class=&#34;hljs-attribute&#34;&gt;normal&lt;/span&gt;	正常&lt;br&gt;		nowrap	不换行&lt;br&gt;		pre 		保留空白&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;3&lt;/span&gt;. 显示省略号的效果&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;white-space&lt;/span&gt;: nowrap;//文本不换行&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;overflow&lt;/span&gt;: hidden;//多余的文本进行隐藏&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;text-overflow&lt;/span&gt;: ellipsis;//使用省略号进行替换&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;24京东顶部导航条总结学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#24京东顶部导航条总结学习&#34;&gt;#&lt;/a&gt; 24. 京东顶部导航条总结学习&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;box-shadow&lt;/code&gt;  属性详解&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;值&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;em&gt;h-shadow&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;必需。水平阴影的位置。允许负值。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;em&gt;v-shadow&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;必需。垂直阴影的位置。允许负值。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;em&gt;blur&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;可选。模糊距离。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;em&gt;spread&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;可选。阴影的尺寸。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;em&gt;color&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;可选。阴影的颜色。请参阅 CSS 颜色值。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;inset&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;可选。将外部阴影 (outset) 改为内部阴影。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;25背景&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#25背景&#34;&gt;#&lt;/a&gt; 25. 背景&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;background-color:&lt;/code&gt;  设置背景颜色&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;background-image:&lt;/code&gt;  设置背景图片&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可以同时设置颜色和图片，背景颜色将会成为图片的背景颜色&lt;/li&gt;
+&lt;li&gt;背景的图片小于元素：背景图片将会自动在元素中平铺，X 轴和 Y 轴方向平铺&lt;/li&gt;
+&lt;li&gt;背景的图片大于元素：背景图片将会无法完全显示&lt;/li&gt;
+&lt;li&gt;背景的图片等于元素：直接正常显示&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;background-repeat:&lt;/code&gt;  设置背景重复的方式&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;默认值repeat&lt;/code&gt; : 背景将会沿着 x 轴和 y 轴方向重复&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;repeat-x&lt;/code&gt; : 沿着 x 轴方向重复&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;repeat-y&lt;/code&gt; : 沿着 y 轴方向重复&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;no-repeat&lt;/code&gt; : 背景图片不重复&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;background-position:&lt;/code&gt;  设置背景图片的位置&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;top&lt;/code&gt; 、 &lt;code&gt;left&lt;/code&gt; 、 &lt;code&gt;right&lt;/code&gt; 、 &lt;code&gt;bottom&lt;/code&gt; 、 &lt;code&gt;center&lt;/code&gt;  同时指定两个值，若只指定一个值，则第二值会和第一个值相同&lt;/li&gt;
+&lt;li&gt;通过偏移量来指定背景图片的位置： &lt;code&gt;水平方向的偏移量&lt;/code&gt; 、 &lt;code&gt;垂直方向的偏移量&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;background-clip&lt;/code&gt; : 设置背景范围&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;border-box&lt;/code&gt; : 默认值，背景会出现在边框的下边&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;padding-box&lt;/code&gt; : 背景不会出现在边框下边，只出现在内容区和内边距&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content-box&lt;/code&gt; : 背景只会出现在内容区&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;background-origin&lt;/code&gt; : 背景图片的偏移量计算原点&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;padding-box&lt;/code&gt; : 默认值， &lt;code&gt;background-position&lt;/code&gt;  从内边距出开始计算&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;border-box&lt;/code&gt; : 背景图片的偏移量从边框处开始计算&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content-box&lt;/code&gt; : 背景图片的偏移量从内容区处开始计算&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;background-size&lt;/code&gt; : 设置背景图片的大小，第一个值表示宽度，第二值表示高度，若只写一个，则第二个值默认是 auto&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;contain&lt;/code&gt; : 图片比例不变，将图片在元素中完整显示&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cover&lt;/code&gt; : 图片比例不变，将元素铺满&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;background-attachment&lt;/code&gt; : 背景图片是否跟随元素移动&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;scroll&lt;/code&gt; : 默认值，背景图片会跟随元素移动&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fixed&lt;/code&gt; : 背景图片固定在页面中，不会随元素移动&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;background&lt;/code&gt; : 属性简写，无顺序要求&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;background-size 必须写在 background-position 的后面，并且时候 &lt;code&gt;/&lt;/code&gt;  隔开&lt;/li&gt;
+&lt;li&gt;background-origin 要写在 background-clip 的前面&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;图片属于网页中的外部资源，外部资源都需要浏览器单独发送请求加载，浏览器家在外部资源是按需加载的，用则加载，不用则不加载。解决多个图片因请求时长而出现的闪烁问题，可以将多个小图片同意保存到一个大图片中，然后通过调整 &lt;code&gt;background-position&lt;/code&gt;  来显示特定的图片称为 &lt;code&gt;CSS-Sprite&lt;/code&gt; , 这种图称为雪碧图&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;雪碧图特点：一张图片里有包含多个图片，一次性将多个图片加载进页面，降低请求的次数，加快访问速度，提升用户的体验&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;渐变：&lt;strong&gt;渐变是图片，需要通过 background-image 来设置&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;线性渐变&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;.线性渐变，需要沿着一条直线发生变化：linear-gradient()&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;background-image&lt;/span&gt;: &lt;span class=&#34;hljs-built_in&#34;&gt;linear-gradient&lt;/span&gt;(red,yellow)&lt;br&gt;指定渐变的方向：to left,to right,to bottom,to top,deg度数，turn圈&lt;br&gt;可以同时指定多个颜色，多个颜色默认情况下平均分布，也可以手动指定渐变的分布情况&lt;br&gt;&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;.线性渐变，可以平铺的线性渐变：&lt;span class=&#34;hljs-built_in&#34;&gt;repeating-linear-gradient&lt;/span&gt;()&lt;br&gt;background-image: &lt;span class=&#34;hljs-built_in&#34;&gt;repeating-linear-gradient&lt;/span&gt;(red,yellow &lt;span class=&#34;hljs-number&#34;&gt;25px&lt;/span&gt;)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;径向渐变&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs css&#34;&gt;&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;.径向渐变(放射性效果)radial-gradient()&lt;br&gt;&lt;span class=&#34;hljs-attribute&#34;&gt;background-image&lt;/span&gt;: &lt;span class=&#34;hljs-built_in&#34;&gt;radial-gradient&lt;/span&gt;(red,yellow &lt;span class=&#34;hljs-number&#34;&gt;50px&lt;/span&gt;)&lt;br&gt;默认情况下径向渐变的形状根据元素的形状来计算的，正方形--圆形，长方形--椭圆形，也可以手动设置径向渐变的大小：circle、ellipse；渐变位置&lt;span class=&#34;hljs-built_in&#34;&gt;radial-gradient&lt;/span&gt;(大小 at 位置，颜色 位置，颜色 位置)&lt;br&gt;大小:circle 圆形、ellipse 椭圆形、farthest-side 远边、farthest-corner 远角、closest-side 近边、closest-corner 近角&lt;br&gt;位置:top、right、left、center、bottom&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
     </channel>

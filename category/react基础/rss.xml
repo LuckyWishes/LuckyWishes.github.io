@@ -5,19 +5,109 @@
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Wed, 23 Jun 2021 20:40:35 +0800</pubDate>
-        <lastBuildDate>Wed, 23 Jun 2021 20:40:35 +0800</lastBuildDate>
+        <pubDate>Wed, 08 Apr 2020 19:47:56 +0800</pubDate>
+        <lastBuildDate>Wed, 08 Apr 2020 19:47:56 +0800</lastBuildDate>
+        <category>uni-app</category>
         <category>Git</category>
+        <category>浏览器</category>
         <category>HTML基础</category>
         <category>JavaScript</category>
         <category>React</category>
         <category>Vue</category>
+        <category>Webpack</category>
+        <category>Node</category>
+        <category>TypeScript</category>
+        <category>计算机网络</category>
+        <category>数据结构</category>
+        <category>计算机组成</category>
+        <category>操作系统</category>
         <item>
-            <guid isPermalink="true">http://example.com/2021/06/23/React/</guid>
+            <guid isPermalink="true">http://example.com/2020/04/08/5002_React/</guid>
             <title>React</title>
-            <link>http://example.com/2021/06/23/React/</link>
+            <link>http://example.com/2020/04/08/5002_React/</link>
             <category>React</category>
-            <pubDate>Wed, 23 Jun 2021 20:40:35 +0800</pubDate>
+            <pubDate>Wed, 08 Apr 2020 19:47:56 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id=&#34;组件通信&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#组件通信&#34;&gt;#&lt;/a&gt; 组件通信&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;父子组件通信&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;父组件传递子组件数据通信&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;父组件通过 &lt;code&gt;属性=值&lt;/code&gt; 的形式来传递给子组件数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;子组件通过 &lt;code&gt;props&lt;/code&gt;  参数获取父组件传递过来的数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;类组件之间传参&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs react&#34;&gt;class Children extends Component&amp;#123;&lt;br&gt;  // 构造方法，方式一&lt;br&gt;  // constructor(props)&amp;#123;&lt;br&gt;  //   super();&lt;br&gt;  //   this.props = props;&lt;br&gt;  // &amp;#125;     &lt;br&gt;  &lt;br&gt;  // 构造方法，方式二&lt;br&gt;  // constructor(props)&amp;#123;&lt;br&gt;  //   super(props);&lt;br&gt;  // &amp;#125;&lt;br&gt;  // 构造方法，方式三&lt;br&gt;  // 不写，子类的默认构造方法可以省略&lt;br&gt;  render()&amp;#123;&lt;br&gt;    const &amp;#123; name,age,height &amp;#125; = this.props;&lt;br&gt;    return (&lt;br&gt;      &amp;lt;div&amp;gt;&lt;br&gt;        &amp;lt;h2&amp;gt;子组件显示数据:&amp;#123;name+&amp;quot; &amp;quot;+age+&amp;quot; &amp;quot;+height&amp;#125;&amp;lt;/h2&amp;gt;&lt;br&gt;      &amp;lt;/div&amp;gt;&lt;br&gt;    )&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;export default class App extends Component &amp;#123;&lt;br&gt;  render() &amp;#123;&lt;br&gt;    return (&lt;br&gt;      &amp;lt;div&amp;gt;&lt;br&gt;        &amp;lt;Children name=&amp;quot;why&amp;quot; age=&amp;quot;20&amp;quot; height=&amp;quot;188&amp;quot;&amp;gt;&amp;lt;/Children&amp;gt; &lt;br&gt;        &amp;lt;Children name=&amp;quot;GXX&amp;quot; age=&amp;quot;22&amp;quot; height=&amp;quot;172&amp;quot;&amp;gt;&amp;lt;/Children&amp;gt; &lt;br&gt;      &amp;lt;/div&amp;gt;&lt;br&gt;    )&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数组件之间传参&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs react&#34;&gt;function Children(props) &amp;#123;&lt;br&gt;  const &amp;#123; name,age,height &amp;#125; = props;&lt;br&gt;  return (&lt;br&gt;    &amp;lt;div&amp;gt;&lt;br&gt;      &amp;lt;h2&amp;gt;App_函数组件&amp;lt;/h2&amp;gt;&lt;br&gt;      &amp;lt;h2&amp;gt;&amp;#123;name+&amp;quot; &amp;quot;+age+&amp;quot; &amp;quot;+height&amp;#125;&amp;lt;/h2&amp;gt;&lt;br&gt;    &amp;lt;/div&amp;gt;&lt;br&gt;  )&lt;br&gt;&amp;#125;&lt;br&gt;export default class App extends Component &amp;#123;&lt;br&gt;  render() &amp;#123;&lt;br&gt;    return (&lt;br&gt;      &amp;lt;div&amp;gt;&lt;br&gt;        &amp;lt;Children name=&amp;quot;why&amp;quot; age=&amp;quot;20&amp;quot; height=&amp;quot;188&amp;quot;&amp;gt;&amp;lt;/Children&amp;gt; &lt;br&gt;        &amp;lt;Children name=&amp;quot;GXX&amp;quot; age=&amp;quot;22&amp;quot; height=&amp;quot;172&amp;quot;&amp;gt;&amp;lt;/Children&amp;gt; &lt;br&gt;      &amp;lt;/div&amp;gt;&lt;br&gt;    )&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;组件参数类型验证&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs react&#34;&gt;import PropTypes from &amp;#x27;prop-types&amp;#x27;&lt;br&gt;function Children(props) &amp;#123;&lt;br&gt;  const &amp;#123; name,age,height,names&amp;#125; = props;&lt;br&gt;  return (&lt;br&gt;    &amp;lt;div&amp;gt;&lt;br&gt;      &amp;lt;h2&amp;gt;App_函数组件&amp;lt;/h2&amp;gt;&lt;br&gt;      &amp;lt;h2&amp;gt;&amp;#123;name+&amp;quot; &amp;quot;+age+&amp;quot; &amp;quot;+height&amp;#125;&amp;lt;/h2&amp;gt;&lt;br&gt;      &amp;lt;ul&amp;gt;&lt;br&gt;        &amp;#123;&lt;br&gt;          names.map((item,index)=&amp;gt;&amp;#123;&lt;br&gt;            return &amp;lt;li&amp;gt;&amp;#123;item&amp;#125;&amp;lt;/li&amp;gt;&lt;br&gt;          &amp;#125;)&lt;br&gt;        &amp;#125;&lt;br&gt;      &amp;lt;/ul&amp;gt;&lt;br&gt;    &amp;lt;/div&amp;gt;&lt;br&gt;  )&lt;br&gt;&amp;#125;&lt;br&gt;// 设置属性类型验证&lt;br&gt;Children.propsTypes = &amp;#123;&lt;br&gt;  name:PropTypes.string.isRequired,&lt;br&gt;  age:PropTypes.number,&lt;br&gt;  height:PropTypes.number,&lt;br&gt;  names:PropTypes.array&lt;br&gt;&amp;#125;&lt;br&gt;// 设置属性默认值&lt;br&gt;Children.defaultProps = &amp;#123;&lt;br&gt;  name:&amp;quot;XGG&amp;quot;,&lt;br&gt;  age:12,//默认类型也会进行类型判断&lt;br&gt;  height:199,&lt;br&gt;  names:[&amp;quot;123&amp;quot;,&amp;quot;456&amp;quot;,&amp;quot;789&amp;quot;]&lt;br&gt;&amp;#125;&lt;br&gt;// 补充：类组件的相关属性编写规范&lt;br&gt;class Children2 extends Component&amp;#123;&lt;br&gt;  //es6中class fields写法，给类上添加属性，而非对象上&lt;br&gt;  static propsTypes =&amp;#123;&lt;br&gt;  &amp;#125;&lt;br&gt;  static defaultProps =&amp;#123;&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;#125;&lt;br&gt;Children2.propsTypes = &amp;#123;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;子组件传递父组件通信&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;父组件给子组件传递一个回调函数，在子组件中调用这个函数即可&lt;/li&gt;
+&lt;li&gt;子组件可以通过该回调函数向父组件传递参数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;模拟插槽样式&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;跨组件通信 (数据传递)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;按照层次依次传递： &lt;code&gt;Spread Attributes&lt;/code&gt; ，可以使用&lt;strong&gt;属性展开符： &lt;code&gt;...&lt;/code&gt; &lt;/strong&gt;，但是此方案对于中间层会存在冗余操作&lt;/li&gt;
+&lt;li&gt;使用 ReactAPI: &lt;code&gt;Context&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;React.createContext&lt;/code&gt; : 创建一个需要共享的对象，若某组件订阅 &lt;code&gt;Context&lt;/code&gt;  时该组件会从距离自身最近的匹配 &lt;code&gt;Provider&lt;/code&gt;  中读取到当前 &lt;code&gt;Context&lt;/code&gt;  值， &lt;code&gt;defaultValue&lt;/code&gt;  是组件在顶层查找过程中没有找到对应的 &lt;code&gt;Provider&lt;/code&gt; , 就会使用默认值。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;context.Provider&lt;/code&gt; : 在创建 &lt;code&gt;Context对象&lt;/code&gt;  (context) 时会返回一个 &lt;code&gt;Provider React组件&lt;/code&gt; ，它允许消费组件订阅 &lt;code&gt;Context&lt;/code&gt;  变化， &lt;code&gt;Provider&lt;/code&gt;  接收一个属性 &lt;code&gt;value&lt;/code&gt;  属性传递给消费组件，一个 &lt;code&gt;Provider&lt;/code&gt;  可以和多个消费组件有对应关系，多个 &lt;code&gt;Provider&lt;/code&gt;  可以嵌套使用，里层会覆盖外层数据；当 &lt;code&gt;Provider&lt;/code&gt;  的 &lt;code&gt;value&lt;/code&gt;  值发生变化时，它内部所有的消费组件都会重新渲染&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;contextType&lt;/code&gt; : 挂载在 &lt;code&gt;class&lt;/code&gt;  上的 &lt;code&gt;contextType&lt;/code&gt;  属性会被重新赋值为一个由 &lt;code&gt;React.createContext&lt;/code&gt;  创建的 &lt;code&gt;Context&lt;/code&gt;  对象，这可以使用 &lt;code&gt;this.context&lt;/code&gt;  来获取最近 &lt;code&gt;Context&lt;/code&gt;  上的值；可以在任何生命周期中访问到，包括 &lt;code&gt;render&lt;/code&gt;  函数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Consumer&lt;/code&gt; : React 组件可以订阅到 context 变化，可以在函数式组件中完成订阅 context，需要函数作为子元素，该函数接收当前的 context 值，返回一个 React 节点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;events&lt;/code&gt; （全局事件传递）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;npm install events&lt;/code&gt; : 安装&lt;/li&gt;
+&lt;li&gt;常用 API
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;eventBus对象&lt;/code&gt; ：创建 EventEmitter 对象&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eventBus.emit(&amp;quot;事件名称&amp;quot;,参数列表)&lt;/code&gt; : 发出事件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eventBus.addListener(&amp;quot;事件名称&amp;quot;,监听函数)&lt;/code&gt; : 监听事件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eventBus.removeListener(&amp;quot;事件名称&amp;quot;,监听函数)&lt;/code&gt; : 移除事件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2020/04/06/5001_React/</guid>
+            <title>React</title>
+            <link>http://example.com/2020/04/06/5001_React/</link>
+            <category>React</category>
+            <pubDate>Mon, 06 Apr 2020 08:20:45 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;

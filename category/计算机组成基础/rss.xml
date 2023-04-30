@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>XGG&amp;Blog • Posts by &#34;计算机组成基础&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 04 May 2020 15:36:44 +0800</pubDate>
+        <lastBuildDate>Mon, 04 May 2020 15:36:44 +0800</lastBuildDate>
+        <category>uni-app</category>
+        <category>Git</category>
+        <category>浏览器</category>
+        <category>HTML基础</category>
+        <category>JavaScript</category>
+        <category>React</category>
+        <category>Vue</category>
+        <category>Webpack</category>
+        <category>Node</category>
+        <category>TypeScript</category>
+        <category>计算机网络</category>
+        <category>数据结构</category>
+        <category>计算机组成</category>
+        <category>操作系统</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2020/05/04/D001_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</guid>
+            <title>计算机组成</title>
+            <link>http://example.com/2020/05/04/D001_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</link>
+            <category>计算机组成</category>
+            <pubDate>Mon, 04 May 2020 15:36:44 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id=&#34;存储形式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#存储形式&#34;&gt;#&lt;/a&gt; 存储形式&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;真值：带有符号的数，如 - 1、+1、+2 等&lt;/li&gt;
+&lt;li&gt;机器数 (符号数字化的数，计算机中定点数分为有符号数和无符号数)
+&lt;ul&gt;
+&lt;li&gt;有符号数 (使用原码、反码、补码三种方式来表示定点整数和定点小数，使用移码只能表示定点整数)
+&lt;ul&gt;
+&lt;li&gt;原码
+&lt;ul&gt;
+&lt;li&gt;原码就是二进制定点表示法，即最高位为符号位，“0” 表示正，“1” 表示负，其余位表示数值的大小&lt;/li&gt;
+&lt;li&gt;表示范围：8 位二进制位表示范围是 - 127~+127&lt;/li&gt;
+&lt;li&gt;数 0 的原码有两种形式:&lt;/li&gt;
+&lt;li&gt;[+0] 原 = 00000000B&lt;/li&gt;
+&lt;li&gt;[-0] 原 = 10000000B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;反码
+&lt;ul&gt;
+&lt;li&gt;正数的反码与其原码相同；负数的反码是符号位不变，对其原码逐位取反&lt;/li&gt;
+&lt;li&gt;表示范围：8 位二进制反码的表示范围：-127～+127&lt;/li&gt;
+&lt;li&gt;数 0 的反码有两种形式:
+&lt;ul&gt;
+&lt;li&gt;[+0] 反 = 00000000B&lt;/li&gt;
+&lt;li&gt;[-0] 反 = 11111111B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;补码
+&lt;ul&gt;
+&lt;li&gt;模的概念，补数的概念，如 8 位二进制数，其模数为 256，计算机中两个互补的数称为补码&lt;/li&gt;
+&lt;li&gt;正数的补码与其原码相同；负数的补码是在其反码的末位加 1，符号为 1&lt;/li&gt;
+&lt;li&gt;表示范围：8 位二进制位表示范围是 - 127~+127&lt;/li&gt;
+&lt;li&gt;与原码、反码不同，数值 0 的补码只有一个，[+0] 补 =[-0] 补 = 00000000B&lt;/li&gt;
+&lt;li&gt;进行补码运算时，应注意所得结果不应超过补码所能表示数的范围&lt;/li&gt;
+&lt;li&gt;采用补码后，可以方便地将减法运算转化成加法运算，运算过程得到简化。正数的补码即是它所表示的数的真值，而负数的补码的数值部份却不是它所表示的数的真值。采用补码进行运算，所得结果仍为补码&lt;/li&gt;
+&lt;li&gt;二进制补码转换原码技巧：从最右边开始，遇到第一个 1 后，出符号为不变，其余位取反即可得到原码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;移码
+&lt;ul&gt;
+&lt;li&gt;将符号位取反的补码 (不区分正负)&lt;/li&gt;
+&lt;li&gt;表示范围：8 位二进制位表示范围是 - 127~+127&lt;/li&gt;
+&lt;li&gt;数值 0 的移码只有一个，[+0] 移 =[-0] 移 = 00000000B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;无符号数
+&lt;ul&gt;
+&lt;li&gt;相对有符号数而言，指的是整个机器字长的全部二进制位均表示数值位，相当于数的绝对值，因为只能表示非负数也就是 0 和正数&lt;/li&gt;
+&lt;li&gt;计算机中无符号数没有原码、反码、补码、移码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;进制转化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进制转化&#34;&gt;#&lt;/a&gt; 进制转化&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;二进制 (0、1 组成)
+&lt;ul&gt;
+&lt;li&gt;二进制转八进制：3 位一组，一组对应一个八进制数字&lt;/li&gt;
+&lt;li&gt;任意进制转十进制：采用 r 进制计数法每个位数的基数 × 该进制的位权次幂依次相加即可&lt;/li&gt;
+&lt;li&gt;二进制转十六进制：4 位一组，，一组对应一个十六进制数字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;八进制 (0~7 组成)
+&lt;ul&gt;
+&lt;li&gt;八进制转二进制：每一个八进制数字对应 3 个二进制数字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;十进制 (0~9 组成)
+&lt;ul&gt;
+&lt;li&gt;十进制转任意进制
+&lt;ul&gt;
+&lt;li&gt;除 x 取余倒排法 (x 代表进制数)&lt;/li&gt;
+&lt;li&gt;拼凑法 (记忆一个表格)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;十六进制 (0&lt;sub&gt;9、A&lt;/sub&gt;F 组成)
+&lt;ul&gt;
+&lt;li&gt;十六进制转二进制：每一个十六进制数字对应 4 个二进制数字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

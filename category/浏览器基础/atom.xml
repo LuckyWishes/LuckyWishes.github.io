@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>XGG&amp;Blog • Posts by &#34;浏览器基础&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2022-03-13T02:23:44.000Z</updated>
+    <category term="uni-app" />
+    <category term="Git" />
+    <category term="浏览器" />
+    <category term="HTML基础" />
+    <category term="JavaScript" />
+    <category term="React" />
+    <category term="Vue" />
+    <category term="Webpack" />
+    <category term="Node" />
+    <category term="TypeScript" />
+    <category term="计算机网络" />
+    <category term="数据结构" />
+    <category term="计算机组成" />
+    <category term="操作系统" />
+    <entry>
+        <id>http://example.com/2022/03/13/11001_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/</id>
+        <title>浏览器基础</title>
+        <link rel="alternate" href="http://example.com/2022/03/13/11001_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/"/>
+        <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id=&#34;从地址栏输入地址到显示页面过程浏览器做什么事情&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#从地址栏输入地址到显示页面过程浏览器做什么事情&#34;&gt;#&lt;/a&gt; 从地址栏输入地址到显示页面过程，浏览器做什么事情&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;导航是加载网页的第一步，它指的是当用户通过点击一个链接、在浏览器地址栏中输入一个网址、提交一个表格等方式请求一个网页时发生的过程&lt;/li&gt;
+&lt;li&gt;域名系统 (DNS) 查询，将域名转换为对应的 IP 地址，查找成功返回 IP 地址，查找不成功 DNS 服务器返回错误信息，在第一次查询后，IP 地址可能会被缓存一段时间，所以下次访问同一个网站会更快，因为不需要进行 DNS 查询 (DNS 查询只发生在我们第一次访问一个网站时)&lt;/li&gt;
+&lt;li&gt;三次握手进行 TCP 连接，信息传输&lt;/li&gt;
+&lt;li&gt;TLS 协商，对于通过 HTTPS 建立的安全连接，需要进行另一次握手，该握手 (TLS 协商) 决定了哪种加密方式将被用于加密通信，验证服务器，并在开始实际的数据传输之前建立一个安全的连接&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="浏览器" />
+        <updated>2022-03-13T02:23:44.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2022/03/11/11002_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/</id>
+        <title>浏览器基础</title>
+        <link rel="alternate" href="http://example.com/2022/03/11/11002_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/"/>
+        <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id=&#34;三次握手&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三次握手&#34;&gt;#&lt;/a&gt; 三次握手&lt;/h5&gt;
+&lt;h5 id=&#34;四次挥手&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四次挥手&#34;&gt;#&lt;/a&gt; 四次挥手&lt;/h5&gt;
+&lt;h5 id=&#34;浏览器缓存-协商缓存-强制缓存&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#浏览器缓存-协商缓存-强制缓存&#34;&gt;#&lt;/a&gt; 浏览器缓存、协商缓存、强制缓存&lt;/h5&gt;
+&lt;h5 id=&#34;http不同版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http不同版本&#34;&gt;#&lt;/a&gt; http 不同版本&lt;/h5&gt;
+&lt;h5 id=&#34;tcp&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tcp&#34;&gt;#&lt;/a&gt; tcp&lt;/h5&gt;
+&lt;h5 id=&#34;不同状态码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#不同状态码&#34;&gt;#&lt;/a&gt; 不同状态码&lt;/h5&gt;
+&lt;h5 id=&#34;长短轮询-长短连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#长短轮询-长短连接&#34;&gt;#&lt;/a&gt; 长短轮询、长短连接&lt;/h5&gt;
+&lt;h5 id=&#34;xss攻击类型-如何防御&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#xss攻击类型-如何防御&#34;&gt;#&lt;/a&gt; XSS 攻击，类型、如何防御&lt;/h5&gt;
+&lt;h5 id=&#34;csrf攻击类型-如何防御&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#csrf攻击类型-如何防御&#34;&gt;#&lt;/a&gt; CSRF 攻击，类型、如何防御&lt;/h5&gt;
+&lt;h5 id=&#34;cookie&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#cookie&#34;&gt;#&lt;/a&gt; Cookie&lt;/h5&gt;
+&lt;h5 id=&#34;ssr与csr&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ssr与csr&#34;&gt;#&lt;/a&gt; SSR 与 CSR&lt;/h5&gt;
+&lt;h5 id=&#34;引起前端安全的问题有哪些&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引起前端安全的问题有哪些&#34;&gt;#&lt;/a&gt; 引起前端安全的问题有哪些&lt;/h5&gt;
+&lt;h5 id=&#34;浏览器内核&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#浏览器内核&#34;&gt;#&lt;/a&gt; 浏览器内核&lt;/h5&gt;
+</content>
+        <category term="浏览器" />
+        <updated>2022-03-11T01:39:44.000Z</updated>
+    </entry>
+</feed>

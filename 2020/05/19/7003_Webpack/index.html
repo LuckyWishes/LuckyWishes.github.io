@@ -1,0 +1,750 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="XGG">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="🌸  Welcome to XGG &amp; blog! 🔭  When you have eliminated the impossible,whatever remains,however improbable,must be the truth. 📫  If you get any problems when looking blog,you can find the answer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Webpack">
+<meta property="og:url" content="http://example.com/2020/05/19/7003_Webpack/index.html">
+<meta property="og:site_name" content="XGG&amp;Blog">
+<meta property="og:description" content="🌸  Welcome to XGG &amp; blog! 🔭  When you have eliminated the impossible,whatever remains,however improbable,must be the truth. 📫  If you get any problems when looking blog,you can find the answer">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-19T05:51:54.000Z">
+<meta property="article:modified_time" content="2023-04-30T12:02:17.950Z">
+<meta property="article:author" content="XGG">
+<meta property="article:tag" content="Webpack">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Webpack - XGG&amp;Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>XGG</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/chengbao.jpeg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.01)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Webpack"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2020-05-19 13:51" pubdate>
+          2020年5月19日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.9k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          41 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Webpack</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>🌸  <span style="font-size:bold;color:purple">Welcome to XGG &amp; blog!</span><br>
+🔭  <span style="font-size:bold;color:purple">When you have eliminated the impossible,whatever remains,however improbable,must be the truth.</span><br>
+📫  <span style="font-size:initial;color:purple">If you get any problems when looking blog,you can find the answer in <a target="_blank" rel="noopener" href="https://juejin.cn/user/2784392994882045">稀土掘金</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/LuckyWishes">GitHub</a>.</span></p>
+<hr />
+<h6 id="浏览器兼容性"><a class="markdownIt-Anchor" href="#浏览器兼容性">#</a> 浏览器兼容性</h6>
+<ol>
+<li>browserslist 工具：查询浏览器版本，一个在不同的前端工具之间，共享目标浏览器和 Node.js 版本的配置 (Babel、Autoprefixer、postcss-preset-env 等)</li>
+<li>browserslist 编写规则
+<ol>
+<li>defaults:Browserslist 的默认浏览器</li>
+<li>5%: 通过全局使用情况统计的信息选择浏览器版本</li>
+<li>dead:24 个月没有官方支持或更新的浏览器</li>
+<li>last 2 version: 每一个浏览器的最后 2 个版本</li>
+<li>not ie &lt;=8: 排除先前查询选择的浏览器</li>
+<li>node 10: 选择最新的的 node.js 版本 (如 current node:Browserslist 现在使用的 Node.js 版本)</li>
+<li>iOS 7: 直接使用 iOS 浏览器版本 7</li>
+<li>supports es6-module: 支持特定功能的浏览器</li>
+</ol>
+</li>
+<li>browserslist 工具使用 caniuse-lite 工具进行条件查询
+<ol>
+<li><code>,</code> 、 <code>or</code> : 并集，满足一个即可</li>
+<li><code>and</code> : 交集，所有条件都要满足</li>
+<li><code>not</code> : 取反</li>
+</ol>
+</li>
+<li>在多个 browserslist 共享查询条件时，两种编写方式
+<ol>
+<li>在 <code>package.json</code>  文件里面添加字段<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-string">&quot;browserslist&quot;</span>: [<br><span class="hljs-string">&quot;&gt;1%&quot;</span>,<br><span class="hljs-string">&quot;last 2 version&quot;</span>,<br><span class="hljs-string">&quot;not dead&quot;</span><br>]<br></code></pre></td></tr></table></figure>
+</li>
+<li>新建 <code>.browserslistrc</code>  文件<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js">&gt;<span class="hljs-number">1</span>%,<br>last <span class="hljs-number">2</span> version,<br>not dead<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+<p>注意：浏览器版本查询的依赖网站:<a target="_blank" rel="noopener" href="https://caniuse.com/">https://caniuse.com/</a></p>
+<h6 id="postcss"><a class="markdownIt-Anchor" href="#postcss">#</a> postcss</h6>
+<p>定义：一个通过 JavaScript 来转换样式的工具，但是要实现特定的功能需要借助与 postcss 相应的插件 (如自动添加浏览器前缀，css 样式重置)</p>
+<ol>
+<li>postcss 的使用
+<ol>
+<li>查找 postcss 在构建工具中的扩展，如 webpack 中的 <code>postcss-loader</code></li>
+<li>选择添加需要的 postcss 相关插件实现相应的功能</li>
+</ol>
+</li>
+<li>在命令行中使用 postcss <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// 安装postcss工具</span><br>npm install postcss -D<br><span class="hljs-comment">// 安装postcss命令行工具</span><br>npm install postcss-cli -D<br><span class="hljs-comment">// 使用postcss工具对test.css文件中样式进行处理，生成目标文件result.css</span><br>npx postcss -o result.<span class="hljs-property">css</span> ./src/css/test.<span class="hljs-property">css</span><br><span class="hljs-comment">//安装`autoprefixer`插件为了给样式添加浏览器前缀</span><br>npm install autoprefixer -D<br><span class="hljs-comment">//`--use autoprefixer`指定使用特性插件</span><br>npx postcss --use autoprefixer -o result.<span class="hljs-property">css</span> ./src/css/test.<span class="hljs-property">css</span><br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>注意：推荐查询样式适配浏览器的网站:<a target="_blank" rel="noopener" href="https://autoprefixer.github.io/(%E5%91%8A%E8%AF%89%E4%BD%A0%E6%98%AF%E5%90%A6%E9%9C%80%E8%A6%81%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%BA%94%E7%9A%84%E5%89%8D%E7%BC%80)">https://autoprefixer.github.io/(告诉你是否需要添加相应的前缀)</a></p>
+<ol>
+<li>在 webpack 中使用 postcss<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// 安装postcss工具</span><br>npm install postcss -D<br><span class="hljs-comment">// 安装postcss-loader</span><br>npm install postcss-loader -D<br><span class="hljs-comment">//安装`autoprefixer`插件为了给样式自动添加浏览器前缀</span><br>npm install autoprefixer -D<br><span class="hljs-comment">//安装`postcss-preset-env`插件为了使CSS新特性适配大部分浏览器</span><br>npm install postcss-preset-env -D<br></code></pre></td></tr></table></figure>
+</li>
+<li><code>postcss-preset-env</code> : 讲一些现代 CSS 特性转成大多数浏览器识别的 CSS，且根据目标浏览器或者运行时环境添加所需的 <code>polyfill</code>
+<ol>
+<li><code>postcss-preset-env</code>  插件已经包含 <code>autoprefixer</code>  插件的特性 (自动为浏览器添加前缀)</li>
+<li>rgb (#000000):6 位；rgba (#00000000):8 位部分浏览器可以解析识别，最后两位表示透明度</li>
+<li>在 webpack 中使用 <code>postcss</code>  工具时，使用相同的插件时可以进行相同的 <code>插件代码抽离</code> ，只需新建文件 <code>postcss.config.js</code>  (特定文件名), 在该文件里面添加以下代码<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//对webpack中的postcss工具使用postcss-preset-env插件配置单独抽离</span><br><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = &#123;<br>  <span class="hljs-attr">plugins</span>:[<br>    <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;postcss-preset-env&quot;</span>)<br>    <span class="hljs-comment">// 该插件可以简写为以下形式，但并不是所有的插件都可以写成简写形式</span><br>    <span class="hljs-comment">// &quot;postcss-preset-env&quot;</span><br>  ]<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+<h6 id="资源模块类型asset-module-type"><a class="markdownIt-Anchor" href="#资源模块类型asset-module-type">#</a> 资源模块类型 (asset module type)</h6>
+<ol>
+<li>4 种新的模块类型
+<ol>
+<li><code>asset/resource</code> : 发送一个单独的文件并导出 URL, 相当于 <code>file-loader</code>  的作用<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs js">&#123;<br>  <span class="hljs-attr">test</span>:<span class="hljs-regexp">/\.(png|jpe?g|gif|svg)$/</span>,<br>  <span class="hljs-attr">type</span>:<span class="hljs-string">&quot;asset/resource&quot;</span>,<br>  <span class="hljs-attr">generator</span>: &#123;<br>    <span class="hljs-attr">filename</span>:<span class="hljs-string">&quot;img/[name].[hash:6][ext]&quot;</span><br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+附加：加载字体文件 (阿里图标库)  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs js">&#123;<br>  <span class="hljs-attr">test</span>:<span class="hljs-regexp">/\.ttf|eot|woff2?$/i</span>,<br>  <span class="hljs-attr">type</span>:<span class="hljs-string">&quot;asset/resource&quot;</span>,<br>  <span class="hljs-attr">generator</span>:&#123;<br>    <span class="hljs-attr">filename</span>:<span class="hljs-string">&quot;font/[name].[hash:6][ext]&quot;</span><br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+<li><code>asset/inline</code> : 导出一个资源 data URL, 相当于 <code>url-loader</code>  的作用<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs js">&#123;<br>  <span class="hljs-attr">test</span>:<span class="hljs-regexp">/\.(png|jpe?g|gif|svg)$/</span>,<br>  <span class="hljs-attr">type</span>:<span class="hljs-string">&quot;asset/inline&quot;</span><br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+<li><code>asset/source</code> : 导出资源的源代码，相当于 <code>raw-loader</code>  的作用</li>
+<li><code>asset</code> : 在导出一个 data URL 和发送一个单独文件之间自动选择，相当于 <code>url-loader</code>  的作用，且配置资源体积限制实现 (大小图片进行筛选)<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs js">&#123;<br>  <span class="hljs-attr">test</span>:<span class="hljs-regexp">/\.(png|jpe?g|gif|svg)$/</span>,<br>  <span class="hljs-attr">type</span>:<span class="hljs-string">&quot;asset&quot;</span>,<br>  <span class="hljs-attr">generator</span>: &#123;<br>    <span class="hljs-attr">filename</span>:<span class="hljs-string">&quot;img/[name].[hash:6][ext]&quot;</span><br>  &#125;,<br>  <span class="hljs-attr">parser</span>:&#123;<br>    &lt;!-- <span class="hljs-string">`url-loader`</span>的limit效果 --&gt;<br>    <span class="hljs-attr">dataUrlCondition</span>:&#123;<br>      <span class="hljs-attr">maxSize</span>:<span class="hljs-number">160</span> * <span class="hljs-number">1024</span><br>    &#125;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li>将图片放入对应的文件夹里面的两种方式
+<ol>
+<li>在 <code>output</code>  中进行配置<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-attr">output</span>: &#123;<br><span class="hljs-attr">filename</span>: <span class="hljs-string">&quot;bundle.js&quot;</span>,<br><span class="hljs-attr">path</span>: path.<span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">&quot;build&quot;</span>),<br><span class="hljs-attr">assetModuleFilename</span>:<span class="hljs-string">&quot;img/[name].[hash:6][ext]&quot;</span><br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+<li>在 <code>rules</code>  中配置<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs js">&#123;<br>  <span class="hljs-attr">test</span>:<span class="hljs-regexp">/\.(png|jpe?g|gif|svg)$/</span>,<br>  <span class="hljs-attr">type</span>:<span class="hljs-string">&quot;asset/resource&quot;</span>,<br>  <span class="hljs-attr">generator</span>: &#123;<br>    <span class="hljs-attr">filename</span>:<span class="hljs-string">&quot;img/[name].[hash:6][ext]&quot;</span><br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+<h6 id="plugin每一个plugin是一个类"><a class="markdownIt-Anchor" href="#plugin每一个plugin是一个类">#</a> Plugin (每一个 plugin 是一个类)</h6>
+<ol>
+<li>定义: <code>Loader</code>  用于特定模块类型进行转换； <code>Plugin</code>  用于执行更加广泛的任务 (打包优化、资源管理、环境变量注入)</li>
+<li><code>Plugin</code>
+<ol>
+<li>安装 <code>clean-webpack-plugin</code> : 修改一些配置后自动生成 dist 文件夹进行替换<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs js">&lt;!-- 第一步引入需要的plugin --&gt;<br><span class="hljs-keyword">const</span> &#123; <span class="hljs-title class_">CleanWebpackPlugin</span> &#125; = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;clean-webpack-plugin&quot;</span>);<br>&lt;!-- 第二步使用需要的plugin --&gt;<br><span class="hljs-attr">plugins</span>: [<br>  <span class="hljs-keyword">new</span> <span class="hljs-title class_">CleanWebpackPlugin</span>()<br>]<br></code></pre></td></tr></table></figure>
+</li>
+<li>安装 <code>html-webpack-plugin</code> : 根据 <code>ejs模板</code> 自动生成 <code>index.js</code>  文件，并引入相关文件；ejs 模板里面可以设置 <code>options.title</code>  属性，即为生成 index 文件的标题；自定义 HTML 模板，新建 public 文件夹，在里面新建 HTML 文件，使用 <code>template</code>  进行引入即可；自定义模板数据填充，使用 <code>&lt;% 变量 %&gt;</code> ，该方式是 ejs 模板填充数据的方式<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs js">&lt;!-- 第一步引入需要的plugin --&gt;<br><span class="hljs-keyword">const</span> &#123; <span class="hljs-title class_">CleanWebpackPlugin</span> &#125; = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;clean-webpack-plugin&quot;</span>);<br>&lt;!-- 第二步使用需要的plugin --&gt;<br><span class="hljs-attr">plugins</span>: [<br>  <span class="hljs-keyword">new</span> <span class="hljs-title class_">CleanWebpackPlugin</span>(&#123;<br>    <span class="hljs-attr">title</span>:<span class="hljs-string">&quot;自定义index文件的标题名&quot;</span>,<br>    <span class="hljs-attr">template</span>:<span class="hljs-string">&quot;./pubilc/index.html&quot;</span><br>  &#125;)<br>]<br></code></pre></td></tr></table></figure>
+</li>
+<li>安装 <code>define-plugin</code> : 解决 <code>BASE_URL的常量</code> 无法找到问题，区分开发与生产环 境，区分 mode 模式等，允许编译时创建配置的全局常量，属于 webpack 内置插件，无需安装<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs js">&lt;!-- 第一步进行引入 --&gt;<br><span class="hljs-keyword">const</span> &#123; <span class="hljs-title class_">DefinePlugin</span> &#125; = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack&quot;</span>);<br>&lt;!-- 第二步使用 --&gt;<br><span class="hljs-attr">plugins</span>: [<br>  <span class="hljs-keyword">new</span> <span class="hljs-title class_">CleanWebpackPlugin</span>(),<br>  <span class="hljs-keyword">new</span> <span class="hljs-title class_">HtmlWebpackPlugin</span>(&#123;<br>    <span class="hljs-attr">title</span>:<span class="hljs-string">&quot;XGG&quot;</span>,<br>    <span class="hljs-attr">template</span>:<span class="hljs-string">&quot;./public/index.html&quot;</span><br>  &#125;),<br>  <span class="hljs-keyword">new</span> <span class="hljs-title class_">DefinePlugin</span>(&#123;<br>    <span class="hljs-attr">BASE_URL</span>:<span class="hljs-string">&#x27;&quot;./&quot;&#x27;</span><br>  &#125;)<br>]<br></code></pre></td></tr></table></figure>
+</li>
+<li>安装 <code>copy-webpack-plugin</code> : 将指定文件夹里面的文件复制到另一个文件夹<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-attr">plugins</span>: [<br>  <span class="hljs-keyword">new</span> <span class="hljs-title class_">CopyWebpackPlugin</span>(&#123;<br>    <span class="hljs-attr">patterns</span>:[<br>      &#123;<br>        <span class="hljs-attr">from</span>:<span class="hljs-string">&quot;public&quot;</span>,<br>        <span class="hljs-comment">// 可以省略不写，默认会复制到output中生成的文件夹</span><br>        <span class="hljs-comment">// to:&quot;build&quot;,</span><br>        <span class="hljs-comment">// 可以忽略不进行复制的文件</span><br>        <span class="hljs-attr">globOptions</span>:&#123;<br>          <span class="hljs-comment">// ignoreFiles:&quot;index.js&quot;</span><br>          <span class="hljs-attr">ignore</span>:[<br>            <span class="hljs-string">&quot;**/index.html&quot;</span>,<br>            <span class="hljs-comment">// 若是Mac的话也需要忽略该文件,该文件是记录当前文件夹的状态信息</span><br>            <span class="hljs-string">&quot;**/.DS_Store&quot;</span>,<br>            <span class="hljs-string">&quot;**/test.txt&quot;</span><br>          ]<br>        &#125;<br>      &#125;<br>    ]<br>  &#125;)<br>]<br></code></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Webpack%E5%9F%BA%E7%A1%80/" class="category-chain-item">Webpack基础</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Webpack/">#Webpack</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Webpack</div>
+      <div>http://example.com/2020/05/19/7003_Webpack/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>XGG</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2020年5月19日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年4月30日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/06/01/8001_Node.js/" title="Node">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Node</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/05/15/7002_Webpack/" title="Webpack">
+                        <span class="hidden-mobile">Webpack</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <span>XGG</span> <i class="iconfont icon-love"></i> <a href="https://github.com/LuckyWishes/LuckyWishes.github.io" target="_blank" rel="nofollow noopener"><span><img src="/img/favicon.svg" srcset="/img/loading.gif" lazyload width="16" height="16" viewBox="0 0 32 32" fill="none"/></span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

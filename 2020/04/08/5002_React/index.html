@@ -1,0 +1,724 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="XGG">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="🌸  Welcome to XGG &amp; blog! 🔭  When you have eliminated the impossible,whatever remains,however improbable,must be the truth. 📫  If you get any problems when looking blog,you can find the answer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React">
+<meta property="og:url" content="http://example.com/2020/04/08/5002_React/index.html">
+<meta property="og:site_name" content="XGG&amp;Blog">
+<meta property="og:description" content="🌸  Welcome to XGG &amp; blog! 🔭  When you have eliminated the impossible,whatever remains,however improbable,must be the truth. 📫  If you get any problems when looking blog,you can find the answer">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-08T11:47:56.000Z">
+<meta property="article:modified_time" content="2023-04-30T11:43:23.851Z">
+<meta property="article:author" content="XGG">
+<meta property="article:tag" content="React">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>React - XGG&amp;Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>XGG</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/chengbao.jpeg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.01)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="React"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2020-04-08 19:47" pubdate>
+          2020年4月8日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          28 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">React</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>🌸  <span style="font-size:bold;color:purple">Welcome to XGG &amp; blog!</span><br>
+🔭  <span style="font-size:bold;color:purple">When you have eliminated the impossible,whatever remains,however improbable,must be the truth.</span><br>
+📫  <span style="font-size:initial;color:purple">If you get any problems when looking blog,you can find the answer in <a target="_blank" rel="noopener" href="https://juejin.cn/user/2784392994882045">稀土掘金</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/LuckyWishes">GitHub</a>.</span></p>
+<hr />
+<h5 id="组件通信"><a class="markdownIt-Anchor" href="#组件通信">#</a> 组件通信</h5>
+<ol>
+<li>
+<p>父子组件通信</p>
+<ol>
+<li>
+<p>父组件传递子组件数据通信</p>
+<ol>
+<li>
+<p>父组件通过 <code>属性=值</code> 的形式来传递给子组件数据</p>
+</li>
+<li>
+<p>子组件通过 <code>props</code>  参数获取父组件传递过来的数据</p>
+</li>
+<li>
+<p>类组件之间传参</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs react">class Children extends Component&#123;<br>  // 构造方法，方式一<br>  // constructor(props)&#123;<br>  //   super();<br>  //   this.props = props;<br>  // &#125;     <br>  <br>  // 构造方法，方式二<br>  // constructor(props)&#123;<br>  //   super(props);<br>  // &#125;<br>  // 构造方法，方式三<br>  // 不写，子类的默认构造方法可以省略<br>  render()&#123;<br>    const &#123; name,age,height &#125; = this.props;<br>    return (<br>      &lt;div&gt;<br>        &lt;h2&gt;子组件显示数据:&#123;name+&quot; &quot;+age+&quot; &quot;+height&#125;&lt;/h2&gt;<br>      &lt;/div&gt;<br>    )<br>  &#125;<br>&#125;<br>export default class App extends Component &#123;<br>  render() &#123;<br>    return (<br>      &lt;div&gt;<br>        &lt;Children name=&quot;why&quot; age=&quot;20&quot; height=&quot;188&quot;&gt;&lt;/Children&gt; <br>        &lt;Children name=&quot;GXX&quot; age=&quot;22&quot; height=&quot;172&quot;&gt;&lt;/Children&gt; <br>      &lt;/div&gt;<br>    )<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>函数组件之间传参</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs react">function Children(props) &#123;<br>  const &#123; name,age,height &#125; = props;<br>  return (<br>    &lt;div&gt;<br>      &lt;h2&gt;App_函数组件&lt;/h2&gt;<br>      &lt;h2&gt;&#123;name+&quot; &quot;+age+&quot; &quot;+height&#125;&lt;/h2&gt;<br>    &lt;/div&gt;<br>  )<br>&#125;<br>export default class App extends Component &#123;<br>  render() &#123;<br>    return (<br>      &lt;div&gt;<br>        &lt;Children name=&quot;why&quot; age=&quot;20&quot; height=&quot;188&quot;&gt;&lt;/Children&gt; <br>        &lt;Children name=&quot;GXX&quot; age=&quot;22&quot; height=&quot;172&quot;&gt;&lt;/Children&gt; <br>      &lt;/div&gt;<br>    )<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>组件参数类型验证</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs react">import PropTypes from &#x27;prop-types&#x27;<br>function Children(props) &#123;<br>  const &#123; name,age,height,names&#125; = props;<br>  return (<br>    &lt;div&gt;<br>      &lt;h2&gt;App_函数组件&lt;/h2&gt;<br>      &lt;h2&gt;&#123;name+&quot; &quot;+age+&quot; &quot;+height&#125;&lt;/h2&gt;<br>      &lt;ul&gt;<br>        &#123;<br>          names.map((item,index)=&gt;&#123;<br>            return &lt;li&gt;&#123;item&#125;&lt;/li&gt;<br>          &#125;)<br>        &#125;<br>      &lt;/ul&gt;<br>    &lt;/div&gt;<br>  )<br>&#125;<br>// 设置属性类型验证<br>Children.propsTypes = &#123;<br>  name:PropTypes.string.isRequired,<br>  age:PropTypes.number,<br>  height:PropTypes.number,<br>  names:PropTypes.array<br>&#125;<br>// 设置属性默认值<br>Children.defaultProps = &#123;<br>  name:&quot;XGG&quot;,<br>  age:12,//默认类型也会进行类型判断<br>  height:199,<br>  names:[&quot;123&quot;,&quot;456&quot;,&quot;789&quot;]<br>&#125;<br>// 补充：类组件的相关属性编写规范<br>class Children2 extends Component&#123;<br>  //es6中class fields写法，给类上添加属性，而非对象上<br>  static propsTypes =&#123;<br>  &#125;<br>  static defaultProps =&#123;<br>  &#125;<br>&#125;<br>Children2.propsTypes = &#123;<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li>
+<p>子组件传递父组件通信</p>
+<ol>
+<li>父组件给子组件传递一个回调函数，在子组件中调用这个函数即可</li>
+<li>子组件可以通过该回调函数向父组件传递参数</li>
+</ol>
+</li>
+<li>
+<p>模拟插槽样式</p>
+</li>
+</ol>
+</li>
+<li>
+<p>跨组件通信 (数据传递)</p>
+<ol>
+<li>按照层次依次传递： <code>Spread Attributes</code> ，可以使用<strong>属性展开符： <code>...</code> </strong>，但是此方案对于中间层会存在冗余操作</li>
+<li>使用 ReactAPI: <code>Context</code>
+<ol>
+<li><code>React.createContext</code> : 创建一个需要共享的对象，若某组件订阅 <code>Context</code>  时该组件会从距离自身最近的匹配 <code>Provider</code>  中读取到当前 <code>Context</code>  值， <code>defaultValue</code>  是组件在顶层查找过程中没有找到对应的 <code>Provider</code> , 就会使用默认值。</li>
+<li><code>context.Provider</code> : 在创建 <code>Context对象</code>  (context) 时会返回一个 <code>Provider React组件</code> ，它允许消费组件订阅 <code>Context</code>  变化， <code>Provider</code>  接收一个属性 <code>value</code>  属性传递给消费组件，一个 <code>Provider</code>  可以和多个消费组件有对应关系，多个 <code>Provider</code>  可以嵌套使用，里层会覆盖外层数据；当 <code>Provider</code>  的 <code>value</code>  值发生变化时，它内部所有的消费组件都会重新渲染</li>
+<li><code>contextType</code> : 挂载在 <code>class</code>  上的 <code>contextType</code>  属性会被重新赋值为一个由 <code>React.createContext</code>  创建的 <code>Context</code>  对象，这可以使用 <code>this.context</code>  来获取最近 <code>Context</code>  上的值；可以在任何生命周期中访问到，包括 <code>render</code>  函数</li>
+<li><code>Consumer</code> : React 组件可以订阅到 context 变化，可以在函数式组件中完成订阅 context，需要函数作为子元素，该函数接收当前的 context 值，返回一个 React 节点</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><code>events</code> （全局事件传递）</p>
+<ol>
+<li><code>npm install events</code> : 安装</li>
+<li>常用 API
+<ol>
+<li><code>eventBus对象</code> ：创建 EventEmitter 对象</li>
+<li><code>eventBus.emit(&quot;事件名称&quot;,参数列表)</code> : 发出事件</li>
+<li><code>eventBus.addListener(&quot;事件名称&quot;,监听函数)</code> : 监听事件</li>
+<li><code>eventBus.removeListener(&quot;事件名称&quot;,监听函数)</code> : 移除事件</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/React%E5%9F%BA%E7%A1%80/" class="category-chain-item">React基础</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/React/">#React</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>React</div>
+      <div>http://example.com/2020/04/08/5002_React/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>XGG</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2020年4月8日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年4月30日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/04/14/C001_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">操作系统</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/04/06/5001_React/" title="React">
+                        <span class="hidden-mobile">React</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <span>XGG</span> <i class="iconfont icon-love"></i> <a href="https://github.com/LuckyWishes/LuckyWishes.github.io" target="_blank" rel="nofollow noopener"><span><img src="/img/favicon.svg" srcset="/img/loading.gif" lazyload width="16" height="16" viewBox="0 0 32 32" fill="none"/></span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

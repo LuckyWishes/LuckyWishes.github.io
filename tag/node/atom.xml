@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>XGG&amp;Blog • Posts by &#34;node&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2020-06-14T05:47:42.000Z</updated>
+    <category term="uni-app" />
+    <category term="Git" />
+    <category term="浏览器" />
+    <category term="HTML基础" />
+    <category term="JavaScript" />
+    <category term="React" />
+    <category term="Vue" />
+    <category term="Webpack" />
+    <category term="Node" />
+    <category term="TypeScript" />
+    <category term="计算机网络" />
+    <category term="数据结构" />
+    <category term="计算机组成" />
+    <category term="操作系统" />
+    <entry>
+        <id>http://example.com/2020/06/14/8003_Node.js/</id>
+        <title>Node</title>
+        <link rel="alternate" href="http://example.com/2020/06/14/8003_Node.js/"/>
+        <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+</content>
+        <category term="Node" />
+        <updated>2020-06-14T05:47:42.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2020/06/08/8002_Node.js/</id>
+        <title>Node</title>
+        <link rel="alternate" href="http://example.com/2020/06/08/8002_Node.js/"/>
+        <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;express 框架&lt;br&gt;
+ egg 框架&lt;br&gt;
+ koa 框架&lt;/p&gt;
+</content>
+        <category term="Node" />
+        <updated>2020-06-08T07:59:44.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2020/06/01/8001_Node.js/</id>
+        <title>Node</title>
+        <link rel="alternate" href="http://example.com/2020/06/01/8001_Node.js/"/>
+        <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h5 id=&#34;node-事件循环&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#node-事件循环&#34;&gt;#&lt;/a&gt; Node 事件循环&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器中 &lt;code&gt;EventLoop即事件循环&lt;/code&gt; 是根据 HTML5 定义的规范来实现的，不同的浏览器可能会有不同的实现，而 node 中是由 &lt;code&gt;libuv库&lt;/code&gt; 现实的&lt;/li&gt;
+&lt;li&gt;微任务和宏任务
+&lt;ol&gt;
+&lt;li&gt;宏任务 (macrotask)：setTimeout、setInterval、IO 事件、setImmediate、close 事件&lt;/li&gt;
+&lt;li&gt;微任务 (microtask)：Promise 的 then 回调、process.nextTick、queueMicrotask&lt;/li&gt;
+&lt;li&gt;node 队列执行顺序
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;next tick microtask queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;other microtask queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timer queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;poll queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;check queue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;close queue&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="Node" />
+        <updated>2020-06-01T07:09:44.000Z</updated>
+    </entry>
+</feed>

@@ -1,0 +1,721 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="XGG">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="🌸  Welcome to XGG &amp; blog! 🔭  When you have eliminated the impossible,whatever remains,however improbable,must be the truth. 📫  If you get any problems when looking blog,you can find the answer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TypeScript">
+<meta property="og:url" content="http://example.com/2020/08/27/9002_TypeScript/index.html">
+<meta property="og:site_name" content="XGG&amp;Blog">
+<meta property="og:description" content="🌸  Welcome to XGG &amp; blog! 🔭  When you have eliminated the impossible,whatever remains,however improbable,must be the truth. 📫  If you get any problems when looking blog,you can find the answer">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-27T10:58:09.000Z">
+<meta property="article:modified_time" content="2023-04-30T12:04:00.517Z">
+<meta property="article:author" content="XGG">
+<meta property="article:tag" content="TypeScript">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>TypeScript - XGG&amp;Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>XGG</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/chengbao.jpeg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.01)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="TypeScript"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2020-08-27 18:58" pubdate>
+          2020年8月27日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          34 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">TypeScript</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>🌸  <span style="font-size:bold;color:purple">Welcome to XGG &amp; blog!</span><br>
+🔭  <span style="font-size:bold;color:purple">When you have eliminated the impossible,whatever remains,however improbable,must be the truth.</span><br>
+📫  <span style="font-size:initial;color:purple">If you get any problems when looking blog,you can find the answer in <a target="_blank" rel="noopener" href="https://juejin.cn/user/2784392994882045">稀土掘金</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/LuckyWishes">GitHub</a>.</span></p>
+<hr />
+<h5 id="5使用webpack打包ts代码"><a class="markdownIt-Anchor" href="#5使用webpack打包ts代码">#</a> 5. 使用 webpack 打包 ts 代码</h5>
+<ol>
+<li>
+<p><code>webpack.config.js</code>  文件配置 webpack</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 引入路径管理的包</span><br><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;path&#x27;</span>);<br><br><span class="hljs-comment">//webpack中所有的配置信息都写在module.exports中 </span><br><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = &#123;<br>  <span class="hljs-comment">// 指定入口文件路径</span><br>  <span class="hljs-attr">entry</span>:<span class="hljs-string">&#x27;./test.ts&#x27;</span>,<br><br>  <span class="hljs-comment">// 指定打包文件所在目录</span><br>  <span class="hljs-attr">output</span>:&#123;<br>    <span class="hljs-comment">// 指定打包文件的目录</span><br>    <span class="hljs-attr">path</span>:path.<span class="hljs-title function_">resolve</span>(__dirname,<span class="hljs-string">&#x27;dist&#x27;</span>),<br>    <span class="hljs-comment">// 打包后文件的名字</span><br>    <span class="hljs-attr">filename</span>:<span class="hljs-string">&quot;bundle.js&quot;</span><br>  &#125;,<br>  <span class="hljs-comment">// 指定webpack打包时要使用的模块</span><br>  <span class="hljs-attr">module</span>:&#123;<br>    <span class="hljs-comment">// 指定要加载的规则</span><br>    <span class="hljs-attr">rules</span>:[<br>      &#123;<br>        <span class="hljs-comment">// 指定规则生效的文件，使用正则语法</span><br>        <span class="hljs-attr">test</span>:<span class="hljs-regexp">/\.ts$/</span>,<span class="hljs-comment">//ts文件生效</span><br>        <span class="hljs-comment">// 要使用的loader</span><br>        <span class="hljs-attr">use</span>:<span class="hljs-string">&#x27;ts-loader&#x27;</span>,<br>        <span class="hljs-comment">// 要排除的文件</span><br>        <span class="hljs-attr">exclude</span>:<span class="hljs-regexp">/node-modules/</span><br>      &#125;<br>    ]<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+<h5 id="6面向对象"><a class="markdownIt-Anchor" href="#6面向对象">#</a> 6. 面向对象</h5>
+<ol>
+<li>在程序中把一切事物当作对象编写</li>
+</ol>
+<h5 id="7类的简介"><a class="markdownIt-Anchor" href="#7类的简介">#</a> 7. 类的简介</h5>
+<ol>
+<li>
+<p>类的实现</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> &#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span> = <span class="hljs-string">&#x27;hello&#x27;</span><br>  <span class="hljs-attr">age</span>:<span class="hljs-built_in">number</span> = <span class="hljs-number">18</span><br>  <span class="hljs-keyword">readonly</span> <span class="hljs-attr">aa</span>:<span class="hljs-built_in">number</span> = <span class="hljs-number">12</span><br>  <span class="hljs-comment">// constructor(parameters) &#123;</span><br>    <br>  <span class="hljs-comment">// &#125;</span><br>&#125;<br><span class="hljs-keyword">const</span> person = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(); <br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person);<br>person.<span class="hljs-property">aa</span> = <span class="hljs-number">18</span> <span class="hljs-comment">//报错，只读属性，不能修改。</span><br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>属性分为两种</p>
+<ol>
+<li>
+<p>实例属性：直接定义的属性，需要通过对象的实例去访问。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span>&#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span> = <span class="hljs-string">&#x27;hello&#x27;</span><br>&#125;<br><span class="hljs-keyword">const</span> person = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>();<br>person.<span class="hljs-property">name</span>;<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>类属性 | 静态属性：使用 <code>static</code>  关键字修饰的属性，直接通过类去访问。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span>&#123;<br>  <span class="hljs-keyword">static</span> <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span> = <span class="hljs-string">&#x27;test&#x27;</span><br>&#125;<br><span class="hljs-title class_">Person</span>.<span class="hljs-property">name</span>;<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>readonly</code> : 只读属性，无法修改</p>
+</li>
+</ol>
+</li>
+<li>
+<p>方法分为两种</p>
+<ol>
+<li>实例方法：需要使用对象的实例去访问。</li>
+<li>类方法 | 静态方法：直接使用类去访问。</li>
+</ol>
+</li>
+<li>
+<p><code>constructor</code> : 称为构造函数，构造函数会在创建对象时调用。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Per</span> &#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span> = <span class="hljs-string">&#x27;王二&#x27;</span><br>  age = <span class="hljs-number">12</span><br>  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name:<span class="hljs-built_in">string</span>,age:<span class="hljs-built_in">number</span></span>) &#123;<br>    <span class="hljs-comment">// 在实例方法中，this就表示当前的实例</span><br>    <span class="hljs-comment">// 在构造函数中当前对象就是新建对象</span><br>    <span class="hljs-comment">// 可以通过this向新建对象中添加属性</span><br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age<br>  &#125;<br>  <span class="hljs-title function_">speak</span>(<span class="hljs-params"></span>)&#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;hahahha&quot;</span>);<br>    <span class="hljs-comment">// 在方法中可以使用this来表示当前调用方法的对象</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>);<br>  &#125;<br>&#125;<br><span class="hljs-keyword">const</span> per = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Per</span>(<span class="hljs-string">&#x27;张三&#x27;</span>,<span class="hljs-number">30</span>);<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(per);<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(per.<span class="hljs-property">name</span>);<br>per.<span class="hljs-title function_">speak</span>();<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+<h5 id="8继承"><a class="markdownIt-Anchor" href="#8继承">#</a> 8. 继承</h5>
+<ol>
+<li>
+<p>简介</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Animal</span> &#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span><br>  <span class="hljs-attr">age</span>:<span class="hljs-built_in">number</span><br>  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name:<span class="hljs-built_in">string</span>,age:<span class="hljs-built_in">number</span></span>) &#123;<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age<br>  &#125;<br>  <span class="hljs-title function_">talk</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;动物在说话!&quot;</span>);<br>    <br>  &#125;<br>&#125;<br><span class="hljs-comment">//子类继承父类，Animal为父类，Dog为子类，子类将会拥有父类所有的属性和方法</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Animal</span>&#123;<br>  <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>)&#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">$&#123;<span class="hljs-variable language_">this</span>.name&#125;</span>在奔跑!`</span>);<br>  &#125;<br>  <span class="hljs-comment">// 子类将会把父类中相同的方法覆盖掉，被称为重写</span><br>  <span class="hljs-title function_">talk</span>(<span class="hljs-params"></span>)&#123;<br>      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`汪汪汪`</span>);<br>  &#125;<br>&#125;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Cat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Animal</span>&#123;<br>  <span class="hljs-title function_">talk</span>(<span class="hljs-params"></span>)&#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`喵喵喵`</span>);<br>  &#125;<br>&#125;<br><span class="hljs-keyword">const</span> dog = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Dog</span>(<span class="hljs-string">&#x27;小狗&#x27;</span>,<span class="hljs-number">2</span>);<br><span class="hljs-keyword">const</span> cat = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Cat</span>(<span class="hljs-string">&#x27;小猫&#x27;</span>,<span class="hljs-number">4</span>);<br>dog.<span class="hljs-title function_">talk</span>();<br>cat.<span class="hljs-title function_">talk</span>();<br>dog.<span class="hljs-title function_">run</span>();<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>super</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Ani</span> &#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span><br>  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name:<span class="hljs-built_in">string</span></span>)&#123;<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name<br>  &#125;<br>  <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>)&#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`动物在说话!000`</span>);<br>  &#125;<br>&#125;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Doff</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Ani</span> &#123;<br>  <span class="hljs-attr">age</span>:<span class="hljs-built_in">number</span>;<br>  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name:<span class="hljs-built_in">string</span>,age:<span class="hljs-built_in">number</span></span>)&#123;<br>    <span class="hljs-comment">// 若子类中写构造函数，则把父类中构造函数覆盖（重写），在子类构造函数中必须对父类中构造函数进行调用</span><br>    <span class="hljs-variable language_">super</span>(name);<span class="hljs-comment">//调用父类中构造函数</span><br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age<br>  &#125;<br>  <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>)&#123;<br>    <span class="hljs-comment">// 在类的方法中super就表示当前类的父类</span><br>      <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">sayHello</span>();<br>  &#125;<br>&#125;<br><span class="hljs-keyword">const</span> doff = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Doff</span>(<span class="hljs-string">&#x27;旺财&#x27;</span>,<span class="hljs-number">3</span>);<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(doff);<br>doff.<span class="hljs-title function_">sayHello</span>();<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>抽象类</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-comment">/* </span><br><span class="hljs-comment">  以abstract开头的类是抽象类，</span><br><span class="hljs-comment">  抽象类不能用来创建对象，</span><br><span class="hljs-comment">  抽象类就是专门用来被继承的类。</span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Animala</span> &#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span><br>  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name:<span class="hljs-built_in">string</span></span>) &#123;<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name<br>  &#125;<br>  <span class="hljs-comment">/* </span><br><span class="hljs-comment">    抽象方法使用abstract开头，没有方法体，</span><br><span class="hljs-comment">    抽象方法只能定义在抽象类中，子类必须对抽象方法进行重写</span><br><span class="hljs-comment">   */</span><br>  <span class="hljs-keyword">abstract</span> <span class="hljs-title function_">sayHello</span>():<span class="hljs-built_in">void</span><br>&#125;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Dogg</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Animala</span>&#123;<br>  <span class="hljs-attr">age</span>:<span class="hljs-built_in">number</span><br>  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name:<span class="hljs-built_in">string</span>,age:<span class="hljs-built_in">number</span></span>) &#123;<br>    <span class="hljs-variable language_">super</span>(name);<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;<br>  &#125;<br>  <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>)&#123;<br>      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">$&#123;<span class="hljs-variable language_">this</span>.name&#125;</span>说话!`</span>);<br>  &#125;<br>&#125;<br><span class="hljs-keyword">const</span> dogg = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Dogg</span>(<span class="hljs-string">&#x27;旺财1&#x27;</span>,<span class="hljs-number">2</span>);<br>dogg.<span class="hljs-title function_">sayHello</span>();<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+<h5 id="9-接口"><a class="markdownIt-Anchor" href="#9-接口">#</a> 9. 接口</h5>
+<ol>
+<li>
+<p>接口的使用</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-comment">// 类型声明(不能重复声明)，描述一个对象的类型</span><br><span class="hljs-keyword">type</span> myType = &#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span>,<br>  <span class="hljs-attr">age</span>:<span class="hljs-built_in">number</span><br>&#125;;<br><span class="hljs-keyword">const</span> <span class="hljs-attr">obj</span>:myType = &#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-string">&#x27;test&#x27;</span>,<br>  <span class="hljs-attr">age</span>:<span class="hljs-number">12</span><br>&#125;<br><span class="hljs-comment">// 接口用来定义一个类结构，定义类中应该包含哪些属性和方法</span><br><span class="hljs-comment">// 同时接口也可以当成类型声明使用(可以重复声明)</span><br><span class="hljs-keyword">interface</span> myInterface&#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span>,<br>  <span class="hljs-attr">age</span>:<span class="hljs-built_in">number</span><br>&#125;<br><span class="hljs-keyword">const</span> <span class="hljs-attr">object</span>:myInterface = &#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-string">&#x27;demo&#x27;</span>,<br>  <span class="hljs-attr">age</span>:<span class="hljs-number">12</span><br>&#125;<br><span class="hljs-comment">// 接口可以在定义类时限制类的结构，</span><br><span class="hljs-comment">// 接口中所有的属性都不能有实际的值，</span><br><span class="hljs-comment">// 接口只定义对象的结构，而不考虑实际值，在接口中所有的方法都是抽象方法</span><br><span class="hljs-keyword">interface</span> myInter&#123;<br>  <span class="hljs-attr">name</span>:<span class="hljs-built_in">string</span>;<br>  <span class="hljs-attr">age</span>:<span class="hljs-built_in">number</span>;<br>  <span class="hljs-title function_">sayHello</span>():<span class="hljs-built_in">void</span>;<br>&#125;<br><span class="hljs-comment">// 定义类时可以使类去实现一个接口,实现接口就是使类满足接口的要求</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyClass</span> <span class="hljs-keyword">implements</span> myInter&#123;<br>  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;<br>  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;<br>  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name:<span class="hljs-built_in">string</span>,age:<span class="hljs-built_in">number</span></span>)&#123;<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age<br>  &#125;<br>  <span class="hljs-title function_">sayHello</span>(): <span class="hljs-built_in">void</span> &#123;<br>      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`hello !`</span>);<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li>
+</ol>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/TypeScript%E5%9F%BA%E7%A1%80/" class="category-chain-item">TypeScript基础</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/TypeScript/">#TypeScript</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>TypeScript</div>
+      <div>http://example.com/2020/08/27/9002_TypeScript/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>XGG</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2020年8月27日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年4月30日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/09/01/9003_TypeScript/" title="TypeScript">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">TypeScript</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/08/21/9001_TypeScript/" title="TypeScript">
+                        <span class="hidden-mobile">TypeScript</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <span>XGG</span> <i class="iconfont icon-love"></i> <a href="https://github.com/LuckyWishes/LuckyWishes.github.io" target="_blank" rel="nofollow noopener"><span><img src="/img/favicon.svg" srcset="/img/loading.gif" lazyload width="16" height="16" viewBox="0 0 32 32" fill="none"/></span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

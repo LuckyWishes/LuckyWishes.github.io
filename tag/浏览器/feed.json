@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "XGG&Blog • All posts by \"浏览器\" tag",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2022/03/13/11001_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/",
+            "url": "http://example.com/2022/03/13/11001_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/",
+            "title": "浏览器基础",
+            "date_published": "2022-03-13T02:23:44.000Z",
+            "content_html": "<p>🌸  <span style=\"font-size:bold;color:purple\">Welcome to XGG &amp; blog!</span><br>\n🔭  <span style=\"font-size:bold;color:purple\">When you have eliminated the impossible,whatever remains,however improbable,must be the truth.</span><br>\n📫  <span style=\"font-size:initial;color:purple\">If you get any problems when looking blog,you can find the answer in <a href=\"https://juejin.cn/user/2784392994882045\">稀土掘金</a> or you can ask me on <a href=\"https://github.com/LuckyWishes\">GitHub</a>.</span></p>\n<hr />\n<h5 id=\"从地址栏输入地址到显示页面过程浏览器做什么事情\"><a class=\"markdownIt-Anchor\" href=\"#从地址栏输入地址到显示页面过程浏览器做什么事情\">#</a> 从地址栏输入地址到显示页面过程，浏览器做什么事情</h5>\n<ul>\n<li>导航是加载网页的第一步，它指的是当用户通过点击一个链接、在浏览器地址栏中输入一个网址、提交一个表格等方式请求一个网页时发生的过程</li>\n<li>域名系统 (DNS) 查询，将域名转换为对应的 IP 地址，查找成功返回 IP 地址，查找不成功 DNS 服务器返回错误信息，在第一次查询后，IP 地址可能会被缓存一段时间，所以下次访问同一个网站会更快，因为不需要进行 DNS 查询 (DNS 查询只发生在我们第一次访问一个网站时)</li>\n<li>三次握手进行 TCP 连接，信息传输</li>\n<li>TLS 协商，对于通过 HTTPS 建立的安全连接，需要进行另一次握手，该握手 (TLS 协商) 决定了哪种加密方式将被用于加密通信，验证服务器，并在开始实际的数据传输之前建立一个安全的连接</li>\n<li></li>\n</ul>\n",
+            "tags": [
+                "浏览器"
+            ]
+        },
+        {
+            "id": "http://example.com/2022/03/11/11002_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/",
+            "url": "http://example.com/2022/03/11/11002_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/",
+            "title": "浏览器基础",
+            "date_published": "2022-03-11T01:39:44.000Z",
+            "content_html": "<p>🌸  <span style=\"font-size:bold;color:purple\">Welcome to XGG &amp; blog!</span><br>\n🔭  <span style=\"font-size:bold;color:purple\">When you have eliminated the impossible,whatever remains,however improbable,must be the truth.</span><br>\n📫  <span style=\"font-size:initial;color:purple\">If you get any problems when looking blog,you can find the answer in <a href=\"https://juejin.cn/user/2784392994882045\">稀土掘金</a> or you can ask me on <a href=\"https://github.com/LuckyWishes\">GitHub</a>.</span></p>\n<hr />\n<h5 id=\"三次握手\"><a class=\"markdownIt-Anchor\" href=\"#三次握手\">#</a> 三次握手</h5>\n<h5 id=\"四次挥手\"><a class=\"markdownIt-Anchor\" href=\"#四次挥手\">#</a> 四次挥手</h5>\n<h5 id=\"浏览器缓存-协商缓存-强制缓存\"><a class=\"markdownIt-Anchor\" href=\"#浏览器缓存-协商缓存-强制缓存\">#</a> 浏览器缓存、协商缓存、强制缓存</h5>\n<h5 id=\"http不同版本\"><a class=\"markdownIt-Anchor\" href=\"#http不同版本\">#</a> http 不同版本</h5>\n<h5 id=\"tcp\"><a class=\"markdownIt-Anchor\" href=\"#tcp\">#</a> tcp</h5>\n<h5 id=\"不同状态码\"><a class=\"markdownIt-Anchor\" href=\"#不同状态码\">#</a> 不同状态码</h5>\n<h5 id=\"长短轮询-长短连接\"><a class=\"markdownIt-Anchor\" href=\"#长短轮询-长短连接\">#</a> 长短轮询、长短连接</h5>\n<h5 id=\"xss攻击类型-如何防御\"><a class=\"markdownIt-Anchor\" href=\"#xss攻击类型-如何防御\">#</a> XSS 攻击，类型、如何防御</h5>\n<h5 id=\"csrf攻击类型-如何防御\"><a class=\"markdownIt-Anchor\" href=\"#csrf攻击类型-如何防御\">#</a> CSRF 攻击，类型、如何防御</h5>\n<h5 id=\"cookie\"><a class=\"markdownIt-Anchor\" href=\"#cookie\">#</a> Cookie</h5>\n<h5 id=\"ssr与csr\"><a class=\"markdownIt-Anchor\" href=\"#ssr与csr\">#</a> SSR 与 CSR</h5>\n<h5 id=\"引起前端安全的问题有哪些\"><a class=\"markdownIt-Anchor\" href=\"#引起前端安全的问题有哪些\">#</a> 引起前端安全的问题有哪些</h5>\n<h5 id=\"浏览器内核\"><a class=\"markdownIt-Anchor\" href=\"#浏览器内核\">#</a> 浏览器内核</h5>\n",
+            "tags": [
+                "浏览器"
+            ]
+        }
+    ]
+}

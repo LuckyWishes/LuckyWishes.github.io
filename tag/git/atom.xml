@@ -3,16 +3,73 @@
     <id>http://example.com</id>
     <title>XGG&amp;Blog • Posts by &#34;git&#34; tag</title>
     <link href="http://example.com" />
-    <updated>2021-03-19T12:42:30.000Z</updated>
+    <updated>2019-02-12T02:14:10.000Z</updated>
+    <category term="uni-app" />
     <category term="Git" />
+    <category term="浏览器" />
     <category term="HTML基础" />
     <category term="JavaScript" />
     <category term="React" />
     <category term="Vue" />
+    <category term="Webpack" />
+    <category term="Node" />
+    <category term="TypeScript" />
+    <category term="计算机网络" />
+    <category term="数据结构" />
+    <category term="计算机组成" />
+    <category term="操作系统" />
     <entry>
-        <id>http://example.com/2021/03/19/Git/</id>
+        <id>http://example.com/2019/02/12/1002_Git/</id>
         <title>Git常用命令</title>
-        <link rel="alternate" href="http://example.com/2021/03/19/Git/"/>
+        <link rel="alternate" href="http://example.com/2019/02/12/1002_Git/"/>
+        <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;11-查看提交历史&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-查看提交历史&#34;&gt;#&lt;/a&gt; 11、查看提交历史；&lt;/h3&gt;
+&lt;p&gt;git reflog&lt;br&gt;
+git 仓库组成：&lt;br&gt;
+Workspace：开发者工作区，也就是你当前写代码的目录，它一般保持的是最新仓库代码。&lt;br&gt;
+Index / Stage：缓存区，最早叫 Stage，现在新版本已经改成 index，位于.git 目录中，它用来存放临时动作，比如我们做了 git add 或者 git rm，都是把文件提交到缓存区，这是可以撤销的，然后在通过 git commit 将缓存区的内容提交到本地仓库&lt;br&gt;
+ Repository：仓库区，是仓库代码，你所有的提交都在这里，git 会保存好每一个历史版本，存放在仓库区，它可以是服务端的也可以是本地的，因为在分布式中，任何人都可以是主仓库。&lt;br&gt;
+Remote：远程仓库，只能是别的电脑上的仓库，即服务器仓库。&lt;/p&gt;
+&lt;h3 id=&#34;12-创建分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12-创建分支&#34;&gt;#&lt;/a&gt; 12、创建分支；&lt;/h3&gt;
+&lt;p&gt;git checkout -b 分支名&lt;br&gt;
+等价于&lt;br&gt;
+ git branch 分支名&lt;br&gt;
+ git checkout 分支名&lt;/p&gt;
+&lt;h3 id=&#34;13-查看当前分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#13-查看当前分支&#34;&gt;#&lt;/a&gt; 13、查看当前分支；&lt;/h3&gt;
+&lt;p&gt;git branch&lt;/p&gt;
+&lt;h3 id=&#34;14-切换分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#14-切换分支&#34;&gt;#&lt;/a&gt; 14、切换分支；&lt;/h3&gt;
+&lt;p&gt;git checkout&lt;/p&gt;
+&lt;h3 id=&#34;15-合并分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#15-合并分支&#34;&gt;#&lt;/a&gt; 15、合并分支；&lt;/h3&gt;
+&lt;p&gt;git merge 分支名&lt;/p&gt;
+&lt;h3 id=&#34;16-查看当前所有分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#16-查看当前所有分支&#34;&gt;#&lt;/a&gt; 16、查看当前所有分支；&lt;/h3&gt;
+&lt;p&gt;git branch -a&lt;/p&gt;
+&lt;h3 id=&#34;17-删除本地分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#17-删除本地分支&#34;&gt;#&lt;/a&gt; 17、删除本地分支；&lt;/h3&gt;
+&lt;p&gt;git branch -D 分支名&lt;/p&gt;
+&lt;h3 id=&#34;18-删除远程分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#18-删除远程分支&#34;&gt;#&lt;/a&gt; 18、删除远程分支；&lt;/h3&gt;
+&lt;p&gt;git push origin --delete 分支名&lt;/p&gt;
+&lt;h3 id=&#34;19-本地仓库与远程仓库关联&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#19-本地仓库与远程仓库关联&#34;&gt;#&lt;/a&gt; 19、本地仓库与远程仓库关联；&lt;/h3&gt;
+&lt;p&gt;git remote add origin 仓库地址&lt;/p&gt;
+&lt;h3 id=&#34;20-推送到远程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-推送到远程&#34;&gt;#&lt;/a&gt; 20、推送到远程；&lt;/h3&gt;
+&lt;p&gt;git push -u origin 分支仓库名&lt;/p&gt;
+&lt;h3 id=&#34;20-查看本地分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看本地分支&#34;&gt;#&lt;/a&gt; 20、查看本地分支；&lt;/h3&gt;
+&lt;p&gt;git branch&lt;/p&gt;
+&lt;h3 id=&#34;20-查看本地和远程仓库的所有分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看本地和远程仓库的所有分支&#34;&gt;#&lt;/a&gt; 20、查看本地和远程仓库的所有分支；&lt;/h3&gt;
+&lt;p&gt;git branch -a&lt;/p&gt;
+&lt;h3 id=&#34;20-查看远程仓库的分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看远程仓库的分支&#34;&gt;#&lt;/a&gt; 20、查看远程仓库的分支&lt;/h3&gt;
+&lt;p&gt;git branch -r&lt;/p&gt;
+&lt;h3 id=&#34;20-查看本地库已经关联的远程仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看本地库已经关联的远程仓库&#34;&gt;#&lt;/a&gt; 20、查看本地库已经关联的远程仓库&lt;/h3&gt;
+&lt;p&gt;git remote -v&lt;/p&gt;
+</content>
+        <category term="Git" />
+        <updated>2019-02-12T02:14:10.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2019/02/11/1001_Git/</id>
+        <title>Git常用命令</title>
+        <link rel="alternate" href="http://example.com/2019/02/11/1001_Git/"/>
         <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
@@ -65,44 +122,8 @@ A：未修改&lt;br&gt;
 &lt;p&gt;git log filename&lt;/p&gt;
 &lt;h3 id=&#34;10-删除文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10-删除文件&#34;&gt;#&lt;/a&gt; 10、删除文件；&lt;/h3&gt;
 &lt;p&gt;git rm 文件名&lt;/p&gt;
-&lt;h3 id=&#34;11-查看提交历史&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-查看提交历史&#34;&gt;#&lt;/a&gt; 11、查看提交历史；&lt;/h3&gt;
-&lt;p&gt;git reflog&lt;br&gt;
-git 仓库组成：&lt;br&gt;
-Workspace：开发者工作区，也就是你当前写代码的目录，它一般保持的是最新仓库代码。&lt;br&gt;
-Index / Stage：缓存区，最早叫 Stage，现在新版本已经改成 index，位于.git 目录中，它用来存放临时动作，比如我们做了 git add 或者 git rm，都是把文件提交到缓存区，这是可以撤销的，然后在通过 git commit 将缓存区的内容提交到本地仓库&lt;br&gt;
- Repository：仓库区，是仓库代码，你所有的提交都在这里，git 会保存好每一个历史版本，存放在仓库区，它可以是服务端的也可以是本地的，因为在分布式中，任何人都可以是主仓库。&lt;br&gt;
-Remote：远程仓库，只能是别的电脑上的仓库，即服务器仓库。&lt;/p&gt;
-&lt;h3 id=&#34;12-创建分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12-创建分支&#34;&gt;#&lt;/a&gt; 12、创建分支；&lt;/h3&gt;
-&lt;p&gt;git checkout -b 分支名&lt;br&gt;
-等价于&lt;br&gt;
- git branch 分支名&lt;br&gt;
- git checkout 分支名&lt;/p&gt;
-&lt;h3 id=&#34;13-查看当前分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#13-查看当前分支&#34;&gt;#&lt;/a&gt; 13、查看当前分支；&lt;/h3&gt;
-&lt;p&gt;git branch&lt;/p&gt;
-&lt;h3 id=&#34;14-切换分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#14-切换分支&#34;&gt;#&lt;/a&gt; 14、切换分支；&lt;/h3&gt;
-&lt;p&gt;git checkout&lt;/p&gt;
-&lt;h3 id=&#34;15-合并分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#15-合并分支&#34;&gt;#&lt;/a&gt; 15、合并分支；&lt;/h3&gt;
-&lt;p&gt;git merge 分支名&lt;/p&gt;
-&lt;h3 id=&#34;16-查看当前所有分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#16-查看当前所有分支&#34;&gt;#&lt;/a&gt; 16、查看当前所有分支；&lt;/h3&gt;
-&lt;p&gt;git branch -a&lt;/p&gt;
-&lt;h3 id=&#34;17-删除本地分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#17-删除本地分支&#34;&gt;#&lt;/a&gt; 17、删除本地分支；&lt;/h3&gt;
-&lt;p&gt;git branch -D 分支名&lt;/p&gt;
-&lt;h3 id=&#34;18-删除远程分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#18-删除远程分支&#34;&gt;#&lt;/a&gt; 18、删除远程分支；&lt;/h3&gt;
-&lt;p&gt;git push origin --delete 分支名&lt;/p&gt;
-&lt;h3 id=&#34;19-本地仓库与远程仓库关联&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#19-本地仓库与远程仓库关联&#34;&gt;#&lt;/a&gt; 19、本地仓库与远程仓库关联；&lt;/h3&gt;
-&lt;p&gt;git remote add origin 仓库地址&lt;/p&gt;
-&lt;h3 id=&#34;20-推送到远程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-推送到远程&#34;&gt;#&lt;/a&gt; 20、推送到远程；&lt;/h3&gt;
-&lt;p&gt;git push -u origin 分支仓库名&lt;/p&gt;
-&lt;h3 id=&#34;20-查看本地分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看本地分支&#34;&gt;#&lt;/a&gt; 20、查看本地分支；&lt;/h3&gt;
-&lt;p&gt;git branch&lt;/p&gt;
-&lt;h3 id=&#34;20-查看本地和远程仓库的所有分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看本地和远程仓库的所有分支&#34;&gt;#&lt;/a&gt; 20、查看本地和远程仓库的所有分支；&lt;/h3&gt;
-&lt;p&gt;git branch -a&lt;/p&gt;
-&lt;h3 id=&#34;20-查看远程仓库的分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看远程仓库的分支&#34;&gt;#&lt;/a&gt; 20、查看远程仓库的分支&lt;/h3&gt;
-&lt;p&gt;git branch -r&lt;/p&gt;
-&lt;h3 id=&#34;20-查看本地库已经关联的远程仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-查看本地库已经关联的远程仓库&#34;&gt;#&lt;/a&gt; 20、查看本地库已经关联的远程仓库&lt;/h3&gt;
-&lt;p&gt;git remote -v&lt;/p&gt;
 </content>
         <category term="Git" />
-        <updated>2021-03-19T12:42:30.000Z</updated>
+        <updated>2019-02-11T11:52:20.000Z</updated>
     </entry>
 </feed>
