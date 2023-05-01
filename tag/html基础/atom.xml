@@ -14,10 +14,11 @@
     <category term="Webpack" />
     <category term="Node" />
     <category term="TypeScript" />
+    <category term="计算机网络" />
     <category term="数据结构" />
     <category term="操作系统" />
-    <category term="计算机网络" />
     <category term="计算机组成" />
+    <category term="Linux" />
     <entry>
         <id>http://example.com/2018/11/25/3001_CSS/</id>
         <title>CSS基础</title>
