@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "XGG&Blog • All posts by \"node\" tag",
+    "title": "XGG • All posts by \"node\" tag",
     "description": "",
     "home_page_url": "http://example.com",
     "items": [
@@ -9,7 +9,7 @@
             "url": "http://example.com/2020/06/14/8003_Node.js/",
             "title": "Node",
             "date_published": "2020-06-14T05:47:42.000Z",
-            "content_html": "<p>🌸  <span style=\"font-size:bold;color:purple\">Welcome to XGG &amp; blog!</span><br>\n🔭  <span style=\"font-size:bold;color:purple\">When you have eliminated the impossible,whatever remains,however improbable,must be the truth.</span><br>\n📫  <span style=\"font-size:initial;color:purple\">If you get any problems when looking blog,you can find the answer in <a href=\"https://juejin.cn/user/2784392994882045\">稀土掘金</a> or you can ask me on <a href=\"https://github.com/LuckyWishes\">GitHub</a>.</span></p>\n<hr />\n",
+            "content_html": "<h2 id=\"title-uni-appcategories-基础知识\"><a class=\"markdownIt-Anchor\" href=\"#title-uni-appcategories-基础知识\">#</a> title: uni-app<br>\ncategories: § 基础知识 §</h2>\n<p>🌸  <span style=\"font-size:bold;color:purple\">您好，欢迎您的阅读，等君久矣，愿与君畅谈.</span><br>\n🔭  <span style=\"font-size:bold;color:purple\">§ 始于颜值 § 陷于才华 § 忠于人品 §</span><br>\n📫  <span style=\"font-size:initial;color:purple\">希望我们可以进一步交流，共同学习，共同探索未知的技术世界 <a href=\"https://juejin.cn/user/2784392994882045\">稀土掘金</a> OR <a href=\"https://github.com/LuckyWishes\">GitHub</a>.</span></p>\n<hr />\n",
             "tags": [
                 "Node"
             ]

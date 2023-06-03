@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>XGG&amp;Blog • Posts by &#34;javascript&#34; tag</title>
+        <title>XGG • Posts by &#34;javascript&#34; tag</title>
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
@@ -18,7 +18,6 @@
         <category>Node</category>
         <category>TypeScript</category>
         <category>计算机网络</category>
-        <category>数据结构</category>
         <category>操作系统</category>
         <category>计算机组成</category>
         <category>Linux</category>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://example.com</id>
-    <title>XGG&amp;Blog • Posts by &#34;one a day&#34; category</title>
+    <title>XGG • Posts by &#34;one a day&#34; category</title>
     <link href="http://example.com" />
     <updated>2018-11-25T13:02:36.000Z</updated>
     <category term="uni-app" />
@@ -15,7 +15,6 @@
     <category term="Node" />
     <category term="TypeScript" />
     <category term="计算机网络" />
-    <category term="数据结构" />
     <category term="操作系统" />
     <category term="计算机组成" />
     <category term="Linux" />

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>XGG&amp;Blog</title>
+        <title>XGG</title>
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 16 Feb 2023 18:23:20 +0800</pubDate>
-        <lastBuildDate>Thu, 16 Feb 2023 18:23:20 +0800</lastBuildDate>
+        <pubDate>Fri, 28 Apr 2023 15:07:43 +0800</pubDate>
+        <lastBuildDate>Fri, 28 Apr 2023 15:07:43 +0800</lastBuildDate>
         <category>uni-app</category>
         <category>Git</category>
         <category>浏览器</category>
@@ -18,17 +18,429 @@
         <category>Node</category>
         <category>TypeScript</category>
         <category>计算机网络</category>
-        <category>数据结构</category>
         <category>操作系统</category>
         <category>计算机组成</category>
         <category>Linux</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/04/28/B001_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+            <title></title>
+            <link>http://example.com/2023/04/28/B001_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+            <pubDate>Fri, 28 Apr 2023 15:07:43 +0800</pubDate>
+            <description><![CDATA[ &lt;hr&gt;
+&lt;p&gt;title: 数据结构&lt;br&gt;
+ categories: § 基础知识 §&lt;br&gt;
+date: 2020/02/21 06:39:44&lt;br&gt;
+tags: 数据结构&lt;br&gt;
+ categories: 数据结构基础&lt;br&gt;
+ comments: true&lt;/p&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;数据结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据结构&#34;&gt;#&lt;/a&gt; 数据结构&lt;/h2&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h5 id=&#34;1绪论&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1绪论&#34;&gt;#&lt;/a&gt; 1. 绪论&lt;/h5&gt;
+&lt;h6 id=&#34;1绪论数据结构介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1绪论数据结构介绍&#34;&gt;#&lt;/a&gt; 1. 绪论–数据结构介绍&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;数据结构学习内容表述
+&lt;ol&gt;
+&lt;li&gt;如何使用程序代码把现实世界的问题信息化&lt;/li&gt;
+&lt;li&gt;如何使用计算机高效的处理这些信息从而创造价值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;发展阶段：人类文明–&amp;gt; 农业革命–&amp;gt; 工业革命–&amp;gt; 信息革命&lt;/li&gt;
+&lt;li&gt;关于计算机联系图解&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;![image-20220621090912904](/Users/xiaoyunfei/Library/Application Support/typora-user-images/image-20220621090912904.png)&lt;/p&gt;
+&lt;h6 id=&#34;2绪论概念理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2绪论概念理解&#34;&gt;#&lt;/a&gt; 2. 绪论–概念理解&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;数据结构基本概念&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;数据：数据是信息的载体，是描述客观事物属性的数、字符及所有能输入到计算机中并被计算机程序识别和处理的符号的集合。数据是计算机程序加工的原料&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据元素：数据元素是数据的基本单位，通常作为一个整体进行考虑和处理&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据项：一个数据元素可由若干数据项组成，数据项是构成数据元素的不可分割的最小单位&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据对象：数据对象是具有相同性质的数据元素的集合，是数据的一个子集（数据元素描述的东西具有相同的性质）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据结构：数据结构是相互之间存在一种或多种特定关系的数据元素的集合。(数据元素之间的关系)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据类型：数据类型是一个值的集合和定义在此集合上的一组操作的总称。如原子类型，其值不可再分的数据类型；结构类型，其值可以再分解为若干成分（分量）的数据类型&lt;/p&gt;
+&lt;p&gt;![image-20220621095124394](/Users/xiaoyunfei/Library/Application Support/typora-user-images/image-20220621095124394.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;抽象数据类型 (Abstract Data Type,ADT)：抽象数据组织及与之相关的操作。ADT 用数学化的语言定义数据的逻辑结构、定义运算。&lt;strong&gt;抽象数据类型定义了一个数据结构&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据结构的三要素&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;逻辑结构
+&lt;ol&gt;
+&lt;li&gt;集合结构：各个元素同属一个集合，别无其他关系&lt;/li&gt;
+&lt;li&gt;线性结构：数据元素之间是一对一的关系。除了第一个元素，所有元素都有唯一前驱；除了最后一个元素，所有元素都有唯一后继&lt;/li&gt;
+&lt;li&gt;树形结构：数据元素之间是一对多的关系&lt;/li&gt;
+&lt;li&gt;图状结构 (网状结构)：数据元素之间是多对多的关系&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;数据运算：针对于某种逻辑结构，结合实际需求，定义基本运算&lt;/li&gt;
+&lt;li&gt;物理结构 (存储结构)：使用计算机表示数据元素之间的逻辑关系
+&lt;ol&gt;
+&lt;li&gt;顺序存储：把逻辑上相邻的元素存储在物理位置上也相邻的存储单元中，元素之间的关系由存储单元的邻接关系来体现&lt;/li&gt;
+&lt;li&gt;链式存储：逻辑上相邻的元素在物理位置上可以不相邻，借助指示元素存储地址的指针来表示元素之间的逻辑关系&lt;/li&gt;
+&lt;li&gt;索引存储：在存储元素信息的同时，还建立附加的索引表。索引表中的每项称为索引项，索引项的一般形式是（关键字，地址）&lt;/li&gt;
+&lt;li&gt;散列存储：根据元素的关键字直接计算出该元素的存储地址，又称哈希（Hash）存储&lt;/li&gt;
+&lt;li&gt;非顺序存储 (离散存储)：链式存储、索引存储、散列存储&lt;/li&gt;
+&lt;li&gt;若采用顺序存储，则各个数据元素在物理上必须是连续的；若采用非顺序存储，则各个数据元素在物理上可以是离散的。数据的存储结构会影响存储空间分配的方便程度，也会影响对数据运算的速度&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;定义一种数据结构包括逻辑结构、数据运算，如何使用计算机实现这种数据结构主要讲的是物理结构&lt;/li&gt;
+&lt;li&gt;运算的定义是针对逻辑结构的，指出运算的功能；运算的实现是针对存储结构的，指出运算的具体操作步骤&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;算法：对特定问题求解步骤的一种描述，它是指令的有限序列，其中的每条指令表示一个或多个操作&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;程序 = 数据结构 + 算法&lt;/li&gt;
+&lt;li&gt;算法的特性
+&lt;ol&gt;
+&lt;li&gt;有穷性：一个算法必须总在执行有穷步之后结束，且每一步都可在有穷时间内完成。算法必须是有穷的，而程序可以是无穷的（&lt;strong&gt;死循环不是算法&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;确定性：算法中每条指令必须有确切的含义，对于相同的输入只能得出相同的输出&lt;/li&gt;
+&lt;li&gt;可行性：算法中描述的操作都可以通过已经实现的基本运算执行有限次来实现&lt;/li&gt;
+&lt;li&gt;输入：一个算法有零个或多个输入，这些输入取自于某个特定的对象的集合&lt;/li&gt;
+&lt;li&gt;输出：一个算法有一个或多个输出，这些输出是与输入有着某种特定关系的量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;算法的衡量角度
+&lt;ol&gt;
+&lt;li&gt;正确性。算法应能够正确地解决求解问题&lt;/li&gt;
+&lt;li&gt;可读性。算法应具有良好的可读性，以帮助人们理解&lt;/li&gt;
+&lt;li&gt;健壮性。输入非法数据时，算法能适当地做出反应或进行处理，而不会产生莫名其妙的输出结果&lt;/li&gt;
+&lt;li&gt;高效率与低存储量需求。省时：时间复杂度低；省内存：空间复杂度低&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;算法的时间复杂度：事前预估算法时间开销 T (n) 与问题规模 n 的关系&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;最坏时间复杂度：最坏情况下算法的时间复杂度&lt;/li&gt;
+&lt;li&gt;平均时间复杂度：所有输入示例等概率出现的情况下，算法的期望运行时间&lt;/li&gt;
+&lt;li&gt;最好时间复杂度：最好情况下算法的时间复杂度&lt;/li&gt;
+&lt;li&gt;计算方法：寻找一个基本操作 (最深层循环)，并计算执行次数&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;O(1)&amp;lt;O(log&lt;sub&gt;2&lt;/sub&gt;n)&amp;lt;O(n)&amp;lt;O(nlog&lt;sub&gt;2&lt;/sub&gt;n)&amp;lt;O(n&lt;sup&gt;2&lt;/sup&gt;)&amp;lt;O(n&lt;sup&gt;3&lt;/sup&gt;)&amp;lt;O(2&lt;sup&gt;n&lt;/sup&gt;)&amp;lt;O(n!)&amp;lt;O(n&lt;sup&gt;n&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;算法的空间复杂度：空间开销（内存开销）与问题规模 n 之间的关系&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;判断口诀：常对幂指阶&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;O(1)&amp;lt;O(log&lt;sub&gt;2&lt;/sub&gt;n)&amp;lt;O(n)&amp;lt;O(nlog&lt;sub&gt;2&lt;/sub&gt;n)&amp;lt;O(n&lt;sup&gt;2&lt;/sup&gt;)&amp;lt;O(n&lt;sup&gt;3&lt;/sup&gt;)&amp;lt;O(2&lt;sup&gt;n&lt;/sup&gt;)&amp;lt;O(n!)&amp;lt;O(n&lt;sup&gt;n&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;2线性表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2线性表&#34;&gt;#&lt;/a&gt; 2. 线性表&lt;/h5&gt;
+&lt;h6 id=&#34;1线性表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1线性表&#34;&gt;#&lt;/a&gt; 1. 线性表&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;定义 (逻辑结构)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;线性表是具有&lt;strong&gt;相同数据类型&lt;/strong&gt;的 n（n≥0）个&lt;strong&gt;数据元素&lt;/strong&gt;的&lt;strong&gt;有限序列&lt;/strong&gt;，其中 n 为表长，当 n= 0 时线性表是一个空表&lt;/li&gt;
+&lt;li&gt;**a&lt;sub&gt;i&lt;/sub&gt;** 是线性表中的 &lt;code&gt;第i个&lt;/code&gt; 元素线性表中的位序 (位序从 1 开始的，数组下标从 0 开始的)&lt;/li&gt;
+&lt;li&gt;a1 是表头元素；**a&lt;sub&gt;n&lt;/sub&gt;** 是表尾元素。除第一个元素外，每个元素有且仅有一个直接前驱；除最后一个元素外，每个元素有且仅有一个直接后继&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;基本操作 (运算)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;InitList (&amp;amp;L)：初始化表。构造一个空的线性表 L，分配内存空间&lt;/li&gt;
+&lt;li&gt;DestroyList (&amp;amp;L)：销毁操作。销毁线性表，并释放线性表 L 所占用的内存空间&lt;/li&gt;
+&lt;li&gt;ListInsert (&amp;amp;L,i,e)：插入操作。在表 L 中的第 i 个位置上插入指定元素 e&lt;/li&gt;
+&lt;li&gt;ListDelete (&amp;amp;L,i,&amp;amp;e)：删除操作。删除表 L 中第 i 个位置的元素，并用 e 返回删除元素的值&lt;/li&gt;
+&lt;li&gt;LocateElem (L,e)：按值查找操作。在表 L 中查找具有给定关键字值的元素&lt;/li&gt;
+&lt;li&gt;GetElem (L,i)：按位查找操作。获取表 L 中第 i 个位置的元素的值&lt;/li&gt;
+&lt;li&gt;Length (L)：求表长。返回线性表 L 的长度，即 L 中数据元素的个数&lt;/li&gt;
+&lt;li&gt;PrintList (L)：输出操作。按前后顺序输出线性表 L 的所有元素值&lt;/li&gt;
+&lt;li&gt;Empty (L)：判空操作。若 L 为空表，则返回 true，否则返回 false&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; : 引用数据类型，对参数的修改结果需要 &amp;quot;带回来&amp;quot;，内存地址复制还是指向原地址&lt;/li&gt;
+&lt;li&gt;线性表在存储结构上分为顺序表、链表&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;![image-20220622150006188](/Users/xiaoyunfei/Library/Application Support/typora-user-images/image-20220622150006188.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;2顺序表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2顺序表&#34;&gt;#&lt;/a&gt; 2. 顺序表&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;定义&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;顺序存储，把逻辑上相邻的元素存储在物理位置上也相邻的存储单元中，元素之间的关系由存储单元的邻接关系来体现。&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;sizeof()&lt;/code&gt;  可以获取数据元素占用内存的大小&lt;/li&gt;
+&lt;li&gt;静态分配（表长不可调）
+&lt;ol&gt;
+&lt;li&gt;内存中会遗留 &lt;code&gt;脏数据&lt;/code&gt; ，需要设置数据的默认值即 &lt;code&gt;L.length = 0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;若数组存满数据，直接舍弃，因为顺序表的表长确定后无法修改（存储空间是静态的）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;动态分配
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;malloc函数&lt;/code&gt; ：动态申请内存空间&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;free函数&lt;/code&gt; ：动态释放内存空间&lt;/li&gt;
+&lt;li&gt;练习：手写 malloc、free 这两个函数   &lt;code&gt;L.data=(ElemType*)malloc(sizeof(ElemType)* InitSize);&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;特点
+&lt;ol&gt;
+&lt;li&gt;随机访问，即可以在 O (1) 时间内找到第 i 个元素&lt;/li&gt;
+&lt;li&gt;存储密度高，每个节点只存储数据元素&lt;/li&gt;
+&lt;li&gt;拓展容量不方便（即便采用动态分配的方式实现，拓展长度的&lt;strong&gt;时间复杂度也比较高&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;插入、删除操作不方便，需要移动大量元素&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;插入&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;代码实现&lt;/li&gt;
+&lt;li&gt;时间复杂度
+&lt;ol&gt;
+&lt;li&gt;最好：O (1)&lt;/li&gt;
+&lt;li&gt;最坏：O (n)&lt;/li&gt;
+&lt;li&gt;平均：O (n)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;代码实现&lt;/li&gt;
+&lt;li&gt;时间复杂度
+&lt;ol&gt;
+&lt;li&gt;最好：O (1)&lt;/li&gt;
+&lt;li&gt;最坏：O (n)&lt;/li&gt;
+&lt;li&gt;平均：O (n)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查找&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;按位查找
+&lt;ol&gt;
+&lt;li&gt;代码实现&lt;/li&gt;
+&lt;li&gt;时间复杂度：O (1)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;按值查找
+&lt;ol&gt;
+&lt;li&gt;代码实现&lt;/li&gt;
+&lt;li&gt;时间复杂度
+&lt;ol&gt;
+&lt;li&gt;最好：O (1)&lt;/li&gt;
+&lt;li&gt;最坏：O (n)&lt;/li&gt;
+&lt;li&gt;平均：O (n)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;差异&lt;/p&gt;
+&lt;p&gt;![image-20220622155805426](/Users/xiaoyunfei/Library/Application Support/typora-user-images/image-20220622155805426.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;3单链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3单链表&#34;&gt;#&lt;/a&gt; 3. 单链表&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;定义
+&lt;ol&gt;
+&lt;li&gt;单链表：&lt;/li&gt;
+&lt;li&gt;代码实现&lt;/li&gt;
+&lt;li&gt;两种实现方式
+&lt;ol&gt;
+&lt;li&gt;带头结点 (代码实现方便)：头指针指向的元素为 null，下一个元素存储数据     &lt;code&gt;L-&amp;gt;next==null&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;不带头结点 (代码实现不方便)：头指针指向的元素就存储数据     &lt;code&gt;L==null&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;插入
+&lt;ol&gt;
+&lt;li&gt;按位序插入
+&lt;ol&gt;
+&lt;li&gt;带头结点&lt;/li&gt;
+&lt;li&gt;不带头结点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;指定结点的后插操作&lt;/li&gt;
+&lt;li&gt;指定结点的前插操作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;删除
+&lt;ol&gt;
+&lt;li&gt;按位序删除&lt;/li&gt;
+&lt;li&gt;指点结点的删除&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;查找（三个时间复杂度都是 &lt;code&gt;O(n)&lt;/code&gt; ）
+&lt;ol&gt;
+&lt;li&gt;按位查找
+&lt;ol&gt;
+&lt;li&gt;单链表不具备随机访问的特性，只能依次扫描&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;按值查找&lt;/li&gt;
+&lt;li&gt;求单链表长度&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;建立（设置一个指向表尾的指针）：核心是初始化操作、指定结点的后插操作
+&lt;ol&gt;
+&lt;li&gt;尾插法：&lt;/li&gt;
+&lt;li&gt;头插法：重要应用：链表的逆置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;4双链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4双链表&#34;&gt;#&lt;/a&gt; 4. 双链表&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;单链表无法逆向检索，双链表可进可退，存储密度较低一些&lt;/li&gt;
+&lt;li&gt;初始化&lt;/li&gt;
+&lt;li&gt;插入&lt;/li&gt;
+&lt;li&gt;删除&lt;/li&gt;
+&lt;li&gt;遍历：双链表不可随机存取，按位查找、按值查找操作都只能用遍历的方式实现。时间复杂度 O (n)&lt;/li&gt;
+&lt;li&gt;空表：前后指针都指向 null&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;5循环链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5循环链表&#34;&gt;#&lt;/a&gt; 5. 循环链表&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;循环单链表
+&lt;ol&gt;
+&lt;li&gt;单链表：表尾结点的 next 指针指向 NULL。单链表：从一个结点出发只能找到后续的各个结点&lt;/li&gt;
+&lt;li&gt;循环单链表：表尾结点的 next 指针指向头结点。循环单链表：从一个结点出发可以找到其他任何一个结点&lt;/li&gt;
+&lt;li&gt;从头结点找到尾部，时间复杂度为 O (n)。从尾部找到头部，时间复杂度为 O (1)&lt;/li&gt;
+&lt;li&gt;空表：单手抱住空虚的自己；非空链表：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;循环双链表
+&lt;ol&gt;
+&lt;li&gt;双链表：表头结点的 prior 指向 NULL；表尾结点的 next 指向 NULL&lt;/li&gt;
+&lt;li&gt;循环双链表：表头结点的 prior 指向表尾结点；表尾结点的 next 指向头结点&lt;/li&gt;
+&lt;li&gt;空表：双手抱住空虚的自己；非空链表：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;代码问题：如何判断空表？如何判断指定结点是否为表尾结点 / 表头节点？如何在表头、表中、表尾插入 / 删除一个结点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;6静态链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6静态链表&#34;&gt;#&lt;/a&gt; 6. 静态链表&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;静态链表
+&lt;ol&gt;
+&lt;li&gt;分配一整片连续的内存空间，各个结点集中安置&lt;/li&gt;
+&lt;li&gt;静态链表也可看作用数组的方式实现的链表&lt;/li&gt;
+&lt;li&gt;在静态链表中游标充当指针，游标为 - 1 时就是到达表尾&lt;/li&gt;
+&lt;li&gt;优点：增、删操作不需要大量移动元素&lt;/li&gt;
+&lt;li&gt;缺点：不能随机存取，只能从头结点开始依次往后查找；&lt;strong&gt;容量固定不可变&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;适用场景：①不支持指针的低级语言；②数据元素数量固定不变的场景（如操作系统的文件分配表 FAT）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;定义静态链表&lt;/li&gt;
+&lt;li&gt;基本操作的实现&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;7顺序表和链表比较&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7顺序表和链表比较&#34;&gt;#&lt;/a&gt; 7. 顺序表和链表比较&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;顺序表&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;链表&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;逻辑结构&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;都属于线性表，都是线性结构&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;都属于线性表，都是线性结构&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;存储结构 / 物理结构&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;优点：支持随机存取、存储密度高 &lt;br/&gt;缺点：大片连续空间分配不方便，改变容量不方便&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;优点：离散的小空间分配方便，改变容量方便&lt;br/&gt;缺点：不可随机存取，存储密度低&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;数据运算 / 基本操作&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;创建&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;需要预分配大片连续空间。若分配空间过小，则之后不方便拓展容量；若分配空间过大，则浪费内存资源&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;只需分配一个头结点（也可以不要头结点，只声明一个头指针），之后方便拓展&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;增&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;插入 / 删除元素要将后续元素都后移 / 前移时间复杂度 O (n)&lt;br/&gt;时间开销主要来自移动元素&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;插入 / 删除元素只需修改指针即可&lt;br/&gt;时间复杂度 O (n), 时间开销主要来自查找目标元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;删&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;查&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;弹性&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;增、删&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;查&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;技巧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;表长可预估、查询（搜索）操作较多&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;表长难以预估、经常要增加 / 删除元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- #### 3.栈和队列
+
+#### 4.串
+
+#### 5.树和二叉树
+
+#### 6.图
+
+#### 7.查找
+
+#### 8.排序 --&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2023/02/16/E001_Linux/</guid>
             <title>Linux</title>
             <link>http://example.com/2023/02/16/E001_Linux/</link>
             <category>Linux</category>
             <pubDate>Thu, 16 Feb 2023 18:23:20 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈。&lt;/span&gt;&lt;br&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
@@ -497,9 +909,11 @@
             <link>http://example.com/2022/03/13/11001_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/</link>
             <category>浏览器</category>
             <pubDate>Sun, 13 Mar 2022 10:23:44 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;title-浏览器基础categories-基础知识1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-浏览器基础categories-基础知识1&#34;&gt;#&lt;/a&gt; title: 浏览器基础&lt;br&gt;
+ categories: § 基础知识 (1) §&lt;/h2&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;从地址栏输入地址到显示页面过程浏览器做什么事情&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#从地址栏输入地址到显示页面过程浏览器做什么事情&#34;&gt;#&lt;/a&gt; 从地址栏输入地址到显示页面过程，浏览器做什么事情&lt;/h5&gt;
 &lt;h5 id=&#34;三次握手&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三次握手&#34;&gt;#&lt;/a&gt; 三次握手&lt;/h5&gt;
@@ -513,9 +927,11 @@
             <link>http://example.com/2022/03/11/11002_%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98/</link>
             <category>浏览器</category>
             <pubDate>Fri, 11 Mar 2022 09:39:44 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;title-计算机网络categories-基础知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-计算机网络categories-基础知识&#34;&gt;#&lt;/a&gt; title: 计算机网络&lt;br&gt;
+ categories: § 基础知识 §&lt;/h2&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;http不同版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http不同版本&#34;&gt;#&lt;/a&gt; http 不同版本&lt;/h5&gt;
 &lt;h5 id=&#34;tcp&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tcp&#34;&gt;#&lt;/a&gt; tcp&lt;/h5&gt;
@@ -530,120 +946,16 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2021/02/01/10002_UniApp/</guid>
+            <guid isPermalink="true">http://example.com/2021/01/21/10001_uniapp/</guid>
             <title>uni-app</title>
-            <link>http://example.com/2021/02/01/10002_UniApp/</link>
-            <category>uni-app</category>
-            <pubDate>Mon, 01 Feb 2021 20:39:44 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h5 id=&#34;4-小程序的语法特点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-小程序的语法特点&#34;&gt;#&lt;/a&gt; 4. 小程序的语法特点&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;小程序特点概述&lt;/p&gt;
-&lt;p&gt;模块：具备特定功能的 js 文件，有目的的拆分，需要用到哪个功能就引入哪个模块；&lt;br&gt;
-组件：具备特定功能效果的代码集合&lt;br&gt;
-没有 DOM；一切基于组件化开发&lt;br&gt;
-一个页面可以由一个或者多个组件组成， 组件不能代表页面，一个页面里面只有一个组件也不无法代替&lt;br&gt;
- ** 面试题 注意：使用 HTML 描述组件化是什么？ **&lt;br&gt;
- 每一个 HTML 标签就是一个组件，一个完整的页面就是由多个组件组成；体积小，单个压缩包体积不能大于 2M，否则无法上线&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;小程序 4 个重要文件：&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;(&lt;span class=&#34;hljs-number&#34;&gt;1&lt;/span&gt;) *.&lt;span class=&#34;hljs-property&#34;&gt;js&lt;/span&gt;&lt;br&gt;(&lt;span class=&#34;hljs-number&#34;&gt;2&lt;/span&gt;) *.&lt;span class=&#34;hljs-property&#34;&gt;wxml&lt;/span&gt;--&amp;gt;view结构--&amp;gt;html&lt;br&gt;(&lt;span class=&#34;hljs-number&#34;&gt;3&lt;/span&gt;) *.&lt;span class=&#34;hljs-property&#34;&gt;wxss&lt;/span&gt;--&amp;gt;view样式--&amp;gt;css&lt;br&gt;(&lt;span class=&#34;hljs-number&#34;&gt;4&lt;/span&gt;) *.&lt;span class=&#34;hljs-property&#34;&gt;json&lt;/span&gt;--&amp;gt;view数据--&amp;gt;json文件&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;小程序适配方案（rpx：响应式像素单位）&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;小程序适配单位：rpx&lt;/li&gt;
-&lt;li&gt;规定任何屏幕下宽度为 750rpx&lt;/li&gt;
-&lt;li&gt;小程序会根据屏幕的宽度不同自动计算 rpx 值的大小&lt;/li&gt;
-&lt;li&gt;iPhone6 下，1rpx = 1 物理像素 = 0.5px&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;小程序配置&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;桌面新建文件夹，导入微信开发者工具，进入其页面，了解顶部一栏的相关功能&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;project.config.json： 项目的配置文件&lt;br&gt;
-一般不需要修改，若需要修改建议使用图形化界面（即开发工具）修改去设置就可以&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;全局配置&lt;br&gt;
-小程序根目录下的  &lt;code&gt;app.json&lt;/code&gt;  文件用来对微信小程序进行全局配置。文件内容为一个 JSON 对象，有以下&lt;a href=&#34;https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html&#34;&gt;&lt;strong&gt;属性&lt;/strong&gt;&lt;/a&gt;：&lt;br&gt;
-必填属性：pages：页面路径列表、sitemapLocation：指明 sitemap.json 的位置&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;页面配置&lt;br&gt;
-每一个小程序页面也可以使用  &lt;code&gt;.json&lt;/code&gt;  文件来对本页面的窗口表现进行配置。页面中配置项在当前页面会覆盖  &lt;code&gt;app.json&lt;/code&gt;  的  &lt;code&gt;window&lt;/code&gt;  中相同的配置项。文件内容为一个 JSON 对象，有以下 **&lt;a href=&#34;https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/page.html&#34;&gt; 属性&lt;/a&gt; **：&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;sitemap 配置&lt;br&gt;
-小程序根目录下的  &lt;code&gt;sitemap.json&lt;/code&gt;  文件用于配置小程序及其页面是否允许被微信索引，文件内容为一个 JSON 对象，如果没有  &lt;code&gt;sitemap.json&lt;/code&gt;  ，则默认为所有页面都允许被索引； &lt;code&gt;sitemap.json&lt;/code&gt;  有以下 **&lt;a href=&#34;https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/sitemap.html&#34;&gt; 属性&lt;/a&gt; **：必填属性：rules [对象]：索引规则列表（rules 配置项指定了索引规则，每项规则为一个 JSON 对象，一般属性 actions:allow，pages: 页面路径）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：微信现已开放小程序内搜索，开发者可以通过  &lt;code&gt;sitemap.json&lt;/code&gt;  配置，或者管理后台页面收录开关来配置其小程序页面是否允许微信索引。当开发者允许微信索引时，微信会通过爬虫的形式，为小程序的页面内容建立索引。当用户的搜索词条触发该索引时，小程序的页面将可能展示在搜索结果中。 爬虫访问小程序内页面时，会携带特定的 user-agent： &lt;code&gt;mpcrawler&lt;/code&gt;  及&lt;a href=&#34;https://developers.weixin.qq.com/miniprogram/dev/reference/scene-list.html&#34;&gt;场景值&lt;/a&gt;： &lt;code&gt;1129&lt;/code&gt; 。需要注意的是，若小程序爬虫发现的页面数据和真实用户的呈现不一致，那么该页面将不会进入索引中。&lt;/p&gt;
-&lt;p&gt;具体配置说明&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;页面收录设置：可对整个小程序的索引进行关闭，小程序管理后台 - 功能 - 页面内容接入 - 页面收录开关；&lt;a href=&#34;https://mp.weixin.qq.com/wxopen/readtemplate?t=config/collection_agreement_tmpl&#34;&gt;详情&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;sitemap 配置：可对特定页面的索引进行关闭&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;小程序文件：&lt;/p&gt;
-&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs text&#34;&gt;├── app.js（APP(&amp;#123;&amp;#125;)：注册整个小程序应用）&lt;br&gt;├── app.json （对象：第一项属性使用数组表示，pages即为页面路径）&lt;br&gt;├── app.wxss&lt;br&gt;├── pages&lt;br&gt;│   │── index&lt;br&gt;│   │   ├── index.wxml&lt;br&gt;│   │   ├── index.js(Page(&amp;#123;&amp;#125;):注册当前页面的实例)&lt;br&gt;│   │   ├── index.json（当前页面的配置）&lt;br&gt;│   │   └── index.wxss&lt;br&gt;│   └── logs&lt;br&gt;│       ├── logs.wxml&lt;br&gt;│       └── logs.js&lt;br&gt;└── utils（封装功能函数）&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h5 id=&#34;5-小程序的语法特点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-小程序的语法特点&#34;&gt;#&lt;/a&gt; 5. 小程序的语法特点&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;数据绑定&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;初始化数据&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;页面.js 的 data 选项（小程序页面使用的数据都会向 data 去要，所以页面上想要有什么数据就要放入 data 中 ）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;Page&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token literal-property property&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;hello world!&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;code￼&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;补充：小程序相关的数据绑定&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;小程序&lt;br&gt;	&lt;span class=&#34;hljs-number&#34;&gt;1.&lt;/span&gt; data中初始化数据&lt;br&gt;  &lt;span class=&#34;hljs-number&#34;&gt;2.&lt;/span&gt; 修改数据&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;setData&lt;/span&gt;(),修改数据的行为始终始终是同步的&lt;br&gt;	&lt;span class=&#34;hljs-number&#34;&gt;3.&lt;/span&gt; 数据流：单项（&lt;span class=&#34;hljs-title class_&#34;&gt;Model&lt;/span&gt;---&amp;gt;&lt;span class=&#34;hljs-title class_&#34;&gt;View&lt;/span&gt;）&lt;br&gt;vue&lt;br&gt;	&lt;span class=&#34;hljs-number&#34;&gt;1.&lt;/span&gt; data中初始化数据&lt;br&gt;  &lt;span class=&#34;hljs-number&#34;&gt;2.&lt;/span&gt; 修改数据&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;hljs-property&#34;&gt;key&lt;/span&gt; = value&lt;br&gt;	&lt;span class=&#34;hljs-number&#34;&gt;3.&lt;/span&gt; 数据流：&lt;br&gt;  	&lt;span class=&#34;hljs-number&#34;&gt;1.&lt;/span&gt; vue是单向数据流&lt;span class=&#34;hljs-title class_&#34;&gt;Model&lt;/span&gt;---&amp;gt;&lt;span class=&#34;hljs-title class_&#34;&gt;View&lt;/span&gt;&lt;br&gt;		&lt;span class=&#34;hljs-number&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;hljs-title class_&#34;&gt;Vue&lt;/span&gt;中实现了双向数据绑定：v-model&lt;br&gt;&lt;span class=&#34;hljs-title class_&#34;&gt;React&lt;/span&gt;&lt;br&gt;	&lt;span class=&#34;hljs-number&#34;&gt;1.&lt;/span&gt; state中初始化状态数据&lt;br&gt;  &lt;span class=&#34;hljs-number&#34;&gt;2.&lt;/span&gt; 修改数据&lt;span class=&#34;hljs-variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;hljs-title function_&#34;&gt;setState&lt;/span&gt;()&lt;br&gt;		&lt;span class=&#34;hljs-number&#34;&gt;1.&lt;/span&gt; 自身钩子函数中（componentDidMount）异步的&lt;br&gt;    &lt;span class=&#34;hljs-number&#34;&gt;2.&lt;/span&gt; 非自身的钩子函数中（定时器的回调）同步的&lt;br&gt;	&lt;span class=&#34;hljs-number&#34;&gt;3.&lt;/span&gt; 数据流：单项&lt;span class=&#34;hljs-title class_&#34;&gt;Model&lt;/span&gt;---&amp;gt;&lt;span class=&#34;hljs-title class_&#34;&gt;View&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;数据劫持代理&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;//Vue 数据底层劫持代理思想&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 模拟 Vue 中的 data 选项&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; data &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;curry&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;11&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 模拟组件的实例&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; _this &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 利用 Object.defineProperty ()&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; itemin data&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  Object&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;defineProperty&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;_this&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;item&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 用来获取扩展属性值的，当获取该属性值的时候调用 get 方法&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;item&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 监事扩展属性的，只要一修改就调用&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;set()&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;item&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; newValue&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;_this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 通过 Object.defineProperty 的 get 方法添加的扩展属性不能直接对象。属性进行修改&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;_this&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;username &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;wade&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;_this&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;username&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;code￼&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;token template-string&#34;&gt;&lt;span class=&#34;token template-punctuation string&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;token template-punctuation string&#34;&gt;`&lt;/span&gt;&lt;/span&gt;`javascript&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token comment&#34;&gt;//catch 绑定：事件绑定可以阻止冒泡事件向上冒泡&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;view catchtap&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;hangleTap&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;阻止冒泡事件&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;view&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;code￼&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;//index.js 文件中写方法即跳转的页面&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;toLogs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    wx&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;reLaunch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token literal-property property&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;/pages/logs/logs&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;code￼&lt;span class=&#34;token number&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;生命周期函数 (钩子函数)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 生命周期函数 -- 监听页面加载&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function-variable function&#34;&gt;onLoad&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;options&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 生命周期函数 -- 监听页面初次渲染完成&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token function-variable function&#34;&gt;onLoad&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;3.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 生命周期函数 -- 监听页面显示&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function-variable function&#34;&gt;onShow&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;4.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 生命周期函数 -- 监听页面隐藏&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function-variable function&#34;&gt;onHide&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;5.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 生命周期函数 -- 监听页面卸载&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function-variable function&#34;&gt;onUnload&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;onLoad、onLoad页面加载未销毁时只执行一次，而onShow可以执行多次，&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;onLoad、onLoad可以发请求，onShow会多次请求影响程序性能&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2021/01/21/10001_UniApp/</guid>
-            <title>uni-app</title>
-            <link>http://example.com/2021/01/21/10001_UniApp/</link>
+            <link>http://example.com/2021/01/21/10001_uniapp/</link>
             <category>uni-app</category>
             <pubDate>Thu, 21 Jan 2021 19:32:44 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;title-uni-appcategories-基础知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-uni-appcategories-基础知识&#34;&gt;#&lt;/a&gt; title: uni-app&lt;br&gt;
+categories: § 基础知识 §&lt;/h2&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;1-小程序定义&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-小程序定义&#34;&gt;#&lt;/a&gt; 1. 小程序定义&lt;/h5&gt;
 &lt;ul&gt;
@@ -728,9 +1040,11 @@ device-width：屏幕大小即视觉视口
             <link>http://example.com/2020/09/01/9003_TypeScript/</link>
             <category>TypeScript</category>
             <pubDate>Tue, 01 Sep 2020 19:58:59 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;title-uni-appcategories-基础知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-uni-appcategories-基础知识&#34;&gt;#&lt;/a&gt; title: uni-app&lt;br&gt;
+categories: § 基础知识 §&lt;/h2&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;10属性的封装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10属性的封装&#34;&gt;#&lt;/a&gt; 10. 属性的封装&lt;/h5&gt;
 &lt;ol&gt;
@@ -761,9 +1075,11 @@ device-width：屏幕大小即视觉视口
             <link>http://example.com/2020/08/27/9002_TypeScript/</link>
             <category>TypeScript</category>
             <pubDate>Thu, 27 Aug 2020 18:58:09 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;title-uni-appcategories-基础知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-uni-appcategories-基础知识&#34;&gt;#&lt;/a&gt; title: uni-app&lt;br&gt;
+categories: § 基础知识 §&lt;/h2&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;5使用webpack打包ts代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5使用webpack打包ts代码&#34;&gt;#&lt;/a&gt; 5. 使用 webpack 打包 ts 代码&lt;/h5&gt;
 &lt;ol&gt;
@@ -839,9 +1155,11 @@ device-width：屏幕大小即视觉视口
             <link>http://example.com/2020/08/21/9001_TypeScript/</link>
             <category>TypeScript</category>
             <pubDate>Fri, 21 Aug 2020 16:38:49 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;title-uni-appcategories-基础知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-uni-appcategories-基础知识&#34;&gt;#&lt;/a&gt; title: uni-app&lt;br&gt;
+categories: § 基础知识 §&lt;/h2&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;1简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1简介&#34;&gt;#&lt;/a&gt; 1. 简介&lt;/h5&gt;
 &lt;ol&gt;
@@ -933,9 +1251,11 @@ device-width：屏幕大小即视觉视口
             <link>http://example.com/2020/06/14/8003_Node.js/</link>
             <category>Node</category>
             <pubDate>Sun, 14 Jun 2020 13:47:42 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;title-uni-appcategories-基础知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-uni-appcategories-基础知识&#34;&gt;#&lt;/a&gt; title: uni-app&lt;br&gt;
+categories: § 基础知识 §&lt;/h2&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
  ]]></description>
         </item>
@@ -1229,7 +1549,7 @@ device-width：屏幕大小即视觉视口
             <link>http://example.com/2020/05/04/D001_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</link>
             <category>计算机组成</category>
             <pubDate>Mon, 04 May 2020 15:36:44 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈。&lt;/span&gt;&lt;br&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
 🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
@@ -1328,9 +1648,15 @@ device-width：屏幕大小即视觉视口
             <link>http://example.com/2020/04/14/C001_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
             <category>操作系统</category>
             <pubDate>Tue, 14 Apr 2020 21:56:44 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;title-linuxexcerpt-开发常用命令01-date-20230216-182320tags-linuxcategories-linux基础comments-true&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-linuxexcerpt-开发常用命令01-date-20230216-182320tags-linuxcategories-linux基础comments-true&#34;&gt;#&lt;/a&gt; title: Linux&lt;br&gt;
+excerpt: § 开发常用命令 (01) §&lt;br&gt;
+date: 2023/02/16 18:23:20&lt;br&gt;
+tags: Linux&lt;br&gt;
+categories: Linux 基础&lt;br&gt;
+ comments: true&lt;/h2&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;进程-线程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进程-线程&#34;&gt;#&lt;/a&gt; 进程、线程&lt;/h5&gt;
 &lt;ul&gt;
@@ -1740,9 +2066,11 @@ device-width：屏幕大小即视觉视口
             <link>http://example.com/2020/03/12/A001_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
             <category>计算机网络</category>
             <pubDate>Thu, 12 Mar 2020 16:39:44 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;title-数据结构categories-基础知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-数据结构categories-基础知识&#34;&gt;#&lt;/a&gt; title: 数据结构&lt;br&gt;
+ categories: § 基础知识 §&lt;/h2&gt;
+&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h4 id=&#34;计算机网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#计算机网络&#34;&gt;#&lt;/a&gt; 计算机网络&lt;/h4&gt;
 &lt;p&gt;[TOC]&lt;/p&gt;
@@ -2925,413 +3253,6 @@ device-width：屏幕大小即视觉视口
 &lt;li&gt;
 &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; object &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token literal-property property&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;vue.js&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; vm &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Vue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token literal-property property&#34;&gt;el&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;#app&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token literal-property property&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;object&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function-variable function&#34;&gt;beforeCreate&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;beforeCreate&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function-variable function&#34;&gt;created&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;created&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function-variable function&#34;&gt;beforeMount&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;beforeMount&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function-variable function&#34;&gt;mounted&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;mounted&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function-variable function&#34;&gt;beforeUpdate&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;beforeUpdate&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function-variable function&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;updated&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;setTimeout&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      vm&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;message &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;chagege ......&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2000&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2020/02/21/B001_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
-            <title>数据结构</title>
-            <link>http://example.com/2020/02/21/B001_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
-            <category>数据结构</category>
-            <pubDate>Fri, 21 Feb 2020 06:39:44 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;数据结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据结构&#34;&gt;#&lt;/a&gt; 数据结构&lt;/h2&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h5 id=&#34;1绪论&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1绪论&#34;&gt;#&lt;/a&gt; 1. 绪论&lt;/h5&gt;
-&lt;h6 id=&#34;1绪论数据结构介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1绪论数据结构介绍&#34;&gt;#&lt;/a&gt; 1. 绪论–数据结构介绍&lt;/h6&gt;
-&lt;ol&gt;
-&lt;li&gt;数据结构学习内容表述
-&lt;ol&gt;
-&lt;li&gt;如何使用程序代码把现实世界的问题信息化&lt;/li&gt;
-&lt;li&gt;如何使用计算机高效的处理这些信息从而创造价值&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;发展阶段：人类文明–&amp;gt; 农业革命–&amp;gt; 工业革命–&amp;gt; 信息革命&lt;/li&gt;
-&lt;li&gt;关于计算机联系图解&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;![image-20220621090912904](/Users/xiaoyunfei/Library/Application Support/typora-user-images/image-20220621090912904.png)&lt;/p&gt;
-&lt;h6 id=&#34;2绪论概念理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2绪论概念理解&#34;&gt;#&lt;/a&gt; 2. 绪论–概念理解&lt;/h6&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;数据结构基本概念&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;数据：数据是信息的载体，是描述客观事物属性的数、字符及所有能输入到计算机中并被计算机程序识别和处理的符号的集合。数据是计算机程序加工的原料&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;数据元素：数据元素是数据的基本单位，通常作为一个整体进行考虑和处理&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;数据项：一个数据元素可由若干数据项组成，数据项是构成数据元素的不可分割的最小单位&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;数据对象：数据对象是具有相同性质的数据元素的集合，是数据的一个子集（数据元素描述的东西具有相同的性质）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;数据结构：数据结构是相互之间存在一种或多种特定关系的数据元素的集合。(数据元素之间的关系)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;数据类型：数据类型是一个值的集合和定义在此集合上的一组操作的总称。如原子类型，其值不可再分的数据类型；结构类型，其值可以再分解为若干成分（分量）的数据类型&lt;/p&gt;
-&lt;p&gt;![image-20220621095124394](/Users/xiaoyunfei/Library/Application Support/typora-user-images/image-20220621095124394.png)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;抽象数据类型 (Abstract Data Type,ADT)：抽象数据组织及与之相关的操作。ADT 用数学化的语言定义数据的逻辑结构、定义运算。&lt;strong&gt;抽象数据类型定义了一个数据结构&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;数据结构的三要素&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;逻辑结构
-&lt;ol&gt;
-&lt;li&gt;集合结构：各个元素同属一个集合，别无其他关系&lt;/li&gt;
-&lt;li&gt;线性结构：数据元素之间是一对一的关系。除了第一个元素，所有元素都有唯一前驱；除了最后一个元素，所有元素都有唯一后继&lt;/li&gt;
-&lt;li&gt;树形结构：数据元素之间是一对多的关系&lt;/li&gt;
-&lt;li&gt;图状结构 (网状结构)：数据元素之间是多对多的关系&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;数据运算：针对于某种逻辑结构，结合实际需求，定义基本运算&lt;/li&gt;
-&lt;li&gt;物理结构 (存储结构)：使用计算机表示数据元素之间的逻辑关系
-&lt;ol&gt;
-&lt;li&gt;顺序存储：把逻辑上相邻的元素存储在物理位置上也相邻的存储单元中，元素之间的关系由存储单元的邻接关系来体现&lt;/li&gt;
-&lt;li&gt;链式存储：逻辑上相邻的元素在物理位置上可以不相邻，借助指示元素存储地址的指针来表示元素之间的逻辑关系&lt;/li&gt;
-&lt;li&gt;索引存储：在存储元素信息的同时，还建立附加的索引表。索引表中的每项称为索引项，索引项的一般形式是（关键字，地址）&lt;/li&gt;
-&lt;li&gt;散列存储：根据元素的关键字直接计算出该元素的存储地址，又称哈希（Hash）存储&lt;/li&gt;
-&lt;li&gt;非顺序存储 (离散存储)：链式存储、索引存储、散列存储&lt;/li&gt;
-&lt;li&gt;若采用顺序存储，则各个数据元素在物理上必须是连续的；若采用非顺序存储，则各个数据元素在物理上可以是离散的。数据的存储结构会影响存储空间分配的方便程度，也会影响对数据运算的速度&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;定义一种数据结构包括逻辑结构、数据运算，如何使用计算机实现这种数据结构主要讲的是物理结构&lt;/li&gt;
-&lt;li&gt;运算的定义是针对逻辑结构的，指出运算的功能；运算的实现是针对存储结构的，指出运算的具体操作步骤&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;算法：对特定问题求解步骤的一种描述，它是指令的有限序列，其中的每条指令表示一个或多个操作&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;程序 = 数据结构 + 算法&lt;/li&gt;
-&lt;li&gt;算法的特性
-&lt;ol&gt;
-&lt;li&gt;有穷性：一个算法必须总在执行有穷步之后结束，且每一步都可在有穷时间内完成。算法必须是有穷的，而程序可以是无穷的（&lt;strong&gt;死循环不是算法&lt;/strong&gt;）&lt;/li&gt;
-&lt;li&gt;确定性：算法中每条指令必须有确切的含义，对于相同的输入只能得出相同的输出&lt;/li&gt;
-&lt;li&gt;可行性：算法中描述的操作都可以通过已经实现的基本运算执行有限次来实现&lt;/li&gt;
-&lt;li&gt;输入：一个算法有零个或多个输入，这些输入取自于某个特定的对象的集合&lt;/li&gt;
-&lt;li&gt;输出：一个算法有一个或多个输出，这些输出是与输入有着某种特定关系的量&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;算法的衡量角度
-&lt;ol&gt;
-&lt;li&gt;正确性。算法应能够正确地解决求解问题&lt;/li&gt;
-&lt;li&gt;可读性。算法应具有良好的可读性，以帮助人们理解&lt;/li&gt;
-&lt;li&gt;健壮性。输入非法数据时，算法能适当地做出反应或进行处理，而不会产生莫名其妙的输出结果&lt;/li&gt;
-&lt;li&gt;高效率与低存储量需求。省时：时间复杂度低；省内存：空间复杂度低&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;算法的时间复杂度：事前预估算法时间开销 T (n) 与问题规模 n 的关系&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;最坏时间复杂度：最坏情况下算法的时间复杂度&lt;/li&gt;
-&lt;li&gt;平均时间复杂度：所有输入示例等概率出现的情况下，算法的期望运行时间&lt;/li&gt;
-&lt;li&gt;最好时间复杂度：最好情况下算法的时间复杂度&lt;/li&gt;
-&lt;li&gt;计算方法：寻找一个基本操作 (最深层循环)，并计算执行次数&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;O(1)&amp;lt;O(log&lt;sub&gt;2&lt;/sub&gt;n)&amp;lt;O(n)&amp;lt;O(nlog&lt;sub&gt;2&lt;/sub&gt;n)&amp;lt;O(n&lt;sup&gt;2&lt;/sup&gt;)&amp;lt;O(n&lt;sup&gt;3&lt;/sup&gt;)&amp;lt;O(2&lt;sup&gt;n&lt;/sup&gt;)&amp;lt;O(n!)&amp;lt;O(n&lt;sup&gt;n&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;算法的空间复杂度：空间开销（内存开销）与问题规模 n 之间的关系&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;判断口诀：常对幂指阶&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;O(1)&amp;lt;O(log&lt;sub&gt;2&lt;/sub&gt;n)&amp;lt;O(n)&amp;lt;O(nlog&lt;sub&gt;2&lt;/sub&gt;n)&amp;lt;O(n&lt;sup&gt;2&lt;/sup&gt;)&amp;lt;O(n&lt;sup&gt;3&lt;/sup&gt;)&amp;lt;O(2&lt;sup&gt;n&lt;/sup&gt;)&amp;lt;O(n!)&amp;lt;O(n&lt;sup&gt;n&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h5 id=&#34;2线性表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2线性表&#34;&gt;#&lt;/a&gt; 2. 线性表&lt;/h5&gt;
-&lt;h6 id=&#34;1线性表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1线性表&#34;&gt;#&lt;/a&gt; 1. 线性表&lt;/h6&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;定义 (逻辑结构)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;线性表是具有&lt;strong&gt;相同数据类型&lt;/strong&gt;的 n（n≥0）个&lt;strong&gt;数据元素&lt;/strong&gt;的&lt;strong&gt;有限序列&lt;/strong&gt;，其中 n 为表长，当 n= 0 时线性表是一个空表&lt;/li&gt;
-&lt;li&gt;**a&lt;sub&gt;i&lt;/sub&gt;** 是线性表中的 &lt;code&gt;第i个&lt;/code&gt; 元素线性表中的位序 (位序从 1 开始的，数组下标从 0 开始的)&lt;/li&gt;
-&lt;li&gt;a1 是表头元素；**a&lt;sub&gt;n&lt;/sub&gt;** 是表尾元素。除第一个元素外，每个元素有且仅有一个直接前驱；除最后一个元素外，每个元素有且仅有一个直接后继&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;基本操作 (运算)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;InitList (&amp;amp;L)：初始化表。构造一个空的线性表 L，分配内存空间&lt;/li&gt;
-&lt;li&gt;DestroyList (&amp;amp;L)：销毁操作。销毁线性表，并释放线性表 L 所占用的内存空间&lt;/li&gt;
-&lt;li&gt;ListInsert (&amp;amp;L,i,e)：插入操作。在表 L 中的第 i 个位置上插入指定元素 e&lt;/li&gt;
-&lt;li&gt;ListDelete (&amp;amp;L,i,&amp;amp;e)：删除操作。删除表 L 中第 i 个位置的元素，并用 e 返回删除元素的值&lt;/li&gt;
-&lt;li&gt;LocateElem (L,e)：按值查找操作。在表 L 中查找具有给定关键字值的元素&lt;/li&gt;
-&lt;li&gt;GetElem (L,i)：按位查找操作。获取表 L 中第 i 个位置的元素的值&lt;/li&gt;
-&lt;li&gt;Length (L)：求表长。返回线性表 L 的长度，即 L 中数据元素的个数&lt;/li&gt;
-&lt;li&gt;PrintList (L)：输出操作。按前后顺序输出线性表 L 的所有元素值&lt;/li&gt;
-&lt;li&gt;Empty (L)：判空操作。若 L 为空表，则返回 true，否则返回 false&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; : 引用数据类型，对参数的修改结果需要 &amp;quot;带回来&amp;quot;，内存地址复制还是指向原地址&lt;/li&gt;
-&lt;li&gt;线性表在存储结构上分为顺序表、链表&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;![image-20220622150006188](/Users/xiaoyunfei/Library/Application Support/typora-user-images/image-20220622150006188.png)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h6 id=&#34;2顺序表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2顺序表&#34;&gt;#&lt;/a&gt; 2. 顺序表&lt;/h6&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;定义&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;顺序存储，把逻辑上相邻的元素存储在物理位置上也相邻的存储单元中，元素之间的关系由存储单元的邻接关系来体现。&lt;/li&gt;
-&lt;li&gt;使用 &lt;code&gt;sizeof()&lt;/code&gt;  可以获取数据元素占用内存的大小&lt;/li&gt;
-&lt;li&gt;静态分配（表长不可调）
-&lt;ol&gt;
-&lt;li&gt;内存中会遗留 &lt;code&gt;脏数据&lt;/code&gt; ，需要设置数据的默认值即 &lt;code&gt;L.length = 0&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;若数组存满数据，直接舍弃，因为顺序表的表长确定后无法修改（存储空间是静态的）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;动态分配
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;malloc函数&lt;/code&gt; ：动态申请内存空间&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;free函数&lt;/code&gt; ：动态释放内存空间&lt;/li&gt;
-&lt;li&gt;练习：手写 malloc、free 这两个函数   &lt;code&gt;L.data=(ElemType*)malloc(sizeof(ElemType)* InitSize);&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;特点
-&lt;ol&gt;
-&lt;li&gt;随机访问，即可以在 O (1) 时间内找到第 i 个元素&lt;/li&gt;
-&lt;li&gt;存储密度高，每个节点只存储数据元素&lt;/li&gt;
-&lt;li&gt;拓展容量不方便（即便采用动态分配的方式实现，拓展长度的&lt;strong&gt;时间复杂度也比较高&lt;/strong&gt;）&lt;/li&gt;
-&lt;li&gt;插入、删除操作不方便，需要移动大量元素&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;插入&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;代码实现&lt;/li&gt;
-&lt;li&gt;时间复杂度
-&lt;ol&gt;
-&lt;li&gt;最好：O (1)&lt;/li&gt;
-&lt;li&gt;最坏：O (n)&lt;/li&gt;
-&lt;li&gt;平均：O (n)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;删除&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;代码实现&lt;/li&gt;
-&lt;li&gt;时间复杂度
-&lt;ol&gt;
-&lt;li&gt;最好：O (1)&lt;/li&gt;
-&lt;li&gt;最坏：O (n)&lt;/li&gt;
-&lt;li&gt;平均：O (n)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;查找&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;按位查找
-&lt;ol&gt;
-&lt;li&gt;代码实现&lt;/li&gt;
-&lt;li&gt;时间复杂度：O (1)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;按值查找
-&lt;ol&gt;
-&lt;li&gt;代码实现&lt;/li&gt;
-&lt;li&gt;时间复杂度
-&lt;ol&gt;
-&lt;li&gt;最好：O (1)&lt;/li&gt;
-&lt;li&gt;最坏：O (n)&lt;/li&gt;
-&lt;li&gt;平均：O (n)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;差异&lt;/p&gt;
-&lt;p&gt;![image-20220622155805426](/Users/xiaoyunfei/Library/Application Support/typora-user-images/image-20220622155805426.png)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h6 id=&#34;3单链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3单链表&#34;&gt;#&lt;/a&gt; 3. 单链表&lt;/h6&gt;
-&lt;ol&gt;
-&lt;li&gt;定义
-&lt;ol&gt;
-&lt;li&gt;单链表：&lt;/li&gt;
-&lt;li&gt;代码实现&lt;/li&gt;
-&lt;li&gt;两种实现方式
-&lt;ol&gt;
-&lt;li&gt;带头结点 (代码实现方便)：头指针指向的元素为 null，下一个元素存储数据     &lt;code&gt;L-&amp;gt;next==null&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;不带头结点 (代码实现不方便)：头指针指向的元素就存储数据     &lt;code&gt;L==null&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;插入
-&lt;ol&gt;
-&lt;li&gt;按位序插入
-&lt;ol&gt;
-&lt;li&gt;带头结点&lt;/li&gt;
-&lt;li&gt;不带头结点&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;指定结点的后插操作&lt;/li&gt;
-&lt;li&gt;指定结点的前插操作&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;删除
-&lt;ol&gt;
-&lt;li&gt;按位序删除&lt;/li&gt;
-&lt;li&gt;指点结点的删除&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;查找（三个时间复杂度都是 &lt;code&gt;O(n)&lt;/code&gt; ）
-&lt;ol&gt;
-&lt;li&gt;按位查找
-&lt;ol&gt;
-&lt;li&gt;单链表不具备随机访问的特性，只能依次扫描&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;按值查找&lt;/li&gt;
-&lt;li&gt;求单链表长度&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;建立（设置一个指向表尾的指针）：核心是初始化操作、指定结点的后插操作
-&lt;ol&gt;
-&lt;li&gt;尾插法：&lt;/li&gt;
-&lt;li&gt;头插法：重要应用：链表的逆置&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h6 id=&#34;4双链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4双链表&#34;&gt;#&lt;/a&gt; 4. 双链表&lt;/h6&gt;
-&lt;ol&gt;
-&lt;li&gt;单链表无法逆向检索，双链表可进可退，存储密度较低一些&lt;/li&gt;
-&lt;li&gt;初始化&lt;/li&gt;
-&lt;li&gt;插入&lt;/li&gt;
-&lt;li&gt;删除&lt;/li&gt;
-&lt;li&gt;遍历：双链表不可随机存取，按位查找、按值查找操作都只能用遍历的方式实现。时间复杂度 O (n)&lt;/li&gt;
-&lt;li&gt;空表：前后指针都指向 null&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h6 id=&#34;5循环链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5循环链表&#34;&gt;#&lt;/a&gt; 5. 循环链表&lt;/h6&gt;
-&lt;ol&gt;
-&lt;li&gt;循环单链表
-&lt;ol&gt;
-&lt;li&gt;单链表：表尾结点的 next 指针指向 NULL。单链表：从一个结点出发只能找到后续的各个结点&lt;/li&gt;
-&lt;li&gt;循环单链表：表尾结点的 next 指针指向头结点。循环单链表：从一个结点出发可以找到其他任何一个结点&lt;/li&gt;
-&lt;li&gt;从头结点找到尾部，时间复杂度为 O (n)。从尾部找到头部，时间复杂度为 O (1)&lt;/li&gt;
-&lt;li&gt;空表：单手抱住空虚的自己；非空链表：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;循环双链表
-&lt;ol&gt;
-&lt;li&gt;双链表：表头结点的 prior 指向 NULL；表尾结点的 next 指向 NULL&lt;/li&gt;
-&lt;li&gt;循环双链表：表头结点的 prior 指向表尾结点；表尾结点的 next 指向头结点&lt;/li&gt;
-&lt;li&gt;空表：双手抱住空虚的自己；非空链表：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;代码问题：如何判断空表？如何判断指定结点是否为表尾结点 / 表头节点？如何在表头、表中、表尾插入 / 删除一个结点&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h6 id=&#34;6静态链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6静态链表&#34;&gt;#&lt;/a&gt; 6. 静态链表&lt;/h6&gt;
-&lt;ol&gt;
-&lt;li&gt;静态链表
-&lt;ol&gt;
-&lt;li&gt;分配一整片连续的内存空间，各个结点集中安置&lt;/li&gt;
-&lt;li&gt;静态链表也可看作用数组的方式实现的链表&lt;/li&gt;
-&lt;li&gt;在静态链表中游标充当指针，游标为 - 1 时就是到达表尾&lt;/li&gt;
-&lt;li&gt;优点：增、删操作不需要大量移动元素&lt;/li&gt;
-&lt;li&gt;缺点：不能随机存取，只能从头结点开始依次往后查找；&lt;strong&gt;容量固定不可变&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;适用场景：①不支持指针的低级语言；②数据元素数量固定不变的场景（如操作系统的文件分配表 FAT）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;定义静态链表&lt;/li&gt;
-&lt;li&gt;基本操作的实现&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h6 id=&#34;7顺序表和链表比较&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7顺序表和链表比较&#34;&gt;#&lt;/a&gt; 7. 顺序表和链表比较&lt;/h6&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;顺序表&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;链表&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;逻辑结构&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;都属于线性表，都是线性结构&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;都属于线性表，都是线性结构&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;存储结构 / 物理结构&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;优点：支持随机存取、存储密度高 &lt;br/&gt;缺点：大片连续空间分配不方便，改变容量不方便&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;优点：离散的小空间分配方便，改变容量方便&lt;br/&gt;缺点：不可随机存取，存储密度低&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;数据运算 / 基本操作&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;创建&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;需要预分配大片连续空间。若分配空间过小，则之后不方便拓展容量；若分配空间过大，则浪费内存资源&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;只需分配一个头结点（也可以不要头结点，只声明一个头指针），之后方便拓展&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;增&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;插入 / 删除元素要将后续元素都后移 / 前移时间复杂度 O (n)&lt;br/&gt;时间开销主要来自移动元素&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;插入 / 删除元素只需修改指针即可&lt;br/&gt;时间复杂度 O (n), 时间开销主要来自查找目标元素&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;删&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;查&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;弹性&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;❌&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;增、删&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;❌&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;查&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;❌&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;技巧&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;表长可预估、查询（搜索）操作较多&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;表长难以预估、经常要增加 / 删除元素&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;!-- #### 3.栈和队列
-
-#### 4.串
-
-#### 5.树和二叉树
-
-#### 6.图
-
-#### 7.查找
-
-#### 8.排序 --&gt;
  ]]></description>
         </item>
         <item>
