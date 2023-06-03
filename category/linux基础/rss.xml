@@ -28,8 +28,8 @@
             <link>http://example.com/2023/02/16/E001_Linux/</link>
             <category>Linux</category>
             <pubDate>Thu, 16 Feb 2023 18:23:20 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的到来并阅读！&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;&lt;/span&gt;&lt;br&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的到来并阅读！&lt;/span&gt;&lt;br /&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;123&lt;/span&gt;&lt;br /&gt;&lt;br&gt;
 📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;linux常用命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux常用命令&#34;&gt;#&lt;/a&gt; Linux 常用命令&lt;/h5&gt;
