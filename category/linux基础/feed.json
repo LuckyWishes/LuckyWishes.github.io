@@ -7,7 +7,7 @@
         {
             "id": "http://example.com/2023/02/16/E001_Linux/",
             "url": "http://example.com/2023/02/16/E001_Linux/",
-            "title": "Linux (01)",
+            "title": "Linux",
             "date_published": "2023-02-16T10:23:20.000Z",
             "content_html": "<p>🌸  <span style=\"font-size:bold;color:purple\">您好，欢迎您的阅读，等君久矣，愿与君畅谈。</span><br>\n🔭  <span style=\"font-size:bold;color:purple\">§ 始于颜值 § 陷于才华 § 忠于人品 §</span><br>\n📫  <span style=\"font-size:initial;color:purple\">希望我们可以进一步交流，共同学习，共同探索未知的技术世界 <a href=\"https://juejin.cn/user/2784392994882045\">稀土掘金</a> OR <a href=\"https://github.com/LuckyWishes\">GitHub</a>.</span></p>\n<hr />\n<h5 id=\"linux常用命令\"><a class=\"markdownIt-Anchor\" href=\"#linux常用命令\">#</a> Linux 常用命令</h5>\n<ul>\n<li>ls：列出当前目录下的文件和目录</li>\n<li>cd：切换目录</li>\n<li>clear：清除终端内容</li>\n<li>pwd：显示当前所在的目录的完整路径</li>\n<li>mkdir：新建一个目录</li>\n<li>touch：新建一个空文件</li>\n<li>cat：输出文件的内容到控制台</li>\n<li>cp：复制文件或目录</li>\n<li>mv：移动文件或目录</li>\n<li>rm：删除文件或目录</li>\n<li>tar：打包或解压缩文件</li>\n<li>ps：查看当前正在运行的进程</li>\n<li>top：实时查看系统资源占用情况</li>\n<li>grep：在文件中查找匹配的字符串</li>\n<li>find：查找文件</li>\n<li>wget：下载文件</li>\n</ul>\n",
             "tags": [
