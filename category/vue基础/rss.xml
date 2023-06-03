@@ -18,6 +18,7 @@
         <category>Node</category>
         <category>TypeScript</category>
         <category>计算机网络</category>
+        <category>数据结构</category>
         <category>操作系统</category>
         <category>计算机组成</category>
         <category>Linux</category>
@@ -27,9 +28,9 @@
             <link>http://example.com/2020/03/07/6003_Vue/</link>
             <category>Vue</category>
             <pubDate>Sat, 07 Mar 2020 10:36:25 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;插值操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#插值操作&#34;&gt;#&lt;/a&gt; 插值操作&lt;/h5&gt;
 &lt;ol&gt;
@@ -92,9 +93,9 @@
             <link>http://example.com/2020/03/02/6002_Vue/</link>
             <category>Vue</category>
             <pubDate>Mon, 02 Mar 2020 09:02:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;1-安装四种安装方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-安装四种安装方式&#34;&gt;#&lt;/a&gt; 1. 安装（四种安装方式）&lt;/h5&gt;
 &lt;ol&gt;
@@ -182,9 +183,9 @@
             <link>http://example.com/2020/02/27/6001_Vue/</link>
             <category>Vue</category>
             <pubDate>Thu, 27 Feb 2020 15:32:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;vue生命周期的理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vue生命周期的理解&#34;&gt;#&lt;/a&gt; Vue 生命周期的理解&lt;/h5&gt;
 &lt;p&gt;每个 &lt;code&gt;Vue&lt;/code&gt;  实例在创建时都会经过一系列的初始化过程， &lt;code&gt;vue&lt;/code&gt;  的生命周期钩子，就是说在达到某一阶段或条件时去触发的函数，目的就是为了完成一些动作或者事件&lt;/p&gt;

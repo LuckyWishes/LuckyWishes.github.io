@@ -18,6 +18,7 @@
         <category>Node</category>
         <category>TypeScript</category>
         <category>计算机网络</category>
+        <category>数据结构</category>
         <category>操作系统</category>
         <category>计算机组成</category>
         <category>Linux</category>
@@ -27,9 +28,9 @@
             <link>http://example.com/2022/06/23/4004_JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
             <category>JavaScript</category>
             <pubDate>Thu, 23 Jun 2022 22:12:56 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h4 id=&#34;1-概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-概念&#34;&gt;#&lt;/a&gt; 1. 概念&lt;/h4&gt;
 &lt;ol&gt;
@@ -126,9 +127,9 @@
             <link>http://example.com/2022/06/19/4003_JavaScript%E5%8E%9F%E5%9E%8B%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/</link>
             <category>JavaScript</category>
             <pubDate>Sun, 19 Jun 2022 22:12:03 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id=&#34;prototype&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#prototype&#34;&gt;#&lt;/a&gt; prototype&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -298,11 +299,11 @@
             <link>http://example.com/2022/06/17/4002_JavaScript%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%B8%8E%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/</link>
             <category>JavaScript</category>
             <pubDate>Fri, 17 Jun 2022 15:43:53 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h3 id=&#34;1-提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-提升&#34;&gt;#&lt;/a&gt; 1 提升&lt;/h3&gt;
+### 1 提升
 &lt;p&gt;在 j s 代码执行前引擎会先进行预编译，预编 译期间会将变量声明与函数声明提升至其对应作用域的最顶端。&lt;/p&gt;
 &lt;h3 id=&#34;2-变量提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-变量提升&#34;&gt;#&lt;/a&gt; 2 变量提升&lt;/h3&gt;
 &lt;p&gt;在 ES 6 出来之前，J S 并没有块级作用域这一说，只有全局作用域和局部作用域。变量提升指的是&lt;strong&gt;使用 var 声明的变量提升到他所在的作用域的最顶端&lt;/strong&gt;。创建阶段，初始化阶段变量提升，赋值阶段没有提升，值为 undefined。&lt;/p&gt;
@@ -345,9 +346,9 @@
             <link>http://example.com/2022/06/15/4001_JavaScript/</link>
             <category>JavaScript</category>
             <pubDate>Wed, 15 Jun 2022 19:12:03 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h5 id=&#34;函数的this绑定&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#函数的this绑定&#34;&gt;#&lt;/a&gt; 函数的 this 绑定&lt;/h5&gt;
 &lt;ol&gt;
@@ -465,9 +466,9 @@
             <link>http://example.com/2019/01/13/4000_JavaScript/</link>
             <category>JavaScript</category>
             <pubDate>Sun, 13 Jan 2019 14:12:03 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;Welcome to XGG &amp;amp; blog!&lt;/span&gt;&lt;br&gt;
-🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;When you have eliminated the impossible,whatever remains,however improbable,must be the truth.&lt;/span&gt;&lt;br&gt;
-📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;If you get any problems when looking blog,you can find the answer in &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;1javascript介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1javascript介绍&#34;&gt;#&lt;/a&gt; 1.JavaScript 介绍&lt;/h2&gt;
 &lt;h3 id=&#34;1javascript应用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1javascript应用&#34;&gt;#&lt;/a&gt; 1.JavaScript 应用&lt;/h3&gt;
