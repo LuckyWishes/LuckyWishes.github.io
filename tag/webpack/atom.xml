@@ -19,6 +19,7 @@
     <category term="操作系统" />
     <category term="计算机组成" />
     <category term="Linux" />
+    <category term="模块化开发" />
     <entry>
         <id>http://example.com/2020/05/19/7003_Webpack/</id>
         <title>Webpack</title>
