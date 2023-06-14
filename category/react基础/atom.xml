@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>XGG • Posts by &#34;react基础&#34; category</title>
     <link href="http://example.com" />
-    <updated>2020-04-08T11:47:56.000Z</updated>
+    <updated>2023-04-13T14:47:06.000Z</updated>
     <category term="uni-app" />
     <category term="Git" />
     <category term="浏览器" />
@@ -20,6 +20,115 @@
     <category term="计算机组成" />
     <category term="Linux" />
     <category term="模块化开发" />
+    <entry>
+        <id>http://example.com/2023/04/13/5003_React/</id>
+        <title>React</title>
+        <link rel="alternate" href="http://example.com/2023/04/13/5003_React/"/>
+        <content type="html">&lt;p&gt;🌸  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;您好，欢迎您的阅读，等君久矣，愿与君畅谈.&lt;/span&gt;&lt;br&gt;
+🔭  &lt;span style=&#34;font-size:bold;color:purple&#34;&gt;§ 始于颜值 § 陷于才华 § 忠于人品 §&lt;/span&gt;&lt;br&gt;
+📫  &lt;span style=&#34;font-size:initial;color:purple&#34;&gt;希望我们可以进一步交流，共同学习，共同探索未知的技术世界 &lt;a href=&#34;https://juejin.cn/user/2784392994882045&#34;&gt;稀土掘金&lt;/a&gt; OR &lt;a href=&#34;https://github.com/LuckyWishes&#34;&gt;GitHub&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;使用 Hooks 旨在增加代码的可复用性，逻辑性，弥补无状态组件没有生命周期，没有数据管理状态 state 的缺陷。函数组件也能做类组件的事，有自己的状态，可以处理一些副作用，能获取 ref ，也能做数据缓存。解决逻辑复用难的问题，拥抱函数式编程。&lt;/p&gt;
+&lt;h4 id=&#34;数据驱动更新型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据驱动更新型&#34;&gt;#&lt;/a&gt; 数据驱动更新型&lt;/h4&gt;
+&lt;h6 id=&#34;数据更新usestate&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据更新usestate&#34;&gt;#&lt;/a&gt; 数据更新 &lt;code&gt;useState&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;const [ ①state , ②dispatch ] = useState(③initData)&lt;/code&gt; &lt;br&gt;
+① state: 数据源。&lt;br&gt;
+② dispatchAction: 改变 state 的函数，可以理解为推动函数组件渲染的渲染函数。&lt;br&gt;
+③ initData: 有两种情况，第一种情况是非函数，将作为 state 初始化的值。第二种情况是函数，函数的返回值作为 useState 初始化的值。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注意事项：
+&lt;ul&gt;
+&lt;li&gt;① 在函数组件一次执行上下文中，state 的值是固定不变的。&lt;/li&gt;
+&lt;li&gt;② 如果两次 dispatchAction 传入相同的 state 值，那么组件就不会更新。&lt;/li&gt;
+&lt;li&gt;③ 当触发 dispatchAction 在当前执行上下文中获取不到最新的 state, 只有再下一次组件 rerender 中才能获取到。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;订阅更新usereducer&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#订阅更新usereducer&#34;&gt;#&lt;/a&gt; 订阅更新 &lt;code&gt;useReducer&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;const [ ①state , ②dispatch ] = useReducer(③reducer)&lt;/code&gt; &lt;br&gt;
+① 更新之后的 state 值。&lt;br&gt;
+② 派发更新的 dispatchAction 函数，本质上和 useState 的 dispatchAction 是一样的。&lt;br&gt;
+③ 一个函数 reducer ，我们可以认为它就是一个 redux 中的 reducer , reducer 的参数就是常规 reducer 里面的 state 和 action, 返回改变后的 state, 这里有一个需要注意的点就是：如果返回的 state 和之前的 state ，内存指向相同，那么组件将不会更新。&lt;/p&gt;
+&lt;h6 id=&#34;过渡更新usetransition&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#过渡更新usetransition&#34;&gt;#&lt;/a&gt; 过渡更新 &lt;code&gt;usetransition&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;const  [ isPending , startTransition ] = useTransition ()&lt;/code&gt; &lt;br&gt;
+ useTransition 执行返回一个数组。数组有两个状态值：第一个是当处于过渡状态的标志 isPending。第二个是一个方法，可以理解为上述的 startTransition。可以把里面的更新任务变成过渡任务。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;concurrent 模式下，过渡更新任务&lt;/li&gt;
+&lt;li&gt;过渡任务对比立即更新任务而产生的，通常一些影响用户交互直观响应的任务例如按键，点击，输入等，这些任务需要视图上立即响应称之为立即更新的任务，但是有一些更新不是那么急迫，比如页面从一个状态过渡到另外一个状态，这些任务就叫做过渡任务。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;滞后更新usedeferredvalue&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#滞后更新usedeferredvalue&#34;&gt;#&lt;/a&gt; 滞后更新 &lt;code&gt;useDeferredValue&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;const deferrredValue = useDeferredValue(value)&lt;/code&gt; &lt;br&gt;
+ useDeferredValue 和上述 useTransition 区别&lt;br&gt;
+相同点： useDeferredValue 与 useTransition 一样都是标记成了过渡更新任务。&lt;br&gt;
+不同点： useTransition 是把 startTransition 内部的更新任务变成了过渡任务 transtion, 而 useDeferredValue 是把原值通过过渡任务得到新的值，这个值作为延时状态。 一个是处理一段逻辑，另一个是生产一个新的状态。useDeferredValue 接受一个参数 value ，一般为可变的 state , 返回一个延时状态 deferrredValue&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;concurrent 模式下，更新状态滞后&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;外部数据源更新usesyncexternaistore&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#外部数据源更新usesyncexternaistore&#34;&gt;#&lt;/a&gt; 外部数据源更新 &lt;code&gt;useSyncExternaiStore&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;useSyncExternalStore(subscribe,getSnapshot,getServerSnapshot)&lt;/code&gt; &lt;br&gt;
+① subscribe 为订阅函数，当数据改变的时候，会触发 subscribe，在 useSyncExternalStore 会通过带有记忆性的 getSnapshot 来判别数据是否发生变化，如果发生变化，那么会强制更新数据。&lt;br&gt;
+② getSnapshot 可以理解成一个带有记忆功能的选择器。当 store 变化的时候，会通过 getSnapshot 生成新的状态值，这个状态值可提供给组件作为数据源使用，getSnapshot 可以检查订阅的值是否改变，改变的话那么会触发更新。&lt;br&gt;
+③ getServerSnapshot 用于 hydration 模式下的 getSnapshot。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;concurrent 模式下，订阅外部数据源，触发更新&lt;/li&gt;
+&lt;li&gt;React 组件在 concurrent 模式下安全地有效地读取外接数据源，在组件渲染过程中能够检测到变化，并且在数据源发生变化的时候，能够调度更新。当读取到外部状态发生了变化，会触发一个强制更新，来保证结果的一致性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;状态获取与传递型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#状态获取与传递型&#34;&gt;#&lt;/a&gt; 状态获取与传递型&lt;/h4&gt;
+&lt;h6 id=&#34;订阅获取上下文usecontext&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#订阅获取上下文usecontext&#34;&gt;#&lt;/a&gt; 订阅获取上下文 &lt;code&gt;useContext&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;const contextValue = useContext(context)&lt;/code&gt; &lt;br&gt;
+ useContext 接受一个参数，一般都是 context 对象，返回值为 context 对象内部保存的 value 值。可以使用 useContext ，来获取父级组件传递过来的 context 值，这个当前值就是最近的父级组件 Provider 设置的 value 值，useContext 参数一般是由 createContext 方式创建的，也可以父级上下文 context 传递的 (参数为 context)。useContext 可以代替 context.Consumer 来获取 Provider 中保存的 value 值。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;跨层级状态传递&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;元素组件获取useref&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#元素组件获取useref&#34;&gt;#&lt;/a&gt; 元素组件获取 &lt;code&gt;useRef&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;const cur = React.useRef(initState)&lt;/code&gt; &lt;br&gt;
+ useRef 可以用来获取元素，缓存状态，接受一个状态 initState 作为初始值，返回一个 ref 对象 cur, cur 上有一个 current 属性就是 ref 对象需要获取的内容。&lt;br&gt;
+useRef 获取 DOM 元素、useRef 保存状态， 可以利用 useRef 返回的 ref 对象来保存状态，只要当前组件不被销毁，那么状态就会一直存在、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取元素或者组件实例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;函数组件兼容refuseimperativehandle&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#函数组件兼容refuseimperativehandle&#34;&gt;#&lt;/a&gt; 函数组件兼容 ref &lt;code&gt;useImperativeHandle&lt;/code&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;用于函数组件能够被 ref 获取&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;状态派生与保存型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#状态派生与保存型&#34;&gt;#&lt;/a&gt; 状态派生与保存型&lt;/h4&gt;
+&lt;h6 id=&#34;派生新状态usememo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#派生新状态usememo&#34;&gt;#&lt;/a&gt; 派生新状态 &lt;code&gt;useMemo&lt;/code&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;性能优化，缓存新的状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;保存状态usecallback&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#保存状态usecallback&#34;&gt;#&lt;/a&gt; 保存状态 &lt;code&gt;useCallback&lt;/code&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;性能优化，缓存状态，提供给子代组件的 callback 回调函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;执行副作用型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#执行副作用型&#34;&gt;#&lt;/a&gt; 执行副作用型&lt;/h4&gt;
+&lt;h6 id=&#34;异步执行副作用useeffect&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#异步执行副作用useeffect&#34;&gt;#&lt;/a&gt; 异步执行副作用 &lt;code&gt;useEffect&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;useEffect( () =&amp;gt; &amp;#123; return destory &amp;#125;, dep )&lt;/code&gt; &lt;br&gt;
+ useEffect 第一个参数 callback, 返回的 destory ， destory 作为下一次 callback 执行之前调用，用于清除上一次 callback 产生的副作用。&lt;br&gt;
+第二个参数作为依赖项，是一个数组，可以有多个依赖项，依赖项改变，执行上一次 callback 返回的 destory ，和执行新的 effect 第一个参数 callback 。&lt;br&gt;
+对于 useEffect 执行， React 处理逻辑是采用异步调用 ，对于每一个 effect 的 callback， React 会向 setTimeout 回调函数一样，放入任务队列，等到主线程任务完成，DOM 更新，js 执行完成，视图绘制完毕，才执行。所以 effect 回调函数不会阻塞浏览器绘制视图。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;异步状态下，视图更新后，执行副作用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;同步执行副作用uselayouteffect&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#同步执行副作用uselayouteffect&#34;&gt;#&lt;/a&gt; 同步执行副作用 &lt;code&gt;useLayoutEffect&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;① 首先 useLayoutEffect 是在 DOM 更新之后，浏览器绘制之前，这样可以方便修改 DOM，获取 DOM 信息，这样浏览器只会绘制一次，如果修改 DOM 布局放在 useEffect ，那 useEffect 执行是在浏览器绘制视图之后，接下来又改 DOM ，就可能会导致浏览器再次回流和重绘。而且由于两次绘制，视图上可能会造成闪现突兀的效果。&lt;br&gt;
+② useLayoutEffect callback 中代码执行会阻塞浏览器绘制。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同步状态下，试图更新前，执行副作用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;css-in-jsuseinetioneffect&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css-in-jsuseinetioneffect&#34;&gt;#&lt;/a&gt; css in js &lt;code&gt;useInetionEffect&lt;/code&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;useLayoutEffect 执行的时候 DOM 已经更新了，但是在 useInsertionEffect 的执行的时候，DOM 还没有更新。useInsertionEffect 主要是解决 CSS-in-JS 在渲染中注入样式的性能问题&lt;/li&gt;
+&lt;li&gt;用于处理 css in js 缺陷问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- #### 工具型
+###### 服务端渲染`useID`
+- 服务端渲染
+###### debug`useDebugValue`
+- devtool debug
+#### 自定义 hooks：部分逻辑代码封装起来，做到复用，减少代码冗余 --&gt;</content>
+        <category term="React" />
+        <updated>2023-04-13T14:47:06.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2020/04/08/5002_React/</id>
         <title>React</title>

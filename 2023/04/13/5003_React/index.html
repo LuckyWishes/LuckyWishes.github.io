@@ -1,0 +1,748 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="XGG">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="§ Hooks总结 §">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React">
+<meta property="og:url" content="http://example.com/2023/04/13/5003_React/index.html">
+<meta property="og:site_name" content="XGG">
+<meta property="og:description" content="§ Hooks总结 §">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/photo/react.png">
+<meta property="article:published_time" content="2023-04-13T14:47:06.000Z">
+<meta property="article:modified_time" content="2023-06-14T02:41:52.952Z">
+<meta property="article:author" content="XGG">
+<meta property="article:tag" content="React">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/photo/react.png">
+  
+  
+  
+  <title>React - XGG</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>XGG</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/chengbao.jpeg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.01)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="React"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-04-13 22:47" pubdate>
+          2023年4月13日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          29 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">React</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>🌸  <span style="font-size:bold;color:purple">您好，欢迎您的阅读，等君久矣，愿与君畅谈.</span><br>
+🔭  <span style="font-size:bold;color:purple">§ 始于颜值 § 陷于才华 § 忠于人品 §</span><br>
+📫  <span style="font-size:initial;color:purple">希望我们可以进一步交流，共同学习，共同探索未知的技术世界 <a target="_blank" rel="noopener" href="https://juejin.cn/user/2784392994882045">稀土掘金</a> OR <a target="_blank" rel="noopener" href="https://github.com/LuckyWishes">GitHub</a>.</span></p>
+<hr />
+<p>使用 Hooks 旨在增加代码的可复用性，逻辑性，弥补无状态组件没有生命周期，没有数据管理状态 state 的缺陷。函数组件也能做类组件的事，有自己的状态，可以处理一些副作用，能获取 ref ，也能做数据缓存。解决逻辑复用难的问题，拥抱函数式编程。</p>
+<h4 id="数据驱动更新型"><a class="markdownIt-Anchor" href="#数据驱动更新型">#</a> 数据驱动更新型</h4>
+<h6 id="数据更新usestate"><a class="markdownIt-Anchor" href="#数据更新usestate">#</a> 数据更新 <code>useState</code></h6>
+<p><code>const [ ①state , ②dispatch ] = useState(③initData)</code> <br>
+① state: 数据源。<br>
+② dispatchAction: 改变 state 的函数，可以理解为推动函数组件渲染的渲染函数。<br>
+③ initData: 有两种情况，第一种情况是非函数，将作为 state 初始化的值。第二种情况是函数，函数的返回值作为 useState 初始化的值。</p>
+<ul>
+<li>注意事项：
+<ul>
+<li>① 在函数组件一次执行上下文中，state 的值是固定不变的。</li>
+<li>② 如果两次 dispatchAction 传入相同的 state 值，那么组件就不会更新。</li>
+<li>③ 当触发 dispatchAction 在当前执行上下文中获取不到最新的 state, 只有再下一次组件 rerender 中才能获取到。</li>
+</ul>
+</li>
+</ul>
+<h6 id="订阅更新usereducer"><a class="markdownIt-Anchor" href="#订阅更新usereducer">#</a> 订阅更新 <code>useReducer</code></h6>
+<p><code>const [ ①state , ②dispatch ] = useReducer(③reducer)</code> <br>
+① 更新之后的 state 值。<br>
+② 派发更新的 dispatchAction 函数，本质上和 useState 的 dispatchAction 是一样的。<br>
+③ 一个函数 reducer ，我们可以认为它就是一个 redux 中的 reducer , reducer 的参数就是常规 reducer 里面的 state 和 action, 返回改变后的 state, 这里有一个需要注意的点就是：如果返回的 state 和之前的 state ，内存指向相同，那么组件将不会更新。</p>
+<h6 id="过渡更新usetransition"><a class="markdownIt-Anchor" href="#过渡更新usetransition">#</a> 过渡更新 <code>usetransition</code></h6>
+<p><code>const  [ isPending , startTransition ] = useTransition ()</code> <br>
+ useTransition 执行返回一个数组。数组有两个状态值：第一个是当处于过渡状态的标志 isPending。第二个是一个方法，可以理解为上述的 startTransition。可以把里面的更新任务变成过渡任务。</p>
+<ul>
+<li>concurrent 模式下，过渡更新任务</li>
+<li>过渡任务对比立即更新任务而产生的，通常一些影响用户交互直观响应的任务例如按键，点击，输入等，这些任务需要视图上立即响应称之为立即更新的任务，但是有一些更新不是那么急迫，比如页面从一个状态过渡到另外一个状态，这些任务就叫做过渡任务。</li>
+</ul>
+<h6 id="滞后更新usedeferredvalue"><a class="markdownIt-Anchor" href="#滞后更新usedeferredvalue">#</a> 滞后更新 <code>useDeferredValue</code></h6>
+<p><code>const deferrredValue = useDeferredValue(value)</code> <br>
+ useDeferredValue 和上述 useTransition 区别<br>
+相同点： useDeferredValue 与 useTransition 一样都是标记成了过渡更新任务。<br>
+不同点： useTransition 是把 startTransition 内部的更新任务变成了过渡任务 transtion, 而 useDeferredValue 是把原值通过过渡任务得到新的值，这个值作为延时状态。 一个是处理一段逻辑，另一个是生产一个新的状态。useDeferredValue 接受一个参数 value ，一般为可变的 state , 返回一个延时状态 deferrredValue</p>
+<ul>
+<li>concurrent 模式下，更新状态滞后</li>
+</ul>
+<h6 id="外部数据源更新usesyncexternaistore"><a class="markdownIt-Anchor" href="#外部数据源更新usesyncexternaistore">#</a> 外部数据源更新 <code>useSyncExternaiStore</code></h6>
+<p><code>useSyncExternalStore(subscribe,getSnapshot,getServerSnapshot)</code> <br>
+① subscribe 为订阅函数，当数据改变的时候，会触发 subscribe，在 useSyncExternalStore 会通过带有记忆性的 getSnapshot 来判别数据是否发生变化，如果发生变化，那么会强制更新数据。<br>
+② getSnapshot 可以理解成一个带有记忆功能的选择器。当 store 变化的时候，会通过 getSnapshot 生成新的状态值，这个状态值可提供给组件作为数据源使用，getSnapshot 可以检查订阅的值是否改变，改变的话那么会触发更新。<br>
+③ getServerSnapshot 用于 hydration 模式下的 getSnapshot。</p>
+<ul>
+<li>concurrent 模式下，订阅外部数据源，触发更新</li>
+<li>React 组件在 concurrent 模式下安全地有效地读取外接数据源，在组件渲染过程中能够检测到变化，并且在数据源发生变化的时候，能够调度更新。当读取到外部状态发生了变化，会触发一个强制更新，来保证结果的一致性。</li>
+</ul>
+<h4 id="状态获取与传递型"><a class="markdownIt-Anchor" href="#状态获取与传递型">#</a> 状态获取与传递型</h4>
+<h6 id="订阅获取上下文usecontext"><a class="markdownIt-Anchor" href="#订阅获取上下文usecontext">#</a> 订阅获取上下文 <code>useContext</code></h6>
+<p><code>const contextValue = useContext(context)</code> <br>
+ useContext 接受一个参数，一般都是 context 对象，返回值为 context 对象内部保存的 value 值。可以使用 useContext ，来获取父级组件传递过来的 context 值，这个当前值就是最近的父级组件 Provider 设置的 value 值，useContext 参数一般是由 createContext 方式创建的，也可以父级上下文 context 传递的 (参数为 context)。useContext 可以代替 context.Consumer 来获取 Provider 中保存的 value 值。</p>
+<ul>
+<li>跨层级状态传递</li>
+</ul>
+<h6 id="元素组件获取useref"><a class="markdownIt-Anchor" href="#元素组件获取useref">#</a> 元素组件获取 <code>useRef</code></h6>
+<p><code>const cur = React.useRef(initState)</code> <br>
+ useRef 可以用来获取元素，缓存状态，接受一个状态 initState 作为初始值，返回一个 ref 对象 cur, cur 上有一个 current 属性就是 ref 对象需要获取的内容。<br>
+useRef 获取 DOM 元素、useRef 保存状态， 可以利用 useRef 返回的 ref 对象来保存状态，只要当前组件不被销毁，那么状态就会一直存在、</p>
+<ul>
+<li>获取元素或者组件实例</li>
+</ul>
+<h6 id="函数组件兼容refuseimperativehandle"><a class="markdownIt-Anchor" href="#函数组件兼容refuseimperativehandle">#</a> 函数组件兼容 ref <code>useImperativeHandle</code></h6>
+<ul>
+<li>用于函数组件能够被 ref 获取</li>
+</ul>
+<h4 id="状态派生与保存型"><a class="markdownIt-Anchor" href="#状态派生与保存型">#</a> 状态派生与保存型</h4>
+<h6 id="派生新状态usememo"><a class="markdownIt-Anchor" href="#派生新状态usememo">#</a> 派生新状态 <code>useMemo</code></h6>
+<ul>
+<li>性能优化，缓存新的状态</li>
+</ul>
+<h6 id="保存状态usecallback"><a class="markdownIt-Anchor" href="#保存状态usecallback">#</a> 保存状态 <code>useCallback</code></h6>
+<ul>
+<li>性能优化，缓存状态，提供给子代组件的 callback 回调函数</li>
+</ul>
+<h4 id="执行副作用型"><a class="markdownIt-Anchor" href="#执行副作用型">#</a> 执行副作用型</h4>
+<h6 id="异步执行副作用useeffect"><a class="markdownIt-Anchor" href="#异步执行副作用useeffect">#</a> 异步执行副作用 <code>useEffect</code></h6>
+<p><code>useEffect( () =&gt; &#123; return destory &#125;, dep )</code> <br>
+ useEffect 第一个参数 callback, 返回的 destory ， destory 作为下一次 callback 执行之前调用，用于清除上一次 callback 产生的副作用。<br>
+第二个参数作为依赖项，是一个数组，可以有多个依赖项，依赖项改变，执行上一次 callback 返回的 destory ，和执行新的 effect 第一个参数 callback 。<br>
+对于 useEffect 执行， React 处理逻辑是采用异步调用 ，对于每一个 effect 的 callback， React 会向 setTimeout 回调函数一样，放入任务队列，等到主线程任务完成，DOM 更新，js 执行完成，视图绘制完毕，才执行。所以 effect 回调函数不会阻塞浏览器绘制视图。</p>
+<ul>
+<li>异步状态下，视图更新后，执行副作用</li>
+</ul>
+<h6 id="同步执行副作用uselayouteffect"><a class="markdownIt-Anchor" href="#同步执行副作用uselayouteffect">#</a> 同步执行副作用 <code>useLayoutEffect</code></h6>
+<p>① 首先 useLayoutEffect 是在 DOM 更新之后，浏览器绘制之前，这样可以方便修改 DOM，获取 DOM 信息，这样浏览器只会绘制一次，如果修改 DOM 布局放在 useEffect ，那 useEffect 执行是在浏览器绘制视图之后，接下来又改 DOM ，就可能会导致浏览器再次回流和重绘。而且由于两次绘制，视图上可能会造成闪现突兀的效果。<br>
+② useLayoutEffect callback 中代码执行会阻塞浏览器绘制。</p>
+<ul>
+<li>同步状态下，试图更新前，执行副作用</li>
+</ul>
+<h6 id="css-in-jsuseinetioneffect"><a class="markdownIt-Anchor" href="#css-in-jsuseinetioneffect">#</a> css in js <code>useInetionEffect</code></h6>
+<ul>
+<li>useLayoutEffect 执行的时候 DOM 已经更新了，但是在 useInsertionEffect 的执行的时候，DOM 还没有更新。useInsertionEffect 主要是解决 CSS-in-JS 在渲染中注入样式的性能问题</li>
+<li>用于处理 css in js 缺陷问题</li>
+</ul>
+<!-- #### 工具型
+###### 服务端渲染`useID`
+- 服务端渲染
+###### debug`useDebugValue`
+- devtool debug
+#### 自定义 hooks：部分逻辑代码封装起来，做到复用，减少代码冗余 -->
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/React%E5%9F%BA%E7%A1%80/" class="category-chain-item">React基础</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/React/">#React</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>React</div>
+      <div>http://example.com/2023/04/13/5003_React/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>XGG</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年4月13日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年6月14日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/03/05/12001_%E6%A8%A1%E5%9D%97%E5%8C%96/" title="模块化开发">
+                        <span class="hidden-mobile">模块化开发</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <span>XGG</span> <i class="iconfont icon-love"></i> <a href="https://github.com/LuckyWishes/LuckyWishes.github.io" target="_blank" rel="nofollow noopener"><span><img src="/img/favicon.svg" srcset="/img/loading.gif" lazyload width="16" height="16" viewBox="0 0 32 32" fill="none"/></span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
